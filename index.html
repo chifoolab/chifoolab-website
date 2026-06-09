@@ -3,1154 +3,217 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Bloque l'indexation par les moteurs de recherche (Google, Bing, etc.)
-     À retirer le jour du lancement officiel du site -->
 <meta name="robots" content="noindex, nofollow">
 <meta name="googlebot" content="noindex, nofollow">
-<title>ChiFoo Lab — Repenser l'alimentation des enfants</title>
+<title>ChiFoo Lab — Transformer l'éducation à l'alimentation des enfants</title>
+<meta name="description" content="Children's Food Education Lab — un laboratoire social pour faire évoluer l'éducation à l'alimentation des enfants en Suisse.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root {
-    /* CHIFOO official palette */
-    --meadow-green: #52B788;
-    --harvest-amber: #C9922A;
-    --forest-deep: #2D6A4F;
-    --amber-deep: #9B6A14;
-    --mint-mist: #B7E4C7;
-    --pollen: #EDD28A;
-    --sky-compass: #48CAE4;
-    --sky-compass-light: #8BDDED;
-    --sky-compass-deep: #2BB5D1;
-    --cream-paper: #FAF7F0;
-    --green-pale: #E8F7EE;
-    --gold-pale: #FBF3E0;
-    --sage-grey: #7A7A6E;
-    --dark-bark: #3D2B1F;
-
-    --font-display: 'Fraunces', Georgia, serif;
-    --font-body: 'Inter', system-ui, sans-serif;
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    font-family: var(--font-body);
-    color: var(--dark-bark);
-    background: var(--cream-paper);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
-  }
-
-  /* ─── Navigation ─── */
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    padding: 1.25rem 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(72, 202, 228, 0.92);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    transition: all 0.3s ease;
-  }
-
-  nav.scrolled {
-    background: rgba(250, 247, 240, 0.96);
-    box-shadow: 0 2px 20px rgba(45, 106, 79, 0.08);
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .logo-mark {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background: var(--cream-paper);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-  }
-
-  nav.scrolled .logo-mark {
-    background: var(--meadow-green);
-  }
-
-  .logo-mark::before {
-    content: '';
-    position: absolute;
-    width: 22px;
-    height: 22px;
-    background: var(--meadow-green);
-    border-radius: 50% 50% 50% 0;
-    transform: rotate(-45deg);
-  }
-
-  nav.scrolled .logo-mark::before {
-    background: var(--cream-paper);
-  }
-
-  .logo-mark::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    height: 6px;
-    background: var(--harvest-amber);
-    border-radius: 50%;
-    z-index: 1;
-    margin-top: -3px;
-  }
-
-  .logo-text {
-    font-family: var(--font-display);
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: var(--cream-paper);
-    letter-spacing: -0.02em;
-  }
-
-  nav.scrolled .logo-text {
-    color: var(--forest-deep);
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 2.25rem;
-    list-style: none;
-    align-items: center;
-  }
-
-  .nav-links a {
-    color: var(--cream-paper);
-    text-decoration: none;
-    font-size: 0.92rem;
-    font-weight: 500;
-    transition: opacity 0.2s;
-    position: relative;
-  }
-
-  nav.scrolled .nav-links a {
-    color: var(--forest-deep);
-  }
-
-  .nav-links a:hover { opacity: 0.7; }
-
-  .nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 1.5px;
-    background: currentColor;
-    transition: width 0.3s;
-  }
-
-  .nav-links a:hover::after { width: 100%; }
-
-  /* Language selector */
-  .lang-switch {
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-    padding: 0.35rem 0.7rem;
-    border-radius: 20px;
-    border: 1px solid rgba(250, 247, 240, 0.35);
-  }
-
-  nav.scrolled .lang-switch {
-    border-color: rgba(45, 106, 79, 0.2);
-  }
-
-  .lang-btn {
-    background: none;
-    border: none;
-    color: var(--cream-paper);
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 0.78rem;
-    font-weight: 500;
-    padding: 0.2rem 0.5rem;
-    border-radius: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    transition: all 0.2s;
-  }
-
-  nav.scrolled .lang-btn {
-    color: var(--forest-deep);
-  }
-
-  .lang-btn.active {
-    background: var(--cream-paper);
-    color: var(--forest-deep);
-  }
-
-  nav.scrolled .lang-btn.active {
-    background: var(--forest-deep);
-    color: var(--cream-paper);
-  }
-
-  /* ─── Hero ─── */
-  .hero {
-    min-height: 100vh;
-    background: var(--sky-compass);
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 8rem 3rem 4rem;
-    overflow: hidden;
-  }
-
-  /* Decorative organic shapes */
-  .blob {
-    position: absolute;
-    border-radius: 50%;
-    pointer-events: none;
-  }
-
-  .blob-1 {
-    width: 480px;
-    height: 480px;
-    background: var(--sky-compass-light);
-    top: -180px;
-    right: -160px;
-    opacity: 0.6;
-  }
-
-  .blob-2 {
-    width: 320px;
-    height: 320px;
-    background: var(--mint-mist);
-    bottom: -120px;
-    left: -100px;
-    opacity: 0.5;
-  }
-
-  .blob-3 {
-    width: 180px;
-    height: 180px;
-    background: var(--pollen);
-    bottom: 12%;
-    right: 8%;
-    opacity: 0.55;
-  }
-
-  .hero-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    gap: 4rem;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    z-index: 2;
-  }
-
-  .hero-tag {
-    display: inline-block;
-    font-size: 0.78rem;
-    font-weight: 500;
-    color: var(--forest-deep);
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    margin-bottom: 1.8rem;
-    padding: 0.4rem 0.9rem;
-    background: rgba(250, 247, 240, 0.5);
-    border-radius: 30px;
-    backdrop-filter: blur(4px);
-  }
-
-  .hero h1 {
-    font-family: var(--font-display);
-    font-size: clamp(2.8rem, 6vw, 5rem);
-    font-weight: 500;
-    line-height: 1.05;
-    color: var(--cream-paper);
-    letter-spacing: -0.025em;
-    margin-bottom: 1.8rem;
-  }
-
-  .hero h1 .accent {
-    font-style: italic;
-    font-weight: 400;
-    color: var(--pollen);
-    display: block;
-  }
-
-  .hero-sub {
-    font-size: 1.18rem;
-    color: var(--cream-paper);
-    max-width: 540px;
-    margin-bottom: 2.5rem;
-    line-height: 1.55;
-    opacity: 0.95;
-  }
-
-  .hero-cta {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.95rem 1.8rem;
-    border-radius: 50px;
-    font-family: inherit;
-    font-size: 0.95rem;
-    font-weight: 500;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: none;
-  }
-
-  .btn-primary {
-    background: var(--forest-deep);
-    color: var(--cream-paper);
-  }
-
-  .btn-primary:hover {
-    background: var(--dark-bark);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(45, 43, 31, 0.25);
-  }
-
-  .btn-secondary {
-    background: transparent;
-    color: var(--cream-paper);
-    border: 1.5px solid var(--cream-paper);
-  }
-
-  .btn-secondary:hover {
-    background: var(--cream-paper);
-    color: var(--forest-deep);
-  }
-
-  /* Hero illustration: stylized compass */
-  .hero-visual {
-    position: relative;
-    aspect-ratio: 1;
-    max-width: 460px;
-    margin-left: auto;
-  }
-
-  .compass {
-    width: 100%;
-    height: 100%;
-    animation: float 6s ease-in-out infinite;
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-12px) rotate(2deg); }
-  }
-
-  /* ─── Manifesto strip ─── */
-  .manifesto {
-    background: var(--cream-paper);
-    padding: 6rem 3rem;
-    text-align: center;
-    position: relative;
-  }
-
-  .manifesto-inner {
-    max-width: 880px;
-    margin: 0 auto;
-  }
-
-  .section-label {
-    font-size: 0.78rem;
-    font-weight: 500;
-    color: var(--meadow-green);
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    margin-bottom: 1.2rem;
-    display: block;
-  }
-
-  .manifesto h2 {
-    font-family: var(--font-display);
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 400;
-    line-height: 1.2;
-    color: var(--forest-deep);
-    letter-spacing: -0.02em;
-  }
-
-  .manifesto h2 em {
-    font-style: italic;
-    color: var(--harvest-amber);
-  }
-
-  /* ─── Pillars (8 levers) ─── */
-  .pillars {
-    background: var(--cream-paper);
-    padding: 4rem 3rem 8rem;
-  }
-
-  .pillars-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .pillars-header {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 3rem;
-    margin-bottom: 4rem;
-    align-items: end;
-  }
-
-  .pillars-header h2 {
-    font-family: var(--font-display);
-    font-size: clamp(2.2rem, 4vw, 3.2rem);
-    font-weight: 500;
-    line-height: 1.1;
-    color: var(--forest-deep);
-    letter-spacing: -0.02em;
-  }
-
-  .pillars-header p {
-    font-size: 1.05rem;
-    color: var(--sage-grey);
-    line-height: 1.6;
-  }
-
-  .pillar-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.25rem;
-  }
-
-  .pillar {
-    background: white;
-    border-radius: 18px;
-    padding: 1.8rem 1.5rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    border: 1px solid transparent;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .pillar:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(45, 106, 79, 0.1);
-    border-color: var(--mint-mist);
-  }
-
-  .pillar-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.1rem;
-    font-size: 1.4rem;
-  }
-
-  .pillar:nth-child(1) .pillar-icon { background: var(--green-pale); color: var(--meadow-green); }
-  .pillar:nth-child(2) .pillar-icon { background: var(--gold-pale); color: var(--harvest-amber); }
-  .pillar:nth-child(3) .pillar-icon { background: #E6F7FB; color: var(--sky-compass-deep); }
-  .pillar:nth-child(4) .pillar-icon { background: var(--green-pale); color: var(--forest-deep); }
-  .pillar:nth-child(5) .pillar-icon { background: #E6F7FB; color: var(--sky-compass-deep); }
-  .pillar:nth-child(6) .pillar-icon { background: var(--gold-pale); color: var(--amber-deep); }
-  .pillar:nth-child(7) .pillar-icon { background: var(--green-pale); color: var(--meadow-green); }
-  .pillar:nth-child(8) .pillar-icon { background: var(--gold-pale); color: var(--harvest-amber); }
-
-  .pillar h3 {
-    font-family: var(--font-display);
-    font-size: 1.15rem;
-    font-weight: 500;
-    color: var(--forest-deep);
-    margin-bottom: 0.5rem;
-    line-height: 1.25;
-  }
-
-  .pillar p {
-    font-size: 0.88rem;
-    color: var(--sage-grey);
-    line-height: 1.5;
-  }
-
-  /* ─── Audiences ─── */
-  .audiences {
-    background: var(--green-pale);
-    padding: 7rem 3rem;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .audiences::before {
-    content: '';
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background: var(--mint-mist);
-    border-radius: 50%;
-    top: -200px;
-    right: -150px;
-    opacity: 0.6;
-  }
-
-  .audiences-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-  }
-
-  .audiences-header {
-    text-align: center;
-    margin-bottom: 4rem;
-  }
-
-  .audiences h2 {
-    font-family: var(--font-display);
-    font-size: clamp(2.2rem, 4vw, 3.2rem);
-    font-weight: 500;
-    line-height: 1.1;
-    color: var(--forest-deep);
-    letter-spacing: -0.02em;
-    margin-bottom: 1rem;
-  }
-
-  .audiences-header p {
-    font-size: 1.05rem;
-    color: var(--sage-grey);
-    max-width: 560px;
-    margin: 0 auto;
-  }
-
-  .audience-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-
-  .audience {
-    background: white;
-    padding: 2.2rem 1.8rem;
-    border-radius: 20px;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-
-  .audience:hover {
-    transform: translateY(-4px);
-  }
-
-  .audience-symbol {
-    width: 64px;
-    height: 64px;
-    margin: 0 auto 1.4rem;
-    border-radius: 50%;
-    background: var(--sky-compass);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.6rem;
-  }
-
-  .audience:nth-child(2) .audience-symbol { background: var(--meadow-green); }
-  .audience:nth-child(3) .audience-symbol { background: var(--harvest-amber); }
-  .audience:nth-child(4) .audience-symbol { background: var(--forest-deep); }
-  .audience:nth-child(5) .audience-symbol { background: var(--amber-deep); }
-  .audience:nth-child(6) .audience-symbol { background: var(--sky-compass-deep); }
-
-  .audience h3 {
-    font-family: var(--font-display);
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: var(--forest-deep);
-    margin-bottom: 0.5rem;
-  }
-
-  .audience p {
-    font-size: 0.9rem;
-    color: var(--sage-grey);
-    line-height: 1.55;
-  }
-
-  /* ─── CTA ─── */
-  .cta-section {
-    background: var(--cream-paper);
-    padding: 7rem 3rem;
-    text-align: center;
-  }
-
-  .cta-inner {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 4rem 3rem;
-    background: var(--forest-deep);
-    border-radius: 32px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .cta-inner::before {
-    content: '';
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    background: var(--meadow-green);
-    border-radius: 50%;
-    bottom: -140px;
-    right: -100px;
-    opacity: 0.4;
-  }
-
-  .cta-inner::after {
-    content: '';
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    background: var(--sky-compass);
-    border-radius: 50%;
-    top: -90px;
-    left: -60px;
-    opacity: 0.3;
-  }
-
-  .cta-inner h2 {
-    font-family: var(--font-display);
-    font-size: clamp(2rem, 4vw, 2.8rem);
-    font-weight: 500;
-    color: var(--cream-paper);
-    line-height: 1.15;
-    margin-bottom: 1rem;
-    position: relative;
-    z-index: 1;
-  }
-
-  .cta-inner h2 em {
-    font-style: italic;
-    color: var(--pollen);
-  }
-
-  .cta-inner p {
-    color: var(--mint-mist);
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    position: relative;
-    z-index: 1;
-  }
-
-  .cta-inner .btn {
-    position: relative;
-    z-index: 1;
-    background: var(--cream-paper);
-    color: var(--forest-deep);
-  }
-
-  .cta-inner .btn:hover {
-    background: var(--pollen);
-  }
-
-  /* ─── Footer ─── */
-  footer {
-    background: var(--dark-bark);
-    color: var(--cream-paper);
-    padding: 4rem 3rem 2rem;
-  }
-
-  .footer-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 3rem;
-    margin-bottom: 3rem;
-  }
-
-  .footer-brand p {
-    color: rgba(250, 247, 240, 0.6);
-    font-size: 0.92rem;
-    line-height: 1.6;
-    margin-top: 1rem;
-    max-width: 320px;
-  }
-
-  .footer-col h4 {
-    font-family: var(--font-display);
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    color: var(--mint-mist);
-  }
-
-  .footer-col ul {
-    list-style: none;
-  }
-
-  .footer-col li { margin-bottom: 0.6rem; }
-
-  .footer-col a {
-    color: rgba(250, 247, 240, 0.65);
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.2s;
-  }
-
-  .footer-col a:hover { color: var(--pollen); }
-
-  .footer-bottom {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 2rem;
-    border-top: 1px solid rgba(250, 247, 240, 0.12);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-    font-size: 0.84rem;
-    color: rgba(250, 247, 240, 0.5);
-  }
-
-  /* ─── Reveal animation ─── */
-  .reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-  }
-
-  .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  /* ─── Responsive ─── */
-  @media (max-width: 960px) {
-    nav { padding: 1rem 1.5rem; }
-    .nav-links { display: none; }
-    .hero { padding: 7rem 1.5rem 4rem; }
-    .hero-content { grid-template-columns: 1fr; }
-    .hero-visual { max-width: 320px; margin: 2rem auto 0; }
-    .manifesto, .pillars, .audiences, .cta-section { padding-left: 1.5rem; padding-right: 1.5rem; }
-    .pillars-header { grid-template-columns: 1fr; gap: 1.5rem; }
-    .pillar-grid { grid-template-columns: repeat(2, 1fr); }
-    .audience-grid { grid-template-columns: 1fr; }
-    .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
-    .cta-inner { padding: 3rem 1.5rem; }
-  }
-
-  @media (max-width: 520px) {
-    .pillar-grid { grid-template-columns: 1fr; }
-    .footer-inner { grid-template-columns: 1fr; }
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- ───── NAVIGATION ───── -->
-<nav id="nav">
-  <a href="#" class="logo">
-    <span class="logo-mark"></span>
-    <span class="logo-text">ChiFoo Lab</span>
-  </a>
+<!-- ─── NAV ─── -->
+<nav>
+  <a href="index.html" class="logo">
+      <img src="images/chifoo-logo-nav.png" alt="ChiFoo - Children's Food Education Lab">
+    </a>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
   <ul class="nav-links">
-    <li><a href="#about" data-i18n="nav_about">Le Lab</a></li>
-    <li><a href="#approach" data-i18n="nav_approach">Notre approche</a></li>
-    <li><a href="#audiences" data-i18n="nav_audiences">Pour qui</a></li>
-    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
-    <li>
-      <div class="lang-switch">
-        <button class="lang-btn active" data-lang="fr">FR</button>
-        <button class="lang-btn" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="de">DE</button>
-      </div>
-    </li>
+    <li><a href="index.html" class="active">Accueil</a></li>
+    <li><a href="lab.html">Le Lab</a></li>
+    <li><a href="champs-action.html">Champs d'action</a></li>
+    <li><a href="carte-systeme.html">Carte du système</a></li>
+    <li><a href="partenaires.html">Partenaires</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
 
-<!-- ───── HERO ───── -->
-<section class="hero">
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
-  <div class="blob blob-3"></div>
+<!-- ─── HERO ─── -->
+<section class="hero bg-cream">
+  <div class="hero-blob" style="width:420px;height:420px;background:var(--mint-mist);top:-150px;right:-100px;opacity:0.5;"></div>
+  <div class="hero-blob" style="width:280px;height:280px;background:var(--coral-soft);bottom:-100px;left:-80px;opacity:0.7;"></div>
+  <div class="hero-blob" style="width:160px;height:160px;background:var(--gold-pale);top:30%;right:15%;opacity:0.6;"></div>
 
-  <div class="hero-content">
-    <div class="hero-text">
-      <span class="hero-tag" data-i18n="hero_tag">BFH–HAFL · Saison 2025–2026</span>
+  <div class="hero-content" style="display:grid;grid-template-columns:1.4fr 1fr;gap:3rem;align-items:center;">
+    <div>
+      <span class="eyebrow">BFH–HAFL · Saison 2025–2026</span>
       <h1>
-        <span data-i18n="hero_h1_a">Repenser</span>
-        <span class="accent" data-i18n="hero_h1_b">l'alimentation</span>
-        <span data-i18n="hero_h1_c">des enfants</span>
+        Repenser
+        <span class="accent">l'alimentation</span>
+        des enfants
       </h1>
-      <p class="hero-sub" data-i18n="hero_sub">Un système cohérent, holistique et efficace pour la Suisse. Une boussole collective pour les acteurs de l'éducation alimentaire.</p>
-      <div class="hero-cta">
-        <a href="#approach" class="btn btn-primary">
-          <span data-i18n="hero_cta_1">Découvrir le compass</span>
-          <span>→</span>
-        </a>
-        <a href="#about" class="btn btn-secondary" data-i18n="hero_cta_2">En savoir plus</a>
+      <p class="lead">
+        Le <strong>Children's Food Education Lab</strong> est un laboratoire social qui œuvre à transformer le système fragmenté de l'éducation à l'alimentation des enfants en Suisse vers un système plus global et plus efficace.
+      </p>
+      <div class="cta-row">
+        <a href="champs-action.html" class="btn btn-primary">Découvrir les champs d'action <span>→</span></a>
+        <a href="lab.html" class="btn btn-outline">En savoir plus sur le Lab</a>
       </div>
     </div>
-
-    <!-- Stylized compass illustration -->
-    <div class="hero-visual">
-      <svg class="compass" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-        <!-- Outer ring -->
-        <circle cx="200" cy="200" r="180" fill="none" stroke="#FAF7F0" stroke-width="2" opacity="0.4"/>
-        <circle cx="200" cy="200" r="160" fill="#FAF7F0" opacity="0.95"/>
-
-        <!-- Tick marks -->
-        <g stroke="#2D6A4F" stroke-width="1.5" opacity="0.5">
-          <line x1="200" y1="50" x2="200" y2="65"/>
-          <line x1="350" y1="200" x2="335" y2="200"/>
-          <line x1="200" y1="350" x2="200" y2="335"/>
-          <line x1="50" y1="200" x2="65" y2="200"/>
-        </g>
-
-        <!-- Inner circle -->
-        <circle cx="200" cy="200" r="130" fill="none" stroke="#52B788" stroke-width="1" opacity="0.3"/>
-
-        <!-- Compass needle: leaf-shape pointing North -->
-        <g transform="translate(200,200)">
-          <path d="M 0,-110 Q 18,-70 14,0 Q 0,30 -14,0 Q -18,-70 0,-110 Z" fill="#2D6A4F"/>
-          <path d="M 0,110 Q 18,70 14,0 Q 0,-30 -14,0 Q -18,70 0,110 Z" fill="#C9922A" opacity="0.85"/>
-          <circle cx="0" cy="0" r="14" fill="#FAF7F0"/>
-          <circle cx="0" cy="0" r="6" fill="#48CAE4"/>
-        </g>
-
-        <!-- Cardinal letters -->
-        <text x="200" y="42" text-anchor="middle" font-family="Fraunces, serif" font-size="20" font-style="italic" fill="#2D6A4F" font-weight="500">N</text>
-        <text x="370" y="207" text-anchor="middle" font-family="Fraunces, serif" font-size="20" font-style="italic" fill="#2D6A4F" font-weight="500">E</text>
-        <text x="200" y="378" text-anchor="middle" font-family="Fraunces, serif" font-size="20" font-style="italic" fill="#2D6A4F" font-weight="500">S</text>
-        <text x="30" y="207" text-anchor="middle" font-family="Fraunces, serif" font-size="20" font-style="italic" fill="#2D6A4F" font-weight="500">O</text>
-
-        <!-- Decorative leaves around -->
-        <g opacity="0.85">
-          <path d="M 320,80 Q 350,90 355,120 Q 335,115 320,80 Z" fill="#52B788"/>
-          <path d="M 70,310 Q 50,290 55,260 Q 80,275 70,310 Z" fill="#C9922A"/>
-          <circle cx="80" cy="100" r="6" fill="#EDD28A"/>
-          <circle cx="330" cy="320" r="5" fill="#B7E4C7"/>
-        </g>
-      </svg>
+    <div class="hero-compass">
+      <img src="images/compass-large.png" alt="La boussole ChiFoo">
     </div>
   </div>
 </section>
 
-<!-- ───── MANIFESTO ───── -->
-<section class="manifesto reveal" id="about">
-  <div class="manifesto-inner">
-    <span class="section-label" data-i18n="manifesto_label">Le Lab</span>
-    <h2 data-i18n="manifesto_h2">L'alimentation des enfants n'est plus une affaire <em>privée</em>. C'est une responsabilité collective — entre écoles, familles, soignants et institutions.</h2>
-  </div>
-</section>
-
-<!-- ───── PILLARS — the 8 levers ───── -->
-<section class="pillars" id="approach">
-  <div class="pillars-inner">
-    <div class="pillars-header reveal">
-      <h2 data-i18n="pillars_h2">Huit leviers pour un changement systémique</h2>
-      <p data-i18n="pillars_intro">Les apprentissages du Chifoo Lab cartographient les chantiers prioritaires pour faire évoluer le système suisse d'éducation alimentaire. Cliquez pour explorer chaque levier.</p>
-    </div>
-
-    <div class="pillar-grid">
-      <div class="pillar reveal">
-        <div class="pillar-icon">👨‍👩‍👧</div>
-        <h3 data-i18n="pillar_1_t">Soutenir les familles</h3>
-        <p data-i18n="pillar_1_d">Étendre le conseil parental au-delà de la petite enfance et dialoguer avec les communautés marginalisées.</p>
-      </div>
-
-      <div class="pillar reveal">
-        <div class="pillar-icon">🧭</div>
-        <h3 data-i18n="pillar_2_t">Cadre de compétences</h3>
-        <p data-i18n="pillar_2_d">Définir un référentiel suisse pour l'éducation à l'alimentation à toutes les étapes de la vie.</p>
-      </div>
-
-      <div class="pillar reveal">
-        <div class="pillar-icon">⚖️</div>
-        <h3 data-i18n="pillar_3_t">Dialoguer avec le politique</h3>
-        <p data-i18n="pillar_3_d">Réguler la publicité, le sucre et les UPF dans les cantines, écoles et réseaux sociaux.</p>
-      </div>
-
-      <div class="pillar reveal">
-        <div class="pillar-icon">📣</div>
-        <h3 data-i18n="pillar_4_t">Mieux communiquer</h3>
-        <p data-i18n="pillar_4_d">Financer des plans pro pour atteindre les publics cibles et collaborer avec les influenceurs scientifiques.</p>
-      </div>
-
-      <div class="pillar reveal">
-        <div class="pillar-icon">🎓</div>
-        <h3 data-i18n="pillar_5_t">Renforcer les capacités</h3>
-        <p data-i18n="pillar_5_d">Former cuisinier·ères et enseignant·es, intégrer l'éducation alimentaire au cursus obligatoire.</p>
-      </div>
-
-      <div class="pillar reveal">
-        <div class="pillar-icon">🤝</div>
-        <h3 data-i18n="pillar_6_t">Collaborer nationalement</h3>
-        <p data-i18n="pillar_6_d">Mutualiser les offres entre cantons et créer un forum transdisciplinaire annuel.</p>
-      </div>
-
-      <div class="pillar reveal">
-        <div class="pillar-icon">🌱</div>
-        <h3 data-i18n="pillar_7_t">Coopérer localement</h3>
-        <p data-i18n="pillar_7_d">Coordonner initiatives, ouvrir les cuisines scolaires, créer le dialogue école–ville–parents.</p>
-      </div>
-
-      <div class="pillar reveal">
-        <div class="pillar-icon">📈</div>
-        <h3 data-i18n="pillar_8_t">Passer à l'échelle</h3>
-        <p data-i18n="pillar_8_d">Établir un cadre pérenne ancré dans une institution existante pour assurer la continuité.</p>
-      </div>
+<!-- ─── QUOTE ─── -->
+<section class="bg-mint">
+  <div class="section-inner">
+    <div class="quote reveal">
+      Comment faire évoluer le système fragmenté de l'éducation à l'alimentation des enfants vers un système <em>plus global et plus efficace</em> ?
     </div>
   </div>
 </section>
 
-<!-- ───── AUDIENCES ───── -->
-<section class="audiences" id="audiences">
-  <div class="audiences-inner">
-    <div class="audiences-header reveal">
-      <span class="section-label" data-i18n="aud_label">Pour qui</span>
-      <h2 data-i18n="aud_h2">Une boussole pour tous les acteurs</h2>
-      <p data-i18n="aud_intro">Le Chifoo Lab s'adresse à tous ceux qui gravitent autour de l'éducation à l'alimentation des enfants.</p>
+<!-- ─── POURQUOI ─── -->
+<section class="bg-cream">
+  <div class="section-inner">
+    <span class="eyebrow coral">Pourquoi agir ensemble</span>
+    <h2 class="reveal">Ce que nous mangeons <span style="color:var(--coral)">dépasse</span> largement notre assiette</h2>
+    <p class="lead reveal">
+      L'alimentation des enfants a des conséquences sur leur santé, sur l'environnement et sur l'économie. Les enfants sont particulièrement concernés et l'enfance reste une phase décisive pour développer des compétences alimentaires durables.
+    </p>
+
+    <div class="stat-grid">
+      <div class="stat reveal">
+        <span class="stat-number">~25%</span>
+        <span class="stat-label">de l'empreinte écologique suisse vient de la consommation alimentaire</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-number">8 Mrd</span>
+        <span class="stat-label">CHF par an de coûts de santé liés à une alimentation malsaine en Suisse</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-number">13%</span>
+        <span class="stat-label">des 6–17 ans sont en surpoids ou obèses (MenuCH-Kids)</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-number">10%</span>
+        <span class="stat-label">des enfants présentent un risque accru de diabète</span>
+      </div>
     </div>
 
-    <div class="audience-grid">
-      <div class="audience reveal">
-        <div class="audience-symbol">🏫</div>
-        <h3 data-i18n="aud_1_t">Écoles</h3>
-        <p data-i18n="aud_1_d">Directions, enseignant·es et personnel parascolaire qui intègrent l'alimentation au quotidien éducatif.</p>
+    <p class="reveal" style="margin-top:1.5rem;max-width:760px;">
+      Les parents se sentent responsables de la transmission de ces compétences, mais sont souvent dépassés par des informations contradictoires et le manque de temps. <strong>L'éducation à l'alimentation est une responsabilité sociétale partagée.</strong>
+    </p>
+  </div>
+</section>
+
+<!-- ─── CHAMPS D'ACTION (teaser) ─── -->
+<section class="bg-gold-pale">
+  <div class="section-inner">
+    <span class="eyebrow gold">Notre approche</span>
+    <h2 class="reveal">Huit champs d'action pour un <span style="color:var(--gold-deep)">changement systémique</span></h2>
+    <p class="lead reveal">
+      La Boussole ChiFoo rassemble les enseignements du Lab. Chaque champ d'action identifie un chantier prioritaire pour faire évoluer le système d'éducation à l'alimentation des enfants en Suisse.
+    </p>
+
+    <div class="card-grid">
+      <div class="card reveal">
+        <div class="card-icon teal"><img src="images/picto-regarder-autour.png" alt=""></div>
+        <h3>Regarder autour de soi avant d'agir</h3>
+        <p>Comprendre le système dans sa globalité, prendre contact avec les initiatives existantes.</p>
       </div>
-      <div class="audience reveal">
-        <div class="audience-symbol">👩‍⚕️</div>
-        <h3 data-i18n="aud_2_t">Médecins & soignants</h3>
-        <p data-i18n="aud_2_d">Pédiatres, diététicien·nes et professionnel·les de la santé qui accompagnent familles et enfants.</p>
+      <div class="card reveal">
+        <div class="card-icon coral"><img src="images/picto-renforcer-familles.png" alt=""></div>
+        <h3>Renforcer les compétences des familles</h3>
+        <p>Étendre le conseil parental, dialoguer avec les familles marginalisées.</p>
       </div>
-      <div class="audience reveal">
-        <div class="audience-symbol">🏛️</div>
-        <h3 data-i18n="aud_3_t">Institutions</h3>
-        <p data-i18n="aud_3_d">Cantons, communes et organismes publics qui pilotent les politiques de santé et d'éducation.</p>
+      <div class="card reveal">
+        <div class="card-icon gold"><img src="images/picto-comprehension-commune.png" alt=""></div>
+        <h3>Créer une compréhension commune</h3>
+        <p>Élaborer un cadre national de compétences pour toutes les étapes de la vie.</p>
       </div>
-      <div class="audience reveal">
-        <div class="audience-symbol">🍽️</div>
-        <h3 data-i18n="aud_4_t">Éducateurs alimentaires</h3>
-        <p data-i18n="aud_4_d">Animateur·rices, chef·fes en cantine, formateur·rices qui transmettent au quotidien.</p>
+      <div class="card reveal">
+        <div class="card-icon sky"><img src="images/picto-politique.png" alt=""></div>
+        <h3>Accentuer le sujet en politique</h3>
+        <p>Plaider pour l'éducation à l'alimentation, réglementer la publicité et l'offre.</p>
       </div>
-      <div class="audience reveal">
-        <div class="audience-symbol">🌾</div>
-        <h3 data-i18n="aud_5_t">Associations & ONG</h3>
-        <p data-i18n="aud_5_d">Organisations engagées pour la santé publique, l'agriculture durable et l'éducation citoyenne.</p>
+      <div class="card reveal">
+        <div class="card-icon mint"><img src="images/picto-communiquer.png" alt=""></div>
+        <h3>Mieux communiquer</h3>
+        <p>Diffuser des informations fiables et toucher les bons publics avec des plans pro.</p>
       </div>
-      <div class="audience reveal">
-        <div class="audience-symbol">🔬</div>
-        <h3 data-i18n="aud_6_t">Chercheur·euses</h3>
-        <p data-i18n="aud_6_d">Universitaires et praticien·nes-chercheur·euses qui documentent et évaluent les interventions.</p>
+      <div class="card reveal">
+        <div class="card-icon coral"><img src="images/picto-changer-echelle.png" alt=""></div>
+        <h3>Changer d'échelle</h3>
+        <p>Passer du local au cantonal, intégrer l'éducation à l'alimentation à la formation.</p>
       </div>
+      <div class="card reveal">
+        <div class="card-icon teal"><img src="images/picto-synergies-locales.png" alt=""></div>
+        <h3>Tirer parti des synergies locales</h3>
+        <p>Coordonner initiatives, ouvrir les cuisines scolaires, créer le dialogue local.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon gold"><img src="images/picto-apprendre-uns-autres.png" alt=""></div>
+        <h3>Apprendre les uns des autres</h3>
+        <p>Mutualiser ressources et formations, créer des ponts entre cultures et langues.</p>
+      </div>
+    </div>
+
+    <div class="cta-row" style="margin-top:2.5rem;justify-content:center;">
+      <a href="champs-action.html" class="btn btn-primary">Explorer chaque champ d'action <span>→</span></a>
     </div>
   </div>
 </section>
 
-<!-- ───── CTA ───── -->
-<section class="cta-section" id="contact">
-  <div class="cta-inner reveal">
-    <h2 data-i18n="cta_h2">Rejoignez la <em>communauté</em> Chifoo</h2>
-    <p data-i18n="cta_sub">Recevez nos publications, événements et opportunités de collaboration.</p>
-    <a href="#" class="btn">
-      <span data-i18n="cta_btn">Nous contacter</span>
-      <span>→</span>
-    </a>
+<!-- ─── INTENTION ─── -->
+<section class="bg-teal">
+  <div class="section-inner">
+    <span class="eyebrow" style="background:rgba(250,247,240,0.15);color:var(--cream);">Notre intention</span>
+    <h2 style="color:var(--cream);max-width:800px;">Rassembler des personnes, construire des communautés, viser un objectif commun.</h2>
+    <p style="color:rgba(250,247,240,0.92);font-size:1.1rem;max-width:720px;">
+      Aucun acteur ne peut opérer seul cette transformation. Chaque acteur peut contribuer par de petits changements qui, additionnés, déclenchent un mouvement significatif.
+    </p>
+    <div class="cta-row">
+      <a href="contact.html" class="btn btn-primary">Rejoindre le mouvement <span>→</span></a>
+      <a href="carte-systeme.html" class="btn" style="background:rgba(250,247,240,0.15);color:var(--cream);border:1.5px solid rgba(250,247,240,0.4);">Voir la carte du système</a>
+    </div>
   </div>
 </section>
 
-<!-- ───── FOOTER ───── -->
+<!-- ─── FOOTER ─── -->
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
-      <a href="#" class="logo">
-        <span class="logo-mark" style="background:#52B788"></span>
-        <span class="logo-text" style="color:#FAF7F0">ChiFoo Lab</span>
-      </a>
-      <p data-i18n="footer_about">Children's Food Education Lab — BFH–HAFL. Un projet collectif pour repenser l'alimentation des enfants en Suisse.</p>
+      <a href="index.html" class="logo">
+      <img src="images/chifoo-logo-white.png" alt="ChiFoo - Children's Food Education Lab">
+    </a>
+      <p>Children's Food Education Lab — BFH–HAFL. Un laboratoire social pour transformer l'éducation à l'alimentation des enfants en Suisse.</p>
     </div>
     <div class="footer-col">
-      <h4 data-i18n="footer_col1">Explorer</h4>
+      <h4>Explorer</h4>
       <ul>
-        <li><a href="#about" data-i18n="nav_about">Le Lab</a></li>
-        <li><a href="#approach" data-i18n="nav_approach">Notre approche</a></li>
-        <li><a href="#audiences" data-i18n="nav_audiences">Pour qui</a></li>
+        <li><a href="lab.html">Le Lab</a></li>
+        <li><a href="champs-action.html">Champs d'action</a></li>
+        <li><a href="carte-systeme.html">Carte du système</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4 data-i18n="footer_col2">Ressources</h4>
+      <h4>Ressources</h4>
       <ul>
-        <li><a href="#" data-i18n="footer_compass">Le compass</a></li>
-        <li><a href="#" data-i18n="footer_pubs">Publications</a></li>
-        <li><a href="#" data-i18n="footer_events">Événements</a></li>
+        <li><a href="champs-action.html">La Boussole</a></li>
+        <li><a href="partenaires.html">Partenaires</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4 data-i18n="footer_col3">Contact</h4>
+      <h4>Contact</h4>
       <ul>
-        <li><a href="mailto:contact@chifoo.ch">contact@chifoo.ch</a></li>
-        <li><a href="#" data-i18n="footer_newsletter">Newsletter</a></li>
-        <li><a href="#" data-i18n="footer_linkedin">LinkedIn</a></li>
+        <li><a href="contact.html">Nous écrire</a></li>
+        <li><a href="mailto:contact@chifoolab.ch">contact@chifoolab.ch</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
     <span>© 2026 ChiFoo Lab · BFH–HAFL</span>
-    <span data-i18n="footer_credit">Conçu avec soin en Suisse</span>
+    <span>Conçu avec soin en Suisse</span>
   </div>
 </footer>
 
 <script>
-  // ─── Trilingual i18n ───
-  const translations = {
-    fr: {
-      nav_about: "Le Lab", nav_approach: "Notre approche", nav_audiences: "Pour qui", nav_contact: "Contact",
-      hero_tag: "BFH–HAFL · Saison 2025–2026",
-      hero_h1_a: "Repenser", hero_h1_b: "l'alimentation", hero_h1_c: "des enfants",
-      hero_sub: "Un système cohérent, holistique et efficace pour la Suisse. Une boussole collective pour les acteurs de l'éducation alimentaire.",
-      hero_cta_1: "Découvrir le compass", hero_cta_2: "En savoir plus",
-      manifesto_label: "Le Lab",
-      manifesto_h2: "L'alimentation des enfants n'est plus une affaire <em>privée</em>. C'est une responsabilité collective — entre écoles, familles, soignants et institutions.",
-      pillars_h2: "Huit leviers pour un changement systémique",
-      pillars_intro: "Les apprentissages du Chifoo Lab cartographient les chantiers prioritaires pour faire évoluer le système suisse d'éducation alimentaire.",
-      pillar_1_t: "Soutenir les familles", pillar_1_d: "Étendre le conseil parental au-delà de la petite enfance et dialoguer avec les communautés marginalisées.",
-      pillar_2_t: "Cadre de compétences", pillar_2_d: "Définir un référentiel suisse pour l'éducation à l'alimentation à toutes les étapes de la vie.",
-      pillar_3_t: "Dialoguer avec le politique", pillar_3_d: "Réguler la publicité, le sucre et les UPF dans les cantines, écoles et réseaux sociaux.",
-      pillar_4_t: "Mieux communiquer", pillar_4_d: "Financer des plans pro pour atteindre les publics cibles et collaborer avec les influenceurs scientifiques.",
-      pillar_5_t: "Renforcer les capacités", pillar_5_d: "Former cuisinier·ères et enseignant·es, intégrer l'éducation alimentaire au cursus obligatoire.",
-      pillar_6_t: "Collaborer nationalement", pillar_6_d: "Mutualiser les offres entre cantons et créer un forum transdisciplinaire annuel.",
-      pillar_7_t: "Coopérer localement", pillar_7_d: "Coordonner initiatives, ouvrir les cuisines scolaires, créer le dialogue école–ville–parents.",
-      pillar_8_t: "Passer à l'échelle", pillar_8_d: "Établir un cadre pérenne ancré dans une institution existante pour assurer la continuité.",
-      aud_label: "Pour qui", aud_h2: "Une boussole pour tous les acteurs",
-      aud_intro: "Le Chifoo Lab s'adresse à tous ceux qui gravitent autour de l'éducation à l'alimentation des enfants.",
-      aud_1_t: "Écoles", aud_1_d: "Directions, enseignant·es et personnel parascolaire qui intègrent l'alimentation au quotidien éducatif.",
-      aud_2_t: "Médecins & soignants", aud_2_d: "Pédiatres, diététicien·nes et professionnel·les de la santé qui accompagnent familles et enfants.",
-      aud_3_t: "Institutions", aud_3_d: "Cantons, communes et organismes publics qui pilotent les politiques de santé et d'éducation.",
-      aud_4_t: "Éducateurs alimentaires", aud_4_d: "Animateur·rices, chef·fes en cantine, formateur·rices qui transmettent au quotidien.",
-      aud_5_t: "Associations & ONG", aud_5_d: "Organisations engagées pour la santé publique, l'agriculture durable et l'éducation citoyenne.",
-      aud_6_t: "Chercheur·euses", aud_6_d: "Universitaires et praticien·nes-chercheur·euses qui documentent et évaluent les interventions.",
-      cta_h2: "Rejoignez la <em>communauté</em> Chifoo", cta_sub: "Recevez nos publications, événements et opportunités de collaboration.",
-      cta_btn: "Nous contacter",
-      footer_about: "Children's Food Education Lab — BFH–HAFL. Un projet collectif pour repenser l'alimentation des enfants en Suisse.",
-      footer_col1: "Explorer", footer_col2: "Ressources", footer_col3: "Contact",
-      footer_compass: "Le compass", footer_pubs: "Publications", footer_events: "Événements",
-      footer_newsletter: "Newsletter", footer_linkedin: "LinkedIn",
-      footer_credit: "Conçu avec soin en Suisse"
-    },
-    en: {
-      nav_about: "The Lab", nav_approach: "Our approach", nav_audiences: "Who it's for", nav_contact: "Contact",
-      hero_tag: "BFH–HAFL · Season 2025–2026",
-      hero_h1_a: "Rethinking", hero_h1_b: "children's", hero_h1_c: "food education",
-      hero_sub: "A coherent, holistic and effective system for Switzerland. A collective compass for food education practitioners.",
-      hero_cta_1: "Discover the compass", hero_cta_2: "Learn more",
-      manifesto_label: "The Lab",
-      manifesto_h2: "Children's food is no longer a <em>private</em> matter. It is a collective responsibility — shared among schools, families, caregivers and institutions.",
-      pillars_h2: "Eight levers for systemic change",
-      pillars_intro: "The Chifoo Lab's learnings map out priority areas to evolve Switzerland's food education system.",
-      pillar_1_t: "Support families", pillar_1_d: "Extend parenting guidance beyond early childhood and engage with marginalised communities.",
-      pillar_2_t: "Competency framework", pillar_2_d: "Define a Swiss reference framework for food education at every stage of life.",
-      pillar_3_t: "Engage with politics", pillar_3_d: "Regulate advertising, sugar and UPFs in canteens, schools and social media.",
-      pillar_4_t: "Communicate better", pillar_4_d: "Fund professional campaigns to reach target groups and partner with science influencers.",
-      pillar_5_t: "Build capacity", pillar_5_d: "Train chefs and teachers, embed food education in compulsory curricula.",
-      pillar_6_t: "Collaborate nationally", pillar_6_d: "Pool offerings across cantons and create an annual transdisciplinary forum.",
-      pillar_7_t: "Cooperate locally", pillar_7_d: "Coordinate initiatives, open school kitchens, foster school–city–parent dialogue.",
-      pillar_8_t: "Scale up", pillar_8_d: "Establish a lasting framework anchored in an existing institution to ensure continuity.",
-      aud_label: "Who it's for", aud_h2: "A compass for every actor",
-      aud_intro: "The Chifoo Lab speaks to everyone working around children's food education.",
-      aud_1_t: "Schools", aud_1_d: "School leaders, teachers and extracurricular staff who weave food into daily education.",
-      aud_2_t: "Doctors & caregivers", aud_2_d: "Paediatricians, dietitians and health professionals supporting families and children.",
-      aud_3_t: "Institutions", aud_3_d: "Cantons, municipalities and public bodies steering health and education policy.",
-      aud_4_t: "Food educators", aud_4_d: "Facilitators, canteen chefs and trainers passing on knowledge every day.",
-      aud_5_t: "Associations & NGOs", aud_5_d: "Organisations committed to public health, sustainable farming and civic education.",
-      aud_6_t: "Researchers", aud_6_d: "Academics and practitioner-researchers documenting and evaluating interventions.",
-      cta_h2: "Join the Chifoo <em>community</em>", cta_sub: "Receive our publications, events and collaboration opportunities.",
-      cta_btn: "Contact us",
-      footer_about: "Children's Food Education Lab — BFH–HAFL. A collective project to rethink children's food education in Switzerland.",
-      footer_col1: "Explore", footer_col2: "Resources", footer_col3: "Contact",
-      footer_compass: "The compass", footer_pubs: "Publications", footer_events: "Events",
-      footer_newsletter: "Newsletter", footer_linkedin: "LinkedIn",
-      footer_credit: "Crafted with care in Switzerland"
-    },
-    de: {
-      nav_about: "Das Lab", nav_approach: "Unser Ansatz", nav_audiences: "Für wen", nav_contact: "Kontakt",
-      hero_tag: "BFH–HAFL · Saison 2025–2026",
-      hero_h1_a: "Die Ernährung", hero_h1_b: "von Kindern", hero_h1_c: "neu denken",
-      hero_sub: "Ein kohärentes, ganzheitliches und wirksames System für die Schweiz. Ein kollektiver Kompass für Akteure der Ernährungsbildung.",
-      hero_cta_1: "Den Kompass entdecken", hero_cta_2: "Mehr erfahren",
-      manifesto_label: "Das Lab",
-      manifesto_h2: "Die Ernährung von Kindern ist keine <em>private</em> Angelegenheit mehr. Sie ist eine kollektive Verantwortung — zwischen Schulen, Familien, Fachpersonen und Institutionen.",
-      pillars_h2: "Acht Hebel für systemischen Wandel",
-      pillars_intro: "Die Erkenntnisse des Chifoo Labs kartieren die Prioritäten für die Weiterentwicklung der schweizerischen Ernährungsbildung.",
-      pillar_1_t: "Familien unterstützen", pillar_1_d: "Elternberatung über die frühe Kindheit hinaus ausweiten und mit marginalisierten Gemeinschaften in Dialog treten.",
-      pillar_2_t: "Kompetenzrahmen", pillar_2_d: "Einen Schweizer Referenzrahmen für Ernährungsbildung in allen Lebensphasen definieren.",
-      pillar_3_t: "Mit der Politik dialogisieren", pillar_3_d: "Werbung, Zucker und UPF in Kantinen, Schulen und sozialen Medien regulieren.",
-      pillar_4_t: "Besser kommunizieren", pillar_4_d: "Professionelle Pläne finanzieren und mit wissenschaftlichen Influencern zusammenarbeiten.",
-      pillar_5_t: "Kapazitäten stärken", pillar_5_d: "Köch·innen und Lehrpersonen ausbilden, Ernährungsbildung in den Pflichtlehrplan integrieren.",
-      pillar_6_t: "National kooperieren", pillar_6_d: "Angebote zwischen Kantonen bündeln und ein jährliches transdisziplinäres Forum schaffen.",
-      pillar_7_t: "Lokal zusammenarbeiten", pillar_7_d: "Initiativen koordinieren, Schulküchen öffnen, Dialog Schule–Stadt–Eltern fördern.",
-      pillar_8_t: "Skalieren", pillar_8_d: "Einen nachhaltigen Rahmen in einer bestehenden Institution verankern.",
-      aud_label: "Für wen", aud_h2: "Ein Kompass für alle Akteure",
-      aud_intro: "Das Chifoo Lab richtet sich an alle, die rund um die Ernährungsbildung von Kindern tätig sind.",
-      aud_1_t: "Schulen", aud_1_d: "Schulleitungen, Lehrpersonen und Tagesbetreuung, die Ernährung in den Schulalltag einbinden.",
-      aud_2_t: "Ärzt·innen & Fachpersonen", aud_2_d: "Kinderärzt·innen, Ernährungsberater·innen und Gesundheitsfachleute, die Familien begleiten.",
-      aud_3_t: "Institutionen", aud_3_d: "Kantone, Gemeinden und öffentliche Stellen, die Gesundheits- und Bildungspolitik steuern.",
-      aud_4_t: "Ernährungsbildner·innen", aud_4_d: "Animator·innen, Kantinenköch·innen und Ausbildner·innen, die täglich Wissen vermitteln.",
-      aud_5_t: "Vereine & NGOs", aud_5_d: "Organisationen, die sich für öffentliche Gesundheit und Bildung einsetzen.",
-      aud_6_t: "Forschende", aud_6_d: "Wissenschaftler·innen und Praxis-Forschende, die Interventionen dokumentieren und evaluieren.",
-      cta_h2: "Werden Sie Teil der Chifoo <em>Community</em>", cta_sub: "Erhalten Sie unsere Publikationen, Veranstaltungen und Kooperationsmöglichkeiten.",
-      cta_btn: "Kontaktieren Sie uns",
-      footer_about: "Children's Food Education Lab — BFH–HAFL. Ein Gemeinschaftsprojekt für die Ernährungsbildung von Kindern in der Schweiz.",
-      footer_col1: "Entdecken", footer_col2: "Ressourcen", footer_col3: "Kontakt",
-      footer_compass: "Der Kompass", footer_pubs: "Publikationen", footer_events: "Veranstaltungen",
-      footer_newsletter: "Newsletter", footer_linkedin: "LinkedIn",
-      footer_credit: "Mit Sorgfalt gestaltet in der Schweiz"
-    }
-  };
-
-  function setLanguage(lang) {
-    document.documentElement.lang = lang;
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      if (translations[lang] && translations[lang][key]) {
-        el.innerHTML = translations[lang][key];
-      }
-    });
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.lang === lang);
-    });
-  }
-
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
-  });
-
-  // ─── Nav scroll state ───
-  const nav = document.getElementById('nav');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 60);
-  });
-
-  // ─── Reveal on scroll ───
+  // Reveal on scroll
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
@@ -1158,8 +221,7 @@
         io.unobserve(e.target);
       }
     });
-  }, { threshold: 0.12 });
-
+  }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
 
