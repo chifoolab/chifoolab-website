@@ -2,18 +2,228 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>ChiFoo Lab</title>
-<meta http-equiv="refresh" content="0; url=/de/">
-<script>
-  // Redirection selon la langue du navigateur (DE par défaut, seule version complète)
-  var l = (navigator.language || 'de').slice(0,2).toLowerCase();
-  var known = ['fr','de','it','en'];
-  window.location.replace('/' + (known.indexOf(l) >= 0 ? l : 'de') + '/');
-</script>
+<meta name="googlebot" content="noindex, nofollow">
+<title>ChiFoo Lab — Die Ernährungsbildung für Kinder transformieren</title>
+<meta name="description" content="Children's Food Education Lab — ein soziales Labor für die Transformation der Ernährungsbildung für Kinder in der Schweiz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<p><a href="/de/">Zur deutschen Version — chifoolab.ch</a></p>
+
+<!-- ─── NAV ─── -->
+<nav>
+  <a href="index.html" class="logo">
+      <img src="images/chifoo-logo-nav.png" alt="ChiFoo - Children's Food Education Lab">
+    </a>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Startseite</a></li>
+    <li><a href="lab.html">Das Lab</a></li>
+    <li><a href="champs-action.html">Der Kompass</a></li>
+    <li><a href="carte-systeme.html">Systemkarte</a></li>
+    <li><a href="partenaires.html">Partner</a></li>
+    <li><a href="contact.html">Kontakt</a></li>
+    <li class="nav-lang"><a href="fr/">FR</a><a href="it/">IT</a><a href="en/">EN</a></li>
+  </ul>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero bg-cream">
+  <div class="hero-blob" style="width:420px;height:420px;background:var(--mint-mist);top:-150px;right:-100px;opacity:0.5;"></div>
+  <div class="hero-blob" style="width:280px;height:280px;background:var(--coral-soft);bottom:-100px;left:-80px;opacity:0.7;"></div>
+  <div class="hero-blob" style="width:160px;height:160px;background:var(--gold-pale);top:30%;right:15%;opacity:0.6;"></div>
+
+  <div class="hero-content" style="display:grid;grid-template-columns:1.4fr 1fr;gap:3rem;align-items:center;">
+    <div>
+      <h1>
+        Gestalten wir
+        <span class="accent">gemeinsam.</span>
+        Sei Teil des Wandels.
+      </h1>
+      <p class="lead">
+        Das <strong>Children's Food Education Lab</strong> ist ein soziales Labor, das daran arbeitet, das fragmentierte System der Ernährungsbildung für Kinder in der Schweiz zu einem ganzheitlicheren und effektiveren System umzuwandeln.
+      </p>
+      <div class="cta-row">
+        <a href="champs-action.html" class="btn btn-primary">Die Handlungsfelder entdecken <span>→</span></a>
+        <a href="lab.html" class="btn btn-outline">Mehr über das Lab</a>
+      </div>
+    </div>
+    <div class="hero-compass">
+      <img src="images/famille-brocoli.png" alt="Eltern und ihr Kind entdecken einen Brokkoli, umgeben von Akteur:innen der Ernährungsbildung">
+    </div>
+  </div>
+</section>
+
+<!-- ─── QUOTE ─── -->
+<section class="bg-mint">
+  <div class="section-inner">
+    <div class="quote reveal">
+      Wie kann das fragmentierte System der Ernährungsbildung für Kinder in der Schweiz zu einem <em>ganzheitlicheren und effektiveren</em> System umgewandelt werden?
+    </div>
+  </div>
+</section>
+
+<!-- ─── POURQUOI ─── -->
+<section class="bg-cream">
+  <div class="section-inner">
+    <span class="eyebrow coral">Warum gemeinsam handeln</span>
+    <h2 class="reveal">Was wir essen, hat Folgen <span style="color:var(--coral)">weit über den Teller hinaus</span></h2>
+    <p class="lead reveal">
+      Was wir essen, hat Folgen für unsere Gesundheit, unsere Umwelt und unsere Wirtschaft. Kinder sind eine besonders vulnerable Gruppe — und die Kindheit ist eine entscheidende Phase für die Entwicklung nachhaltiger Ernährungskompetenzen.
+    </p>
+
+    <div class="stat-grid">
+      <div class="stat reveal">
+        <span class="stat-number">~25%</span>
+        <span class="stat-label">des ökologischen Fussabdrucks der Schweizer Bevölkerung entfällt auf den Lebensmittelkonsum</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-number">8 Mrd</span>
+        <span class="stat-label">Schweizer Franken ernährungsbedingte Gesundheitskosten pro Jahr</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-number">13%</span>
+        <span class="stat-label">der 6- bis 17-Jährigen sind übergewichtig oder adipös (Studie MenuCH-Kids)</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-number">10%</span>
+        <span class="stat-label">der Kinder weisen Blutwerte auf, die auf ein erhöhtes Diabetesrisiko hindeuten</span>
+      </div>
+    </div>
+
+    <p class="reveal" style="margin-top:1.5rem;max-width:760px;">
+      Familien fühlen sich für den Aufbau dieser Kompetenzen verantwortlich, sind jedoch unter anderem durch widersprüchliche Informationen und Zeitdruck oft nicht in der Lage, dies zu tun. <strong>Ernährungsbildung ist eine gemeinsame gesellschaftliche Verantwortung.</strong>
+    </p>
+  </div>
+</section>
+
+<!-- ─── CHAMPS D'ACTION (teaser) ─── -->
+<section class="bg-gold-pale">
+  <div class="section-inner">
+    <span class="eyebrow gold">Unser Ansatz</span>
+    <h2 class="reveal">Acht Handlungsfelder für einen <span style="color:var(--gold-deep)">systemischen Wandel</span></h2>
+    <p class="lead reveal">
+      Der Kompass bündelt die Erkenntnisse und Denkanstösse des Labs. Jedes Handlungsfeld lädt zum Handeln ein — die Handlungsfelder können auf verschiedenen Wegen miteinander verbunden werden.
+    </p>
+
+    <div class="card-grid">
+      <div class="card reveal">
+        <div class="card-icon teal"><img src="images/picto-regarder-autour.png" alt=""></div>
+        <h3>Erst umschauen, dann handeln</h3>
+        <p>Das System als Ganzes verstehen und den Austausch mit bestehenden Initiativen suchen.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon coral"><img src="images/picto-renforcer-familles.png" alt=""></div>
+        <h3>Die Ernährungskompetenzen von Familien stärken</h3>
+        <p>Beratungsangebote erweitern und den Dialog mit marginalisierten Familien suchen.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon gold"><img src="images/picto-comprehension-commune.png" alt=""></div>
+        <h3>Ein gemeinsames Verständnis schaffen</h3>
+        <p>Einen nationalen Kompetenzrahmen für alle Lebensphasen entwickeln.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon sky"><img src="images/picto-politique.png" alt=""></div>
+        <h3>Das Thema in der Politik vorantreiben</h3>
+        <p>Für die Ernährungsbildung einstehen, Werbung und Angebot regulieren.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon mint"><img src="images/picto-communiquer.png" alt=""></div>
+        <h3>Wirksamer kommunizieren</h3>
+        <p>Zuverlässige Informationen verbreiten und die richtigen Zielgruppen erreichen.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon coral"><img src="images/picto-changer-echelle.png" alt=""></div>
+        <h3>Strukturell verankern</h3>
+        <p>Ernährungsbildung im Stundenplan sowie in der Aus- und Weiterbildung verankern.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon teal"><img src="images/picto-synergies-locales.png" alt=""></div>
+        <h3>Lokale Synergien nutzen</h3>
+        <p>Initiativen koordinieren, Schulküchen öffnen, den lokalen Dialog aufbauen.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon gold"><img src="images/picto-apprendre-uns-autres.png" alt=""></div>
+        <h3>Von- und miteinander lernen</h3>
+        <p>Ressourcen und Bildungsangebote teilen, Brücken zwischen Kulturen und Sprachen schlagen.</p>
+      </div>
+    </div>
+
+    <div class="cta-row" style="margin-top:2.5rem;justify-content:center;">
+      <a href="champs-action.html" class="btn btn-primary">Jedes Handlungsfeld erkunden <span>→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── INTENTION ─── -->
+<section class="bg-teal">
+  <div class="section-inner">
+    <span class="eyebrow" style="background:rgba(250,247,240,0.15);color:var(--cream);">Unsere Intention</span>
+    <h2 style="color:var(--cream);max-width:800px;">Menschen zusammenbringen, Gemeinschaften aufbauen, ein gemeinsames Ziel verfolgen.</h2>
+    <p style="color:rgba(250,247,240,0.92);font-size:1.1rem;max-width:720px;">
+      Kein einzelner Akteur kann die Transformation allein bewirken. Jeder Akteur kann durch kleine Veränderungen einen Beitrag leisten, der in der Summe eine bedeutende Bewegung auslösen kann.
+    </p>
+    <div class="cta-row">
+      <a href="contact.html" class="btn btn-primary">Teil des Wandels werden <span>→</span></a>
+      <a href="carte-systeme.html" class="btn" style="background:rgba(250,247,240,0.15);color:var(--cream);border:1.5px solid rgba(250,247,240,0.4);">Zur Systemkarte</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+      <img src="images/chifoo-logo-white.png" alt="ChiFoo - Children's Food Education Lab">
+    </a>
+      <p>Children's Food Education Lab — BFH–HAFL. Ein soziales Labor für die Transformation der Ernährungsbildung für Kinder in der Schweiz.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Entdecken</h4>
+      <ul>
+        <li><a href="lab.html">Das Lab</a></li>
+        <li><a href="champs-action.html">Der Kompass</a></li>
+        <li><a href="carte-systeme.html">Systemkarte</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Ressourcen</h4>
+      <ul>
+        <li><a href="downloads/chifoo-kompass.pdf">Der Kompass (PDF)</a></li>
+        <li><a href="partenaires.html">Partner</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <ul>
+        <li><a href="contact.html">Schreib uns</a></li>
+        <li><a href="mailto:chifoolab.hafl@bfh.ch">chifoolab.hafl@bfh.ch</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 ChiFoo Lab · BFH–HAFL</span>
+    <span>Mit Sorgfalt gestaltet in der Schweiz</span>
+  </div>
+</footer>
+
+<script>
+  // Reveal on scroll
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
 </body>
 </html>
