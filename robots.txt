@@ -1,5 +1,3 @@
-# Site en construction - indexation bloquée
-# À retirer le jour du lancement officiel
-
+# Soft launch — indexation désactivée
 User-agent: *
 Disallow: /

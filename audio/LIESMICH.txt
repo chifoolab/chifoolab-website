@@ -1,0 +1,2 @@
+Déposer ici le fichier audio du Kompass sous le nom : kompass.mp3
+(ou adapter le chemin dans de/index.html, section 'Zum Anhören')
