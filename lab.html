@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
 <meta name="googlebot" content="noindex, nofollow">
-<title>Der Kompass — ChiFoo Lab</title>
+<title>Das Lab — ChiFoo Lab</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -20,8 +20,8 @@
   <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
   <ul class="nav-links">
     <li><a href="index.html">Startseite</a></li>
-    <li><a href="lab.html">Das Lab</a></li>
-    <li><a href="champs-action.html" class="active">Der Kompass</a></li>
+    <li><a href="lab.html" class="active">Das Lab</a></li>
+    <li><a href="champs-action.html">Der Kompass</a></li>
     <li><a href="carte-systeme.html">Systemkarte</a></li>
     <li><a href="partenaires.html">Partner</a></li>
     <li><a href="contact.html">Kontakt</a></li>
@@ -31,356 +31,124 @@
 
 <!-- ─── HERO ─── -->
 <section class="hero bg-cream">
-  <div class="hero-blob" style="width:380px;height:380px;background:var(--gold-pale);top:-130px;right:-100px;opacity:0.8;"></div>
-  <div class="hero-blob" style="width:260px;height:260px;background:var(--teal-pale);bottom:-90px;left:-70px;opacity:0.7;"></div>
+  <div class="hero-blob" style="width:380px;height:380px;background:var(--coral-soft);top:-130px;right:-100px;opacity:0.6;"></div>
+  <div class="hero-blob" style="width:240px;height:240px;background:var(--mint-mist);bottom:-80px;left:-60px;opacity:0.5;"></div>
 
-  <div class="hero-content hero-two-col">
-    <div>
-    <span class="eyebrow gold">Der Kompass</span>
+  <div class="hero-content">
+    <span class="eyebrow coral">Das Lab</span>
     <h1>
-      Der Kompass dient als
-      <span class="accent-teal">Orientierungstool</span>
-      im Ernährungsbildungssystem für Kinder
+      Ein soziales Labor
+      <span class="accent-teal">für die Transformation</span>
+      der Ernährungsbildung
     </h1>
     <p class="lead">
-      Der Kompass bündelt die Erkenntnisse und Denkanstösse des ChiFoo Labs. Er lädt zum <strong>Handeln</strong> ein, zeigt <strong>verschiedene Wege</strong> auf und <strong>verbindet</strong> die Handlungsfelder miteinander.
+      Das Children's Food Education Lab bringt engagierte Akteur:innen der Ernährungsbildung zusammen, um das Schweizer System gemeinsam weiterzuentwickeln.
     </p>
-    <p style="font-size:0.95rem;color:var(--grey);max-width:680px;">
-      Jedes Handlungsfeld wird durch einen <strong style="color:var(--coral);">Audiobeitrag</strong> ergänzt, der seine Bedeutung erläutert und in einen grösseren Zusammenhang stellt.
-    </p>
-    <div style="margin-top:1.8rem;">
-      <a href="downloads/chifoo-kompass.pdf" download class="btn btn-primary">⬇ Kompass als PDF herunterladen</a>
-      <p style="font-size:0.85rem;color:var(--grey);margin-top:0.6rem;">PDF · 0.5 MB · Deutsch</p>
-    </div>
-    </div>
-    <div class="hero-compass" style="max-width:280px;margin:0 auto;">
-      <img src="images/compass-large.png" alt="Der ChiFoo Kompass">
-    </div>
   </div>
 </section>
 
+<!-- ─── QUESTION CENTRALE ─── -->
+<section class="bg-mint">
+  <div class="section-inner">
+    <div class="quote reveal">
+      Wie kann das fragmentierte System der Ernährungsbildung für Kinder in der Schweiz zu einem <em>ganzheitlicheren und effektiveren</em> System umgewandelt werden?
+    </div>
+    <p style="text-align:center;color:var(--grey);margin:0 auto;max-width:560px;font-size:0.95rem;">
+      Das ist die zentrale Frage, die die Arbeit des Labs leitet.
+    </p>
+  </div>
+</section>
 
-<!-- ─── LES 8 CHAMPS D'ACTION ─── -->
+<!-- ─── QU'EST-CE QUE LE LAB ─── -->
 <section class="bg-cream">
   <div class="section-inner">
+    <span class="eyebrow">Was ist das ChiFoo Lab?</span>
+    <h2 class="reveal">Ein <span style="color:var(--teal)">systemischer</span> und kollektiver Ansatz</h2>
 
-    <!-- 1. Regarder autour de soi -->
-    <div class="champ" onclick="toggleChamp(this)">
-      <div class="champ-header">
-        <div class="champ-num" data-num="1"><img src="images/picto-regarder-autour.png" alt=""></div>
-        <div class="champ-title-block">
-          <div class="champ-title">Erst umschauen, dann handeln</div>
-        </div>
-        <div class="champ-toggle">＋</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;margin-top:2rem;">
+      <div class="reveal">
+        <p>
+          Das ChiFoo Lab verfolgt einen <strong>systemischen Ansatz</strong> mit Akteur:innen aus verschiedenen Bereichen der Ernährungsbildung für Kinder — z.&nbsp;B. Schulen, Kantinen, Vereine, Institutionen, Wissenschaft und Public Health.
+        </p>
+        <p>
+          Das Lab ist ein <strong>offener Raum</strong>: Alle Interessierten sind jederzeit herzlich eingeladen, Kontakt aufzunehmen.
+        </p>
       </div>
-      <div class="champ-body">
-        <div class="champ-content">
-          <div class="champ-actions">
-            <h4>Die Handlungsansätze</h4>
-            <ul>
-              <li>Vor dem Start neuer Projekte den Austausch mit bestehenden Initiativen suchen, um Synergien zu nutzen und bestehende Erfahrungen einzubeziehen.</li>
-              <li>Relevante Zielgruppen und Akteur:innen an die Entwicklung der Aktivitäten einbeziehen, um diese bedarfsgerecht und wirksamer zu gestalten.</li>
-              <li>Initiativen bündeln und aufeinander abgestimmte Aktivitäten für verschiedene Altersgruppen umsetzen, um Kohärenz zu gewährleisten.</li>
-            </ul>
-          </div>
-          <div class="champ-audio" onclick="event.stopPropagation()">
-            <audio controls preload="none">
-              <source src="audio/01-regarder-autour.mp3" type="audio/mpeg">
-              Dein Browser unterstützt kein HTML5-Audio.
-            </audio>
-            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Transkription lesen</button>
-            <div class="audio-transcript">
-              <p>Wirksame Interventionen müssen auf einer klaren Einschätzung der tatsächlichen Bedürfnisse beruhen — jener der Kinder, Eltern, Lehrpersonen, Betreuungspersonen oder anderer Beteiligter — und gemeinsam mit diesen Menschen entwickelt werden. Das heisst: Sie werden von Anfang an in den Prozess einbezogen, mit partizipativen Formaten, die ihrem Alter entsprechen. Wenn Menschen Lösungen mitgestalten, steigen Identifikation und Wirkung erheblich.</p>
-              <p>Wenn Ernährungsbildung das Verhalten wirklich verbessern soll, müssen wir zudem auf erfahrungsbasiertes Lernen setzen: kochen, degustieren, gärtnern, beobachten. Ernährung mit allen Sinnen zu erkunden schafft die nötige persönliche Erfahrung. Wissen allein reicht nicht. Ebenso wichtig ist die Wiederholung über die Zeit.</p>
-              <p>Und bevor wir etwas Neues lancieren, sollten wir uns fragen: Wer ist bereits engagiert? Welche Programme gibt es schon? Wo liegen Stärken, Lücken, Überschneidungen? Zu oft schaffen wir Parallelinitiativen, ohne zu merken, dass ganz in der Nähe Ähnliches geleistet wird. Das führt zu Ressourcenverschwendung und fragmentierter Wirkung.</p>
-              <p>Manchmal ist die strategischste Handlung, nicht zu handeln — zumindest nicht, indem man etwas Neues schafft. Eine bestehende Initiative zu stärken, einen Partner zu unterstützen oder Akteur:innen zu vernetzen kann weit mehr bewirken als ein brandneues Projekt. Systemischer Wandel verlangt Bescheidenheit.</p>
-            </div>
-          </div>
-        </div>
+      <div class="reveal">
+        <p>
+          Um relevante Ansatzpunkte und Wege für die Transformation des heutigen Systems zu identifizieren, nutzte das Lab während <strong>zehn Monaten</strong> verschiedene sozialwissenschaftliche Methoden: Aktionsforschung, Beobachtungen, partizipative Untersuchungen sowie Interviews mit unterschiedlichen Akteur:innen.
+        </p>
+        <p>
+          Das Ziel: individuelle Perspektiven erweitern und einen <strong>gemeinsamen, kollektiven</strong> Blick auf das System ermöglichen.
+        </p>
       </div>
     </div>
-
-    <!-- 2. Renforcer les compétences des familles -->
-    <div class="champ" onclick="toggleChamp(this)">
-      <div class="champ-header">
-        <div class="champ-num" data-num="2"><img src="images/picto-renforcer-familles.png" alt=""></div>
-        <div class="champ-title-block">
-          <div class="champ-title">Die Ernährungskompetenzen von Familien stärken</div>
-        </div>
-        <div class="champ-toggle">＋</div>
-      </div>
-      <div class="champ-body">
-        <div class="champ-content">
-          <div class="champ-actions">
-            <h4>Die Handlungsansätze</h4>
-            <ul>
-              <li>Bestehende Beratungsangebote für Familien zum Thema Ernährung sichtbarer und in mehreren Sprachen zugänglich machen.</li>
-              <li>Beratungsangebote für Familien über die frühkindliche Förderung hinaus erweitern.</li>
-              <li>Familien über Ernährung sensibilisieren und auf passende Angebote bei kinderärztlichen Untersuchungen verweisen.</li>
-              <li>Familien im Umgang mit Social Media zum Thema Ernährung unterstützen.</li>
-              <li>Dialog mit marginalisierten Familien suchen, um ihre Bedürfnisse besser zu verstehen und gezielte Massnahmen zu entwickeln.</li>
-              <li>Kein Essen als Belohnung oder Ablenkung einsetzen.</li>
-              <li>Ferienlager für Kinder anbieten, die Gärtnern, Kochen und das Entdecken der Lebensmittel miteinander verbinden, und diese subventionieren.</li>
-              <li>Influencer:innen für deren Einfluss in sozialen Medien auf das Ernährungsverhalten von Kindern sensibilisieren.</li>
-            </ul>
-          </div>
-          <div class="champ-audio" onclick="event.stopPropagation()">
-            <audio controls preload="none">
-              <source src="audio/02-renforcer-familles.mp3" type="audio/mpeg">
-            </audio>
-            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Transkription lesen</button>
-            <div class="audio-transcript">
-              <p>Die Familie ist der erste Ort der Ernährungsbildung. Doch Kinder essen oft bis zu viermal am Tag ausser Haus, während Werbung und soziale Medien ihre Essensentscheidungen stark beeinflussen. Eltern fühlen sich für die Ernährungsbildung ihrer Kinder verantwortlich — aber können sie mit professionellem Marketing und den Medien mithalten?</p>
-              <p>Vielen Eltern fehlt Zeit und/oder Wissen, um zu Hause solide Ernährungskompetenzen aufzubauen. Sie erhalten keine zuverlässigen Informationen und treffen deshalb verzerrte Entscheidungen. Wichtig ist, Beratungsangebote zu schaffen, die Eltern gezielt in der Ernährungsbildung unterstützen — oder die Sichtbarkeit der bestehenden zu verbessern.</p>
-              <p>Eltern sollten darin unterstützt werden, Entscheidungen zur Ernährung ihrer Kinder auf der Grundlage verlässlicher Informationen zu treffen. Der persönliche Austausch kann ihnen helfen, diese Informationen einzuordnen, ihre Kompetenzen zu stärken und Vertrauen in das eigene Urteil zu gewinnen.</p>
-              <p>Städte und Kantone bieten heute bereits Ernährungsberatung ab der frühen Kindheit an — doch die Unterstützung sollte über diese Phase hinausgehen und sichtbarer sein. Es reicht nicht, erst zu handeln, wenn ein Kind übergewichtig wird oder eine Essstörung entwickelt. Kinderärzt:innen sollten das Thema Ernährung bei Routineuntersuchungen aktiv ansprechen.</p>
-              <p>Marginalisierte Familien brauchen besondere Aufmerksamkeit. Wenn der Alltag schwierig ist, erscheint gesunde Ernährung womöglich nicht als Priorität. Wir müssen auf diese Familien zugehen, ihre Realitäten verstehen und Unterstützung anbieten — ohne zusätzlichen Druck und ohne Schuldgefühle zu erzeugen.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 3. Créer une compréhension commune -->
-    <div class="champ" onclick="toggleChamp(this)">
-      <div class="champ-header">
-        <div class="champ-num" data-num="3"><img src="images/picto-comprehension-commune.png" alt=""></div>
-        <div class="champ-title-block">
-          <div class="champ-title">Ein gemeinsames Verständnis schaffen</div>
-        </div>
-        <div class="champ-toggle">＋</div>
-      </div>
-      <div class="champ-body">
-        <div class="champ-content">
-          <div class="champ-actions">
-            <h4>Die Handlungsansätze</h4>
-            <ul>
-              <li>Einen nationalen Kompetenzrahmen für Ernährungsbildung und die Ernährungsumgebung für alle Lebensphasen auf der Grundlage wissenschaftlicher Erkenntnisse und Expertenwissen entwickeln.</li>
-              <li>Rollen und Verantwortlichkeiten der einzelnen Akteur:innen — wie Familie, Schulen, Kantinen, Sportvereine usw. — gemeinsam definieren.</li>
-              <li>Verbindliche Richtlinien für die Verpflegung bei öffentlichen Veranstaltungen entwickeln, an denen Kinder teilnehmen (z.&nbsp;B. Sportcamps, Festivals).</li>
-            </ul>
-          </div>
-          <div class="champ-audio" onclick="event.stopPropagation()">
-            <audio controls preload="none">
-              <source src="audio/03-comprehension-commune.mp3" type="audio/mpeg">
-            </audio>
-            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Transkription lesen</button>
-            <div class="audio-transcript">
-              <p>Was verstehen wir gemeinsam unter einer Ernährung, die Natur und Mensch bestmöglich respektiert? Wie sollte sich das konkret in einem typischen Tag eines Kindes in der Schweiz niederschlagen? Was sollen Kinder über Ernährung wissen? Was sollen sie können — und in welchem Alter?</p>
-              <p>Wer ist dafür verantwortlich, das erwartete Wissen und die Kompetenzen zu vermitteln? Welche Rolle spielen die Eltern? Die Schulen? Wie tragen Kantinen und Kitas dazu bei? Gibt es weitere Akteur:innen, etwa Sporttrainer:innen, die ebenfalls einen positiven Beitrag leisten können?</p>
-              <p>Heute beeinflussen viele Akteur:innen die Essgewohnheiten der Kinder und bilden zusammen eine oft sehr heterogene Ernährungsumgebung. Obwohl es viele engagierte und begeisterte Akteur:innen im Bereich Ernährung gibt, stellt sich die Frage nach der Kohärenz all dieser Einflüsse. Die Gesamtverantwortung für das Wohl der Kinder bleibt unklar und fragmentiert.</p>
-              <p>Wir brauchen ein gemeinsames, geteiltes Verständnis davon, was Ernährungsbildung in der Schweiz bedeutet — und welche Kompetenzen wir von Kindern in welchem Alter erwarten. Ein klarer Kompetenzrahmen würde einen gemeinsamen Bezugspunkt schaffen. Er würde Fachpersonen helfen, ihre Interventionen aufeinander abzustimmen, die Kohärenz zwischen Programmen zu stärken und die Kontinuität über alle Lebensphasen hinweg zu sichern.</p>
-              <p>Das bedeutet auch: Die Kriterien für die Verpflegung von Kindern müssen dem Kompetenzrahmen entsprechen — in der Schule ebenso wie bei öffentlichen Veranstaltungen, an denen Kinder teilnehmen.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 4. Accentuer le sujet en politique -->
-    <div class="champ" onclick="toggleChamp(this)">
-      <div class="champ-header">
-        <div class="champ-num" data-num="4"><img src="images/picto-politique.png" alt=""></div>
-        <div class="champ-title-block">
-          <div class="champ-title">Das Thema in der Politik vorantreiben</div>
-        </div>
-        <div class="champ-toggle">＋</div>
-      </div>
-      <div class="champ-body">
-        <div class="champ-content">
-          <div class="champ-actions">
-            <h4>Die Handlungsansätze</h4>
-            <ul>
-              <li>Entscheidungsträger:innen im eigenen Handlungsfeld identifizieren.</li>
-              <li>Partnerschaften mit Organisationen im Bereich der öffentlichen Gesundheit aufbauen.</li>
-              <li>Präventive und wirtschaftliche Argumente zum Kosten-Nutzen-Verhältnis der Ernährungsbildung entwickeln.</li>
-              <li>Reduktion von hochverarbeiteten Lebensmitteln in Schulkantinen.</li>
-              <li>Reduktion des Gehalts an Zucker, Salz und Fett in Lebensmitteln, die sich an Kinder richten.</li>
-              <li>Verbot von Lebensmittelmarketing und Lebensmittelwerbung, die sich an Kinder richten.</li>
-              <li>Regulierung der Lebensmittelwerbung in sozialen Medien, die sich an Kinder richtet.</li>
-            </ul>
-          </div>
-          <div class="champ-audio" onclick="event.stopPropagation()">
-            <audio controls preload="none">
-              <source src="audio/04-politique.mp3" type="audio/mpeg">
-            </audio>
-            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Transkription lesen</button>
-            <div class="audio-transcript">
-              <p>Neben den Anstrengungen der verschiedenen Akteur:innen braucht es auch politisches Handeln, um die Ernährungsbildung voranzubringen. Ohne dieses droht die Lähmung durch Untätigkeit einen echten Systemwandel zu behindern: Unternehmen rechtfertigen ihre Entscheidungen mit Konsumentenpräferenzen oder starkem Wettbewerbsdruck; Konsument:innen werden vom Marketing beeinflusst und erwarten Entscheidungen und Unterstützung der Politik — während diese untätig bleibt, um keinen Popularitätsverlust zu riskieren.</p>
-              <p>Erste Schritte sind gemacht: die Regulierung des an Kinder gerichteten Lebensmittelmarketings, die Integration der Ernährungsbildung als obligatorisches Schulfach in einigen Kantonen. Aber es geht mehr. Wir können uns für Standards in Schulkantinen einsetzen, für Grenzen bei hochverarbeiteten Lebensmitteln und Zucker — und für eine bessere Regulierung der Lebensmittelwerbung in sozialen Medien, einschliesslich des Influencer-Marketings.</p>
-              <p>Besondere Aufmerksamkeit verdienen hochverarbeitete Produkte: Chips, Wurstwaren und Tiefkühlpizzas sind keine geeigneten Alternativen zu frischen Lebensmitteln. Sie tragen zur Industrialisierung der Kinderernährung bei. Hersteller solcher Produkte sollten deshalb nicht als Sponsoren in der Gesundheitsförderung auftreten.</p>
-              <p>Sich politisch zu engagieren kann komplex, ja einschüchternd wirken. Viele Fachpersonen zögern, sich auf dieses Terrain zu wagen. Doch ohne Engagement auf kommunaler, kantonaler und eidgenössischer Ebene werden wir die Kräfteverhältnisse im System nicht verändern.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 5. Mieux communiquer -->
-    <div class="champ" onclick="toggleChamp(this)">
-      <div class="champ-header">
-        <div class="champ-num" data-num="5"><img src="images/picto-communiquer.png" alt=""></div>
-        <div class="champ-title-block">
-          <div class="champ-title">Wirksamer kommunizieren</div>
-        </div>
-        <div class="champ-toggle">＋</div>
-      </div>
-      <div class="champ-body">
-        <div class="champ-content">
-          <div class="champ-actions">
-            <h4>Die Handlungsansätze</h4>
-            <ul>
-              <li>Sichtbarkeit bewährter Praktiken in der Ernährungsbildung teilen und fördern.</li>
-              <li>Mit der eigenen Initiative die relevante Zielgruppe erreichen.</li>
-              <li>Zuverlässige Informationen über Lebensmittel und Ernährung in den öffentlichen Medien verbreiten.</li>
-              <li>Einen professionellen, kreativen und innovativen Kommunikationsplan konzipieren und die dafür nötige Unterstützung einholen.</li>
-            </ul>
-          </div>
-          <div class="champ-audio" onclick="event.stopPropagation()">
-            <audio controls preload="none">
-              <source src="audio/05-communiquer.mp3" type="audio/mpeg">
-            </audio>
-            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Transkription lesen</button>
-            <div class="audio-transcript">
-              <p>Es gibt solide Projekte, ausgezeichnete Initiativen, wertvolle Wissensplattformen und hochwertiges Unterrichtsmaterial. Aber viel zu oft wird die Zielgruppe nicht erreicht.</p>
-              <p>Kommunikation ist keine Nebensache. Sie braucht Kompetenzen, Strategie und Ressourcen. Angemessene Kommunikation kann Wirkung entfalten. Das bedeutet, Kommunikationskompetenzen zu verbessern und mit Fachleuten zusammenzuarbeiten.</p>
-              <p>In jedem Projektantrag sollte ein Budget für einen professionellen Kommunikationsplan vorgesehen sein. Geldgeber sollten dies verlangen und finanzieren. Ohne Sichtbarkeit bleiben selbst die besten Programme wirkungslos.</p>
-              <p>Wirksame Kommunikation beginnt mit der Wahl der Zielgruppe. Die ChiFoo-Systemkarte kann helfen, die Botschaft an jene zu richten, die wirklich betroffen sind.</p>
-              <p>Um die Kommunikation in der Ernährungsbildung zu stärken, gilt es, die sozialen Medien besser zu nutzen. Die Zusammenarbeit mit Influencer:innen und Botschafter:innen, die die breite Öffentlichkeit für diese Fragen sensibilisieren, sollte ausgebaut werden. Ihr Einfluss auf die Essgewohnheiten junger Menschen ist beträchtlich.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 6. Changer d'échelle -->
-    <div class="champ" onclick="toggleChamp(this)">
-      <div class="champ-header">
-        <div class="champ-num" data-num="6"><img src="images/picto-changer-echelle.png" alt=""></div>
-        <div class="champ-title-block">
-          <div class="champ-title">Strukturell verankern</div>
-        </div>
-        <div class="champ-toggle">＋</div>
-      </div>
-      <div class="champ-body">
-        <div class="champ-content">
-          <div class="champ-actions">
-            <h4>Die Handlungsansätze</h4>
-            <ul>
-              <li>In der Primarschule Schullektionen speziell für die Ernährungsbildung im Stundenplan einplanen.</li>
-              <li>Bestehende Fächer (z.&nbsp;B. Mathematik, Deutsch) für einen fächerübergreifenden Ansatz nutzen, um Kompetenzen im Bereich der Ernährungsbildung aufzubauen.</li>
-              <li>Ernährung als Thema für alltagsnahe Bildung für nachhaltige Entwicklung (BNE) einsetzen.</li>
-              <li>Den Kindern den Zugang zum Gärtnern in jeder Kindertagesstätte und Schule ermöglichen.</li>
-              <li>Ernährungsbildung in die Aus- und Weiterbildung von Lehrpersonen, Erzieher:innen, Kantinenköch:innen und -personal, Sozialarbeiter:innen, Kinderbetreuer:innen, Gesundheitsfachkräften usw. aufnehmen.</li>
-              <li>Institutionen, die Kinder regelmässig im Alltag begleiten — insbesondere Kindertagesstätten, Kindergärten und Spielgruppen — stärker im Bereich der Ernährungsbildung unterstützen.</li>
-            </ul>
-          </div>
-          <div class="champ-audio" onclick="event.stopPropagation()">
-            <audio controls preload="none">
-              <source src="audio/06-changer-echelle.mp3" type="audio/mpeg">
-            </audio>
-            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Transkription lesen</button>
-            <div class="audio-transcript">
-              <p>Viele Vereine und Programme haben ihre Wirksamkeit beim Aufbau von Ernährungskompetenzen bereits bewiesen. Die Inhalte existieren. Die Expertise existiert. Die Belege existieren. Jetzt geht es darum, sie in grossem Massstab umzusetzen.</p>
-              <p>Statt immer neue Pilotprojekte zu schaffen, sollten wir uns darauf konzentrieren, das Bewährte weiterzuentwickeln und flächendeckend auszurollen. Hochwertige Ernährungsbildungsprogramme für die Primarschule sind vorhanden. Doch um sie in der Breite umzusetzen, muss die Ernährungsbildung ein obligatorischer Teil der Lehrpläne und Stundenpläne werden.</p>
-              <p>Lehrpersonen brauchen eine angemessene Ausbildung — sowohl in der Grundausbildung als auch in der Weiterbildung — und/oder die punktuelle Unterstützung durch externe Fachpersonen.</p>
-              <p>Ernährungsbildung ist kein zusätzliches Fach. Sie ist ein ganzheitliches Thema, das vollständig mit der Bildung für nachhaltige Entwicklung, der politischen Bildung und mehreren Unterrichtsdisziplinen (Naturwissenschaften, Geschichte usw.) verbunden ist. Das Ernährungssystem ist ein starker Zugang, um kritisches Denken, Zusammenarbeit und systemisches Denken zu entwickeln.</p>
-              <p>Nicht nur Lehrpersonen sind betroffen. Auch Kantinenköch:innen und Kita-Erzieher:innen müssen ausgebildet werden. Sie sind nicht nur Essenslieferant:innen — sie sind auch Vorbilder und Bildungsakteur:innen.</p>
-              <p>Schulgärten sollten zur gängigen Praxis werden. Wir haben Turnhallen in jeder Schule. Der Zugang zu einem Gartenbereich sollte genauso selbstverständlich sein.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 7. Tirer parti des synergies locales -->
-    <div class="champ" onclick="toggleChamp(this)">
-      <div class="champ-header">
-        <div class="champ-num" data-num="7"><img src="images/picto-synergies-locales.png" alt=""></div>
-        <div class="champ-title-block">
-          <div class="champ-title">Lokale Synergien nutzen</div>
-        </div>
-        <div class="champ-toggle">＋</div>
-      </div>
-      <div class="champ-body">
-        <div class="champ-content">
-          <div class="champ-actions">
-            <h4>Die Handlungsansätze</h4>
-            <ul>
-              <li>Eine lokale und kantonale Koordination einrichten, um Initiativen zu bündeln, Synergien besser zu nutzen und neue Möglichkeiten zu erschliessen.</li>
-              <li>Schulküchen z.&nbsp;B. für Vereine öffnen, um Kochworkshops mit Familien durchzuführen.</li>
-              <li>Einblicke in Lebensmittelbetriebe, -verarbeitung und -vertrieb für Schulkinder ermöglichen.</li>
-              <li>Zusammenarbeit zwischen Schulleitung, Lehrkräften, Vertreter:innen der Gemeinden sowie Familien und Köch:innen aufbauen, um die Ernährungsbildung als Teil der Schulhauskultur ganzheitlich zu stärken.</li>
-            </ul>
-          </div>
-          <div class="champ-audio" onclick="event.stopPropagation()">
-            <audio controls preload="none">
-              <source src="audio/07-synergies-locales.mp3" type="audio/mpeg">
-            </audio>
-            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Transkription lesen</button>
-            <div class="audio-transcript">
-              <p>Lokale Zusammenarbeit ist der Schlüsselhebel für eine wirksame Ernährungsbildung — und die Gemeinden spielen eine zentrale Rolle. Sie sind in einer einzigartigen Position, um Akteur:innen zu vernetzen, Ressourcen zu bündeln und Kohärenz zu schaffen.</p>
-              <p>Um bestehende Initiativen aufeinander abzustimmen und Doppelspurigkeiten zu vermeiden, können Gemeinden lokale Koordinationsstellen schaffen. Statt neue, isolierte Projekte zu lancieren, gilt es, die Synergien zwischen Schulen, Kantinen, Elternvereinen, lokalen Organisationen sowie den Bereichen Gesundheit, Bildung und Umwelt zu stärken.</p>
-              <p>Schulküchen für Kochateliers mit Kindern und Eltern zu öffnen ist eine konkrete und wirksame Massnahme. Einen strukturierten Dialog zwischen Schulleitung, Gemeindediensten, Lehrpersonen und Eltern zu etablieren eine weitere.</p>
-              <p>Ernährungsbildung geht über das Klassenzimmer hinaus. Sie braucht ein koordiniertes lokales Ökosystem. Wenn Gemeinden die Initiative ergreifen und die verschiedenen Akteur:innen vernetzen, verwandeln sie verstreute Anstrengungen in nachhaltige Wirkung.</p>
-              <p>Wenn Ernährungsbildung in lokaler Zusammenarbeit verankert ist, wird sie auch nachhaltiger und widerstandsfähiger. Die Zahl der beteiligten Akteur:innen und ihre lokale Präsenz verringern das Risiko, dass über Jahre mühsam aufgebaute Aktivitäten plötzlich verschwinden. Verankere dein Projekt in der lokalen Gemeinschaft, damit es Bestand hat!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 8. Apprendre les uns des autres -->
-    <div class="champ" onclick="toggleChamp(this)">
-      <div class="champ-header">
-        <div class="champ-num" data-num="8"><img src="images/picto-apprendre-uns-autres.png" alt=""></div>
-        <div class="champ-title-block">
-          <div class="champ-title">Von- und miteinander lernen</div>
-        </div>
-        <div class="champ-toggle">＋</div>
-      </div>
-      <div class="champ-body">
-        <div class="champ-content">
-          <div class="champ-actions">
-            <h4>Die Handlungsansätze</h4>
-            <ul>
-              <li>Aufbau einer starken Community durch regelmässigen Austausch zwischen Akteur:innen.</li>
-              <li>Akteur:innen zu einem schweizweiten transdisziplinären Forum einladen, um eine nationale Agenda zur Ernährungsbildung zu initiieren.</li>
-              <li>Neue Wege erkunden, um Brücken zwischen Kulturen und Sprachen zu schlagen.</li>
-              <li>Ernährungsbildungsprogramme und Lehrpersonenbildungen kantonsübergreifend bündeln und zugänglich machen.</li>
-            </ul>
-          </div>
-          <div class="champ-audio" onclick="event.stopPropagation()">
-            <audio controls preload="none">
-              <source src="audio/08-apprendre-uns-autres.mp3" type="audio/mpeg">
-            </audio>
-            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Transkription lesen</button>
-            <div class="audio-transcript">
-              <p>Die Schweiz ist durch Sprach- und Kulturgrenzen geteilt. Zu oft entwickeln wir Initiativen parallel, ohne zu wissen, was gleich nebenan geschieht.</p>
-              <p>Das Schulsystem ist ein gutes Beispiel. Da die Bildung kantonal organisiert ist, neigt jeder Kanton dazu, eigene Programme und eine eigene Lehrpersonenbildung zu entwickeln. Das führt zu doppelter Arbeit — und wir verpassen die Chance, Ressourcen zu teilen und Synergien zu schaffen. Ein Konkurrenzdenken ist oft das grösste Hindernis. Dabei ist Ernährungsbildung kein Produkt auf dem Markt: Sie geht alle an.</p>
-              <p>Statt getrennt zu arbeiten, sollten wir die Zusammenarbeit stärken. Sparen wir Zeit, Energie und öffentliche Gelder — und unterstützen wir uns gegenseitig auf dem Weg zu einem gemeinsamen Ziel: die Ernährungsbildung zu fördern.</p>
-              <p>2024 hat das erste nationale Forum zur Ernährungsbildung «Passion for Food Education» eine breite Gemeinschaft von Interessierten zusammengebracht. Diese Dynamik muss weitergehen. Wir brauchen eine gemeinsame Vision und eine transdisziplinäre Zusammenarbeit.</p>
-              <p>Damit dies nachhaltig ist, muss die vom ChiFoo Lab lancierte Bewegung weitergehen — nicht als neue, eigenständige Organisation, sondern eingebettet in etablierte und anerkannte nationale Institutionen.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
-<!-- ─── CTA ─── -->
-<section class="bg-teal">
-  <div class="section-inner" style="text-align:center;">
-    <h2 style="color:var(--cream);">Du möchtest zu einem Handlungsfeld beitragen?</h2>
-    <p style="color:rgba(250,247,240,0.9);font-size:1.1rem;max-width:580px;margin:0 auto 1.5rem;">
-      Jede:r Akteur:in hat eine Rolle zu spielen. Mach mit.
+
+<!-- ─── QUI EST IMPLIQUÉ ─── -->
+<section class="bg-cream">
+  <div class="section-inner">
+    <span class="eyebrow coral">Wer ist beteiligt</span>
+    <h2 class="reveal">Eine Vielfalt engagierter Akteur:innen</h2>
+    <p class="lead reveal">
+      Das Lab vereint Fachpersonen, die auf verschiedenen Ebenen der Ernährungsbildung für Kinder in der Schweiz aktiv sind. Das Kollektiv wächst laufend und erreicht neue Gemeinschaften.
     </p>
-    <a href="contact.html" class="btn btn-primary">Kontakt aufnehmen <span>→</span></a>
+
+    <div class="audience-grid">
+      <div class="audience-card reveal">
+        <img src="images/char-parent-poussette.png" alt="" class="audience-illu">
+        <h3>Familien</h3>
+        <p>Eltern und Erziehungsberechtigte im Zentrum der alltäglichen Vermittlung von Ernährungskompetenzen.</p>
+      </div>
+      <div class="audience-card reveal">
+        <img src="images/char-chef.png" alt="" class="audience-illu">
+        <h3>Kantinen & Köch:innen</h3>
+        <p>Fachpersonen, die das Esserlebnis der Kinder in Schulen und Tagesstrukturen prägen.</p>
+      </div>
+      <div class="audience-card reveal">
+        <img src="images/char-enseignant-livre.png" alt="" class="audience-illu">
+        <h3>Lehrpersonen & Erzieher:innen</h3>
+        <p>Pädagog:innen, die die Ernährungsbildung in den Schul- und Betreuungsalltag integrieren.</p>
+      </div>
+      <div class="audience-card reveal">
+        <img src="images/char-medecin.png" alt="" class="audience-illu">
+        <h3>Ärzt:innen & Gesundheitsfachkräfte</h3>
+        <p>Kinderärzt:innen, Ernährungsberater:innen und Gesundheitsfachpersonen, die Familien und Kinder begleiten.</p>
+      </div>
+      <div class="audience-card reveal">
+        <img src="images/char-jardinier.png" alt="" class="audience-illu">
+        <h3>Lokale Akteur:innen</h3>
+        <p>Produzent:innen, Landwirt:innen und Vereine, die die Verbindung zwischen Boden, Hof und Teller schaffen.</p>
+      </div>
+      <div class="audience-card reveal">
+        <img src="images/placeholder-cercle.png" alt="" class="audience-illu">
+        <h3>Institutionen & Politik</h3>
+        <p>Kantone, Gemeinden und Entscheidungsträger:innen, welche die Gesundheits- und Bildungspolitik gestalten.</p>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- ─── L'AMBITION ─── -->
+<section class="bg-teal">
+  <div class="section-inner">
+    <span class="eyebrow" style="background:rgba(250,247,240,0.15);color:var(--cream);">Unser Ehrgeiz</span>
+    <h2 style="color:var(--cream);max-width:820px;">Menschen zusammenbringen und sie dabei unterstützen, neue Gemeinschaften, Kooperationen und Beziehungen aufzubauen.</h2>
+    <p style="color:rgba(250,247,240,0.92);font-size:1.1rem;max-width:720px;">
+      Getragen von einem gemeinsamen Ziel der Transformation kann jede:r Akteur:in durch kleine Veränderungen einen Beitrag leisten, der in der Summe eine bedeutende Bewegung auslösen kann.
+    </p>
+    <p style="color:rgba(250,247,240,0.92);font-size:1.1rem;max-width:720px;margin-top:1rem;">
+      Ernährungsbildung ist eine <strong style="color:var(--gold);">gemeinsame gesellschaftliche Verantwortung</strong>. Kein:e einzelne:r Akteur:in kann die Transformation allein bewirken.
+    </p>
+    <div class="cta-row">
+      <a href="contact.html" class="btn" style="background:rgba(250,247,240,0.15);color:var(--cream);border:1.5px solid rgba(250,247,240,0.4);">Kontakt aufnehmen</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
 <footer>
   <div class="footer-inner">
     <div class="footer-brand">
@@ -419,16 +187,6 @@
 </footer>
 
 <script>
-  function toggleChamp(el) {
-    el.classList.toggle('open');
-  }
-  function toggleTranscript(btn) {
-    const transcript = btn.nextElementSibling;
-    transcript.classList.toggle('show');
-    btn.textContent = transcript.classList.contains('show') ? 'Transkription ausblenden' : 'Transkription lesen';
-  }
-
-
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
