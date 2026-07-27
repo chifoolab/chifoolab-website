@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>ChiFoo Lab — Sito in costruzione</title>
+<title>ChiFoo Lab — Site en construction</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="../styles.css">
@@ -13,13 +13,13 @@
 <div class="construction">
   <div class="trail-bg" aria-hidden="true"></div>
   <img class="logo-big" src="../images/chifoo-logo-nav.png" alt="ChiFoo — Children's Food Education">
-  <h1>Sito in costruzione</h1>
-  <p>La versione italiana del sito del Children's Food Education Lab sarà presto disponibile. Nel frattempo è già disponibile la versione tedesca.</p>
-  <a class="btn btn-primary" href="../">Vai alla versione tedesca</a>
+  <h1>Site en construction</h1>
+  <p>La version française du site du Children's Food Education Lab arrive bientôt. En attendant, la version allemande est déjà disponible.</p>
+  <a class="btn btn-primary" href="../">Voir la version allemande</a>
   <nav class="lang-row" aria-label="Languages">
     <a href="../">DE</a>
-    <a href="../fr/">FR</a>
-    <a href="../it/" class="current">IT</a>
+    <a href="../fr/" class="current">FR</a>
+    <a href="../it/">IT</a>
     <a href="../en/">EN</a>
   </nav>
 </div>
