@@ -72,7 +72,7 @@ nav {
 }
 
 .logo img {
-  height: 42px;
+  height: 62px;
   width: auto;
   display: block;
 }
@@ -155,9 +155,14 @@ footer .logo img {
 
 .hero-blob {
   position: absolute;
-  border-radius: 50%;
+  border-radius: 53% 47% 56% 44% / 55% 46% 54% 45%;
+  transform: rotate(-6deg);
   pointer-events: none;
   z-index: 0;
+}
+.hero-blob:nth-of-type(2) {
+  border-radius: 45% 55% 48% 52% / 52% 44% 56% 48%;
+  transform: rotate(8deg);
 }
 
 .hero-content {
@@ -420,12 +425,9 @@ section {
   flex-shrink: 0;
   width: 96px;
   height: 96px;
-  border-radius: 22px;
-  background: var(--cream-soft);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
   position: relative;
 }
 
@@ -551,14 +553,14 @@ section {
 .champ-example strong { color: var(--forest); }
 
 .champ-audio {
-  background: var(--teal-pale);
-  border-radius: 14px;
-  padding: 1.4rem 1.6rem;
+  background: none;
+  border-radius: 0;
+  padding: 0.4rem 0 0;
 }
 
 .champ-audio h4 {
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--teal-deep);
   margin-bottom: 0.8rem;
@@ -859,6 +861,9 @@ footer {
 .map-link {
   display: block;
   position: relative;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 22px;
   overflow: hidden;
   box-shadow: 0 12px 32px rgba(4, 84, 99, 0.15);
@@ -905,4 +910,35 @@ footer {
   position:absolute; inset:0; z-index:0; pointer-events:none;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800' preserveAspectRatio='none'><path d='M -60 620 C 240 520 460 700 700 600 S 1040 460 1260 560' fill='none' stroke='white' stroke-width='4' stroke-dasharray='2 16' stroke-linecap='round' opacity='0.9'/><path d='M -60 160 C 200 260 420 100 660 180 S 980 120 1260 200' fill='none' stroke='white' stroke-width='4' stroke-dasharray='2 16' stroke-linecap='round' opacity='0.9'/></svg>");
   background-size:100% 100%;
+}
+
+
+/* ───── Pictos urban dans les cartes ───── */
+.card-picto {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* ───── Réseau de partenaires relié (chemins pointillés) ───── */
+.partners-network {
+  position: relative;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 700' preserveAspectRatio='none'><path d='M 80 120 C 320 60 420 260 640 200 S 940 90 1140 170' fill='none' stroke='%23007488' stroke-width='3' stroke-dasharray='1 14' stroke-linecap='round' opacity='0.45'/><path d='M 60 420 C 260 520 500 350 720 460 S 1000 560 1160 440' fill='none' stroke='%23007488' stroke-width='3' stroke-dasharray='1 14' stroke-linecap='round' opacity='0.45'/><path d='M 160 640 C 380 560 620 660 840 580 S 1060 500 1180 600' fill='none' stroke='%23E16364' stroke-width='3' stroke-dasharray='1 14' stroke-linecap='round' opacity='0.4'/></svg>");
+  background-size: 100% 100%;
+}
+.partners-network .partner-card { background: rgba(255,255,255,0.92); }
+
+
+/* ───── Hero Kompass : boussole à droite du titre ───── */
+.hero-two-col {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+@media (max-width: 820px) {
+  .hero-two-col { grid-template-columns: 1fr; }
+  .hero-two-col .hero-compass { max-width: 220px !important; }
 }

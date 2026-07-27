@@ -34,12 +34,13 @@
   <div class="hero-blob" style="width:380px;height:380px;background:var(--gold-pale);top:-130px;right:-100px;opacity:0.8;"></div>
   <div class="hero-blob" style="width:260px;height:260px;background:var(--teal-pale);bottom:-90px;left:-70px;opacity:0.7;"></div>
 
-  <div class="hero-content">
+  <div class="hero-content hero-two-col">
+    <div>
     <span class="eyebrow gold">Der Kompass</span>
     <h1>
-      Acht Handlungsfelder
-      <span class="accent-teal">für einen systemischen</span>
-      Wandel
+      Der Kompass dient als
+      <span class="accent-teal">Orientierungstool</span>
+      im Ernährungsbildungssystem für Kinder
     </h1>
     <p class="lead">
       Der Kompass bündelt die Erkenntnisse und Denkanstösse des ChiFoo Labs. Er lädt zum <strong>Handeln</strong> ein, zeigt <strong>verschiedene Wege</strong> auf und <strong>verbindet</strong> die Handlungsfelder miteinander.
@@ -47,39 +48,17 @@
     <p style="font-size:0.95rem;color:var(--grey);max-width:680px;">
       Jedes Handlungsfeld wird durch einen <strong style="color:var(--coral);">Audiobeitrag</strong> ergänzt, der seine Bedeutung erläutert und in einen grösseren Zusammenhang stellt.
     </p>
-    <div class="hero-compass" style="max-width:300px;margin:2.5rem auto 0;">
-      <img src="images/compass-large.png" alt="Der ChiFoo Kompass">
-    </div>
-    <div style="text-align:center;margin-top:1.8rem;">
+    <div style="margin-top:1.8rem;">
       <a href="downloads/chifoo-kompass.pdf" download class="btn btn-primary">⬇ Kompass als PDF herunterladen</a>
       <p style="font-size:0.85rem;color:var(--grey);margin-top:0.6rem;">PDF · 0.5 MB · Deutsch</p>
+    </div>
+    </div>
+    <div class="hero-compass" style="max-width:280px;margin:0 auto;">
+      <img src="images/compass-large.png" alt="Der ChiFoo Kompass">
     </div>
   </div>
 </section>
 
-<!-- ─── COMMENT LIRE ─── -->
-<section class="bg-mint" style="padding:3rem 2.5rem;">
-  <div class="section-inner">
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem;">
-      <div>
-        <h3 style="font-size:1.1rem;">🎯 Die Handlungsansätze</h3>
-        <p style="font-size:0.92rem;color:var(--grey);margin:0;">Konkrete Wege, um im eigenen Bereich aktiv zu werden.</p>
-      </div>
-      <div>
-        <h3 style="font-size:1.1rem;">💡 Das Beispiel</h3>
-        <p style="font-size:0.92rem;color:var(--grey);margin:0;">Eine konkrete Illustration aus dem Alltag.</p>
-      </div>
-      <div>
-        <h3 style="font-size:1.1rem;">🎧 Der Audiobeitrag</h3>
-        <p style="font-size:0.92rem;color:var(--grey);margin:0;">Eine vertiefte Einordnung des Handlungsfelds.</p>
-      </div>
-      <div>
-        <h3 style="font-size:1.1rem;">📜 Die Transkription</h3>
-        <p style="font-size:0.92rem;color:var(--grey);margin:0;">Der vollständige Text des Audiobeitrags zum Nachlesen.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ─── LES 8 CHAMPS D'ACTION ─── -->
 <section class="bg-cream">
@@ -91,7 +70,6 @@
         <div class="champ-num" data-num="1"><img src="images/picto-regarder-autour.png" alt=""></div>
         <div class="champ-title-block">
           <div class="champ-title">Erst umschauen, dann handeln</div>
-          <div class="champ-subtitle">Das System verstehen, an Bestehendes anknüpfen</div>
         </div>
         <div class="champ-toggle">＋</div>
       </div>
@@ -105,17 +83,11 @@
               <li>Initiativen bündeln und aufeinander abgestimmte Aktivitäten für verschiedene Altersgruppen umsetzen, um Kohärenz zu gewährleisten.</li>
             </ul>
           </div>
-          <div class="champ-example">
-            <h4>Das Beispiel</h4>
-            <p>Frag die Kinder nach ihrer Meinung zum Kantinenmenü. Betrachte die Akteur:innen in deinem Bereich als <strong>Partner:innen</strong> statt als Konkurrenz.</p>
-          </div>
           <div class="champ-audio" onclick="event.stopPropagation()">
-            <h4>🎧 Audiobeitrag</h4>
             <audio controls preload="none">
               <source src="audio/01-regarder-autour.mp3" type="audio/mpeg">
               Dein Browser unterstützt kein HTML5-Audio.
             </audio>
-            <div class="audio-missing">⏳ Audio noch im Ordner <code>audio/</code> auf GitHub hochzuladen</div>
             <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Transkription lesen</button>
             <div class="audio-transcript">
               <p>Wirksame Interventionen müssen auf einer klaren Einschätzung der tatsächlichen Bedürfnisse beruhen — jener der Kinder, Eltern, Lehrpersonen, Betreuungspersonen oder anderer Beteiligter — und gemeinsam mit diesen Menschen entwickelt werden. Das heisst: Sie werden von Anfang an in den Prozess einbezogen, mit partizipativen Formaten, die ihrem Alter entsprechen. Wenn Menschen Lösungen mitgestalten, steigen Identifikation und Wirkung erheblich.</p>
@@ -134,7 +106,6 @@
         <div class="champ-num" data-num="2"><img src="images/picto-renforcer-familles.png" alt=""></div>
         <div class="champ-title-block">
           <div class="champ-title">Die Ernährungskompetenzen von Familien stärken</div>
-          <div class="champ-subtitle">Familien über die frühkindliche Förderung hinaus begleiten</div>
         </div>
         <div class="champ-toggle">＋</div>
       </div>
@@ -153,16 +124,10 @@
               <li>Influencer:innen für deren Einfluss in sozialen Medien auf das Ernährungsverhalten von Kindern sensibilisieren.</li>
             </ul>
           </div>
-          <div class="champ-example">
-            <h4>Das Beispiel</h4>
-            <p>Kinder brauchen keine Süssigkeiten als Belohnung — weder beim Kinderarzt noch beim Coiffeur oder in der Schule. Für Familien, die den Zuckerkonsum ihrer Kinder begrenzen wollen, ist das eine Belastung. <strong>Gib keine Süssigkeit als Belohnung.</strong></p>
-          </div>
           <div class="champ-audio" onclick="event.stopPropagation()">
-            <h4>🎧 Audiobeitrag</h4>
             <audio controls preload="none">
               <source src="audio/02-renforcer-familles.mp3" type="audio/mpeg">
             </audio>
-            <div class="audio-missing">⏳ Audio noch im Ordner <code>audio/</code> auf GitHub hochzuladen</div>
             <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Transkription lesen</button>
             <div class="audio-transcript">
               <p>Die Familie ist der erste Ort der Ernährungsbildung. Doch Kinder essen oft bis zu viermal am Tag ausser Haus, während Werbung und soziale Medien ihre Essensentscheidungen stark beeinflussen. Eltern fühlen sich für die Ernährungsbildung ihrer Kinder verantwortlich — aber können sie mit professionellem Marketing und den Medien mithalten?</p>
@@ -182,7 +147,6 @@
         <div class="champ-num" data-num="3"><img src="images/picto-comprehension-commune.png" alt=""></div>
         <div class="champ-title-block">
           <div class="champ-title">Ein gemeinsames Verständnis schaffen</div>
-          <div class="champ-subtitle">Ein nationaler Kompetenzrahmen für die Ernährungsbildung</div>
         </div>
         <div class="champ-toggle">＋</div>
       </div>
@@ -196,16 +160,10 @@
               <li>Verbindliche Richtlinien für die Verpflegung bei öffentlichen Veranstaltungen entwickeln, an denen Kinder teilnehmen (z.&nbsp;B. Sportcamps, Festivals).</li>
             </ul>
           </div>
-          <div class="champ-example">
-            <h4>Das Beispiel</h4>
-            <p><strong>Es braucht eine ganze Gemeinschaft, um gesunde Kinder grosszuziehen.</strong> Céleste erlebt das jeden Tag: Am Morgen isst sie ein Butterbrot mit ihrem Vater, sie isst in der Kita, nimmt ein Zvieri im Sportverein und beendet den Tag mit einem Abendessen in der Familie.</p>
-          </div>
           <div class="champ-audio" onclick="event.stopPropagation()">
-            <h4>🎧 Audiobeitrag</h4>
             <audio controls preload="none">
               <source src="audio/03-comprehension-commune.mp3" type="audio/mpeg">
             </audio>
-            <div class="audio-missing">⏳ Audio noch im Ordner <code>audio/</code> auf GitHub hochzuladen</div>
             <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Transkription lesen</button>
             <div class="audio-transcript">
               <p>Was verstehen wir gemeinsam unter einer Ernährung, die Natur und Mensch bestmöglich respektiert? Wie sollte sich das konkret in einem typischen Tag eines Kindes in der Schweiz niederschlagen? Was sollen Kinder über Ernährung wissen? Was sollen sie können — und in welchem Alter?</p>
@@ -225,7 +183,6 @@
         <div class="champ-num" data-num="4"><img src="images/picto-politique.png" alt=""></div>
         <div class="champ-title-block">
           <div class="champ-title">Das Thema in der Politik vorantreiben</div>
-          <div class="champ-subtitle">Den politischen Dialog für einen Systemwandel führen</div>
         </div>
         <div class="champ-toggle">＋</div>
       </div>
@@ -243,22 +200,10 @@
               <li>Regulierung der Lebensmittelwerbung in sozialen Medien, die sich an Kinder richtet.</li>
             </ul>
           </div>
-          <div class="champ-example">
-            <h4>Das Beispiel — Was kann reguliert werden?</h4>
-            <ul style="list-style:none;padding:0;margin-top:0.5rem;">
-              <li style="padding:0.3rem 0;">→ Regulierung des Lebensmittelangebots in und um Schulen: <em>Snackautomaten entfernen.</em></li>
-              <li style="padding:0.3rem 0;">→ Verbot von Lebensmittelmarketing und -werbung, die sich an Kinder richten: <em>Spielzeug in Lebensmittelverpackungen verbieten.</em></li>
-              <li style="padding:0.3rem 0;">→ Reduktion des übermässigen Gehalts an Zucker, Salz und Fett in verpackten Lebensmitteln für Kinder.</li>
-              <li style="padding:0.3rem 0;">→ Regulierung der Lebensmittelwerbung in sozialen Medien: <em>Unboxing-Videos oder Produktplatzierungen verbieten.</em></li>
-              <li style="padding:0.3rem 0;">→ Verbot von hochverarbeiteten Lebensmitteln in Schulkantinen.</li>
-            </ul>
-          </div>
           <div class="champ-audio" onclick="event.stopPropagation()">
-            <h4>🎧 Audiobeitrag</h4>
             <audio controls preload="none">
               <source src="audio/04-politique.mp3" type="audio/mpeg">
             </audio>
-            <div class="audio-missing">⏳ Audio noch im Ordner <code>audio/</code> auf GitHub hochzuladen</div>
             <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Transkription lesen</button>
             <div class="audio-transcript">
               <p>Neben den Anstrengungen der verschiedenen Akteur:innen braucht es auch politisches Handeln, um die Ernährungsbildung voranzubringen. Ohne dieses droht die Lähmung durch Untätigkeit einen echten Systemwandel zu behindern: Unternehmen rechtfertigen ihre Entscheidungen mit Konsumentenpräferenzen oder starkem Wettbewerbsdruck; Konsument:innen werden vom Marketing beeinflusst und erwarten Entscheidungen und Unterstützung der Politik — während diese untätig bleibt, um keinen Popularitätsverlust zu riskieren.</p>
@@ -277,7 +222,6 @@
         <div class="champ-num" data-num="5"><img src="images/picto-communiquer.png" alt=""></div>
         <div class="champ-title-block">
           <div class="champ-title">Wirksamer kommunizieren</div>
-          <div class="champ-subtitle">Die richtigen Zielgruppen mit professionellen Strategien erreichen</div>
         </div>
         <div class="champ-toggle">＋</div>
       </div>
@@ -292,16 +236,10 @@
               <li>Einen professionellen, kreativen und innovativen Kommunikationsplan konzipieren und die dafür nötige Unterstützung einholen.</li>
             </ul>
           </div>
-          <div class="champ-example">
-            <h4>Das Beispiel</h4>
-            <p>Trage dein Projekt oder deine Initiative in die ChiFoo-Systemkarte ein. Bitte eine etablierte Organisation, deine Initiative über ihre Kanäle zu verbreiten. <strong>Sensibilisiere Influencer:innen</strong> für ihren Einfluss auf das Ernährungsverhalten von Kindern. Benenne kinderschädliche Praktiken, die dir auffallen. Arbeite mit Hochschulen zusammen, die auf Marketing und Kommunikation spezialisiert sind.</p>
-          </div>
           <div class="champ-audio" onclick="event.stopPropagation()">
-            <h4>🎧 Audiobeitrag</h4>
             <audio controls preload="none">
               <source src="audio/05-communiquer.mp3" type="audio/mpeg">
             </audio>
-            <div class="audio-missing">⏳ Audio noch im Ordner <code>audio/</code> auf GitHub hochzuladen</div>
             <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Transkription lesen</button>
             <div class="audio-transcript">
               <p>Es gibt solide Projekte, ausgezeichnete Initiativen, wertvolle Wissensplattformen und hochwertiges Unterrichtsmaterial. Aber viel zu oft wird die Zielgruppe nicht erreicht.</p>
@@ -321,7 +259,6 @@
         <div class="champ-num" data-num="6"><img src="images/picto-changer-echelle.png" alt=""></div>
         <div class="champ-title-block">
           <div class="champ-title">Strukturell verankern</div>
-          <div class="champ-subtitle">Vom Lokalen zum Kantonalen, vom Pilotprojekt zur Institution</div>
         </div>
         <div class="champ-toggle">＋</div>
       </div>
@@ -338,21 +275,10 @@
               <li>Institutionen, die Kinder regelmässig im Alltag begleiten — insbesondere Kindertagesstätten, Kindergärten und Spielgruppen — stärker im Bereich der Ernährungsbildung unterstützen.</li>
             </ul>
           </div>
-          <div class="champ-example">
-            <h4>Das Beispiel</h4>
-            <ul style="list-style:none;padding:0;margin-top:0.5rem;">
-              <li style="padding:0.3rem 0;">→ Nutze bestehende Fächer (Mathematik, Deutsch), um einen ganzheitlichen, fächerübergreifenden Ansatz umzusetzen.</li>
-              <li style="padding:0.3rem 0;">→ Plane Lektionen speziell für die Ernährungsbildung im Stundenplan ein.</li>
-              <li style="padding:0.3rem 0;">→ Verankere Bildung für nachhaltige Entwicklung (BNE) im Alltag, mit Ernährung als Lernthema.</li>
-              <li style="padding:0.3rem 0;">→ Unterstütze, ausgehend von einer persönlichen Initiative, eine strategische Verankerung auf institutioneller Ebene (Schule, Kita oder Gemeinde).</li>
-            </ul>
-          </div>
           <div class="champ-audio" onclick="event.stopPropagation()">
-            <h4>🎧 Audiobeitrag</h4>
             <audio controls preload="none">
               <source src="audio/06-changer-echelle.mp3" type="audio/mpeg">
             </audio>
-            <div class="audio-missing">⏳ Audio noch im Ordner <code>audio/</code> auf GitHub hochzuladen</div>
             <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Transkription lesen</button>
             <div class="audio-transcript">
               <p>Viele Vereine und Programme haben ihre Wirksamkeit beim Aufbau von Ernährungskompetenzen bereits bewiesen. Die Inhalte existieren. Die Expertise existiert. Die Belege existieren. Jetzt geht es darum, sie in grossem Massstab umzusetzen.</p>
@@ -373,7 +299,6 @@
         <div class="champ-num" data-num="7"><img src="images/picto-synergies-locales.png" alt=""></div>
         <div class="champ-title-block">
           <div class="champ-title">Lokale Synergien nutzen</div>
-          <div class="champ-subtitle">Die Gemeinden im Zentrum eines koordinierten Ökosystems</div>
         </div>
         <div class="champ-toggle">＋</div>
       </div>
@@ -388,21 +313,10 @@
               <li>Zusammenarbeit zwischen Schulleitung, Lehrkräften, Vertreter:innen der Gemeinden sowie Familien und Köch:innen aufbauen, um die Ernährungsbildung als Teil der Schulhauskultur ganzheitlich zu stärken.</li>
             </ul>
           </div>
-          <div class="champ-example">
-            <h4>Das Beispiel</h4>
-            <ul style="list-style:none;padding:0;margin-top:0.5rem;">
-              <li style="padding:0.3rem 0;">→ Organisiere einen Ausflug zur lokalen Mühle, auf einen Bauernhof oder zum Gemüsemarkt.</li>
-              <li style="padding:0.3rem 0;">→ Führe einen Thementag Ernährung in der Schule durch, mit einem «kulinarischen Spaziergang» rund um lokale Produkte.</li>
-              <li style="padding:0.3rem 0;">→ Biete Kochateliers für Kinder und Eltern an.</li>
-              <li style="padding:0.3rem 0;">→ Initiiere ein Treffen zwischen Schulleitung, Lehrpersonen und Gemeinde, um ein kohärentes Konzept zu definieren.</li>
-            </ul>
-          </div>
           <div class="champ-audio" onclick="event.stopPropagation()">
-            <h4>🎧 Audiobeitrag</h4>
             <audio controls preload="none">
               <source src="audio/07-synergies-locales.mp3" type="audio/mpeg">
             </audio>
-            <div class="audio-missing">⏳ Audio noch im Ordner <code>audio/</code> auf GitHub hochzuladen</div>
             <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Transkription lesen</button>
             <div class="audio-transcript">
               <p>Lokale Zusammenarbeit ist der Schlüsselhebel für eine wirksame Ernährungsbildung — und die Gemeinden spielen eine zentrale Rolle. Sie sind in einer einzigartigen Position, um Akteur:innen zu vernetzen, Ressourcen zu bündeln und Kohärenz zu schaffen.</p>
@@ -422,7 +336,6 @@
         <div class="champ-num" data-num="8"><img src="images/picto-apprendre-uns-autres.png" alt=""></div>
         <div class="champ-title-block">
           <div class="champ-title">Von- und miteinander lernen</div>
-          <div class="champ-subtitle">Brücken zwischen Kulturen, Sprachen und Kantonen schlagen</div>
         </div>
         <div class="champ-toggle">＋</div>
       </div>
@@ -437,16 +350,10 @@
               <li>Ernährungsbildungsprogramme und Lehrpersonenbildungen kantonsübergreifend bündeln und zugänglich machen.</li>
             </ul>
           </div>
-          <div class="champ-example">
-            <h4>Das Beispiel</h4>
-            <p>Stelle Mittel und Ressourcen für interkulturelle Zusammenarbeit bereit. Biete <strong>«Lernreisen»</strong> in deiner Institution an.</p>
-          </div>
           <div class="champ-audio" onclick="event.stopPropagation()">
-            <h4>🎧 Audiobeitrag</h4>
             <audio controls preload="none">
               <source src="audio/08-apprendre-uns-autres.mp3" type="audio/mpeg">
             </audio>
-            <div class="audio-missing">⏳ Audio noch im Ordner <code>audio/</code> auf GitHub hochzuladen</div>
             <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Transkription lesen</button>
             <div class="audio-transcript">
               <p>Die Schweiz ist durch Sprach- und Kulturgrenzen geteilt. Zu oft entwickeln wir Initiativen parallel, ohne zu wissen, was gleich nebenan geschieht.</p>
@@ -518,16 +425,9 @@
   function toggleTranscript(btn) {
     const transcript = btn.nextElementSibling;
     transcript.classList.toggle('show');
-    btn.textContent = transcript.classList.contains('show') ? 'Masquer la transcription' : 'Lire la transcription';
+    btn.textContent = transcript.classList.contains('show') ? 'Transkription ausblenden' : 'Transkription lesen';
   }
 
-  // Hide "audio-missing" warning when audio is actually loaded
-  document.querySelectorAll('audio').forEach(a => {
-    a.addEventListener('loadedmetadata', () => {
-      const warning = a.parentElement.querySelector('.audio-missing');
-      if (warning) warning.style.display = 'none';
-    });
-  });
 
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
