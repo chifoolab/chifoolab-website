@@ -1,0 +1,10 @@
+# Anciennes URLs (slugs FR sur pages DE) -> nouvelles URLs DE
+# Le "!" force la redirection même si un ancien fichier existe encore dans le repo
+/champs-action          /kompass                301!
+/champs-action.html     /kompass.html           301!
+/carte-systeme          /systemuebersicht       301!
+/carte-systeme.html     /systemuebersicht.html  301!
+/partenaires            /partner                301!
+/partenaires.html       /partner.html           301!
+/contact                /kontakt                301!
+/contact.html           /kontakt.html           301!

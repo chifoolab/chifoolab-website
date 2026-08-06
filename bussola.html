@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<title>La bussola — ChiFoo Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">
+      <img src="../images/chifoo-logo-nav.png" alt="ChiFoo - Children's Food Education Lab">
+    </a>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Pagina iniziale</a></li>
+    <li><a href="lab.html">Il Lab</a></li>
+    <li><a href="bussola.html" class="active">La bussola</a></li>
+    <li><a href="sistema.html">Panoramica</a></li>
+    <li><a href="partner.html">Partner</a></li>
+    <li><a href="contatto.html">Contatto</a></li>
+    <li class="nav-lang"><a href="../kompass.html">DE</a><a href="../fr/boussole.html">FR</a><a href="../en/">EN</a></li>
+  </ul>
+</nav>
+
+<section class="hero bg-cream">
+  <div class="hero-blob" style="width:380px;height:380px;background:var(--gold-pale);top:-130px;right:-100px;opacity:0.8;"></div>
+  <div class="hero-blob" style="width:260px;height:260px;background:var(--teal-pale);bottom:-90px;left:-70px;opacity:0.7;"></div>
+
+  <div class="hero-content hero-two-col">
+    <div>
+    <span class="eyebrow gold">La bussola</span>
+    <h1>
+      La bussola offre
+      <span class="accent-teal">orientamento</span>
+      nel sistema di educazione alimentare dei bambini
+    </h1>
+    <p class="lead">
+      La bussola raccoglie le conoscenze e gli spunti di riflessione del Children's Food Education Lab. È composta da otto campi d'azione raggruppati per tema, che invitano alla riflessione e alla co-costruzione.
+    </p>
+    </div>
+    <div class="hero-compass" style="max-width:280px;margin:0 auto;">
+      <img src="../images/compass-large.png" alt="La bussola ChiFoo">
+      <div style="margin-top:1.4rem;text-align:center;">
+        <a href="../downloads/chifoo-kompass.pdf" download class="btn btn-primary">⬇ Scaricare la bussola in PDF</a>
+        <p style="font-size:0.85rem;color:var(--grey);margin-top:0.6rem;">PDF · 0.5 MB · tedesco</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-cream">
+  <div class="section-inner">
+
+    <span class="eyebrow gold">Campi d'azione e contributi audio</span>
+    <p class="lead" style="margin-bottom:2rem;">
+      Ogni campo d'azione è completato da un contributo audio che ne spiega il significato e lo colloca in un contesto più ampio.
+    </p>
+
+    <!-- 1. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="1"><img src="../images/picto-regarder-autour.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Guardarsi attorno prima di agire</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Piste d'azione</h4>
+            <ul>
+              <li>Prima di avviare nuovi progetti, cercare lo scambio con le iniziative esistenti per sfruttare le sinergie e integrare le esperienze già acquisite.</li>
+              <li>Coinvolgere i gruppi target e gli attori rilevanti nello sviluppo delle attività, per renderle più adeguate ai bisogni e più efficaci.</li>
+              <li>Raggruppare le iniziative e attuare attività coordinate per diverse fasce d'età, per garantire la coerenza.</li>
+            </ul>
+          </div>
+          <!-- TODO: Audio IT — aggiungere il blocco audio (player + trascrizione) quando saranno disponibili le audioregistrazioni italiane. File suggerito: ../audio/it/01-regarder-autour.mp3 -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="2"><img src="../images/picto-renforcer-familles.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Rafforzare le competenze alimentari delle famiglie</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Piste d'azione</h4>
+            <ul>
+              <li>Rendere le offerte di consulenza esistenti per le famiglie sul tema dell'alimentazione più visibili e accessibili in più lingue.</li>
+              <li>Ampliare le offerte di consulenza per le famiglie oltre la prima infanzia.</li>
+              <li>Sensibilizzare le famiglie sull'alimentazione e indirizzarle verso offerte adeguate durante le visite pediatriche.</li>
+              <li>Sostenere le famiglie nel rapporto con i social media sul tema dell'alimentazione.</li>
+              <li>Cercare il dialogo con le famiglie marginalizzate per comprendere meglio i loro bisogni e sviluppare misure mirate.</li>
+              <li>Non utilizzare il cibo come ricompensa o come distrazione.</li>
+              <li>Proporre campi di vacanza per bambini che combinino giardinaggio, cucina e scoperta degli alimenti, e sovvenzionarli.</li>
+              <li>Sensibilizzare gli influencer sulla loro influenza sui social media sul comportamento alimentare dei bambini.</li>
+            </ul>
+          </div>
+          <!-- TODO: Audio IT — aggiungere il blocco audio (player + trascrizione) quando saranno disponibili le audioregistrazioni italiane. File suggerito: ../audio/it/02-renforcer-familles.mp3 -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="3"><img src="../images/picto-apprendre-uns-autres.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Imparare gli uni dagli altri</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Piste d'azione</h4>
+            <ul>
+              <li>Costruire una comunità forte grazie a scambi regolari tra attori e attrici.</li>
+              <li>Invitare gli attori e le attrici a un forum transdisciplinare a livello svizzero per avviare un'agenda nazionale per l'educazione alimentare.</li>
+              <li>Esplorare nuove vie per costruire ponti tra culture e lingue.</li>
+              <li>Raggruppare i programmi di educazione alimentare e le formazioni per il corpo insegnante a livello intercantonale e renderli accessibili.</li>
+            </ul>
+          </div>
+          <!-- TODO: Audio IT — aggiungere il blocco audio (player + trascrizione) quando saranno disponibili le audioregistrazioni italiane. File suggerito: ../audio/it/08-apprendre-uns-autres.mp3 -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="4"><img src="../images/picto-comprehension-commune.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Creare una comprensione comune</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Piste d'azione</h4>
+            <ul>
+              <li>Sviluppare un quadro nazionale delle competenze per l'educazione alimentare e l'ambiente alimentare, per tutte le fasi della vita, sulla base delle conoscenze scientifiche e dell'esperienza degli esperti.</li>
+              <li>Definire insieme i ruoli e le responsabilità dei singoli attori — famiglia, scuole, mense, società sportive, ecc.</li>
+              <li>Sviluppare direttive vincolanti per la ristorazione in occasione di eventi pubblici a cui partecipano bambini (ad es. campi sportivi, festival).</li>
+            </ul>
+          </div>
+          <!-- TODO: Audio IT — aggiungere il blocco audio (player + trascrizione) quando saranno disponibili le audioregistrazioni italiane. File suggerito: ../audio/it/03-comprehension-commune.mp3 -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="5"><img src="../images/picto-synergies-locales.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Sfruttare le sinergie locali</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Piste d'azione</h4>
+            <ul>
+              <li>Istituire un coordinamento locale e cantonale per raggruppare le iniziative, sfruttare meglio le sinergie e aprire nuove possibilità.</li>
+              <li>Aprire le cucine scolastiche, ad es. alle associazioni, per organizzare atelier di cucina con le famiglie.</li>
+              <li>Permettere agli scolari di conoscere le aziende alimentari, la trasformazione e la distribuzione degli alimenti.</li>
+              <li>Costruire una collaborazione tra direzione scolastica, corpo insegnante, rappresentanti dei comuni nonché famiglie e cuochi, per rafforzare l'educazione alimentare in modo globale, come parte della cultura dell'istituto scolastico.</li>
+            </ul>
+          </div>
+          <!-- TODO: Audio IT — aggiungere il blocco audio (player + trascrizione) quando saranno disponibili le audioregistrazioni italiane. File suggerito: ../audio/it/07-synergies-locales.mp3 -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="6"><img src="../images/picto-communiquer.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Comunicare in modo più efficace</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Piste d'azione</h4>
+            <ul>
+              <li>Condividere e promuovere la visibilità delle buone pratiche nell'educazione alimentare.</li>
+              <li>Raggiungere il gruppo target rilevante con la propria iniziativa.</li>
+              <li>Diffondere informazioni affidabili sugli alimenti e sull'alimentazione nei media pubblici.</li>
+              <li>Concepire un piano di comunicazione professionale, creativo e innovativo, e ottenere il sostegno necessario per realizzarlo.</li>
+            </ul>
+          </div>
+          <!-- TODO: Audio IT — aggiungere il blocco audio (player + trascrizione) quando saranno disponibili le audioregistrazioni italiane. File suggerito: ../audio/it/05-communiquer.mp3 -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="7"><img src="../images/picto-politique.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Portare avanti il tema in politica</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Piste d'azione</h4>
+            <ul>
+              <li>Identificare i decisori nel proprio campo d'azione.</li>
+              <li>Costruire partenariati con organizzazioni del settore della salute pubblica.</li>
+              <li>Sviluppare argomenti preventivi ed economici sul rapporto costi-benefici dell'educazione alimentare.</li>
+              <li>Ridurre i prodotti ultra-trasformati nelle mense scolastiche.</li>
+              <li>Ridurre il contenuto di zucchero, sale e grassi negli alimenti destinati ai bambini.</li>
+              <li>Vietare il marketing e la pubblicità alimentare destinati ai bambini.</li>
+              <li>Regolamentare la pubblicità alimentare destinata ai bambini sui social media.</li>
+            </ul>
+          </div>
+          <!-- TODO: Audio IT — aggiungere il blocco audio (player + trascrizione) quando saranno disponibili le audioregistrazioni italiane. File suggerito: ../audio/it/04-politique.mp3 -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="8"><img src="../images/picto-changer-echelle.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Ancorare strutturalmente</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Piste d'azione</h4>
+            <ul>
+              <li>Prevedere nella scuola elementare lezioni specificamente dedicate all'educazione alimentare nell'orario scolastico.</li>
+              <li>Utilizzare le materie esistenti (ad es. matematica, italiano) in un approccio interdisciplinare per costruire competenze nell'ambito dell'educazione alimentare.</li>
+              <li>Utilizzare l'alimentazione come tema per un'educazione allo sviluppo sostenibile (ESS) vicina alla vita quotidiana.</li>
+              <li>Permettere ai bambini l'accesso al giardinaggio in ogni asilo nido e in ogni scuola.</li>
+              <li>Integrare l'educazione alimentare nella formazione di base e continua del corpo insegnante, degli educatori, dei cuochi e del personale di mensa, degli operatori sociali, del personale di custodia dei bambini, dei professionisti della salute, ecc.</li>
+              <li>Sostenere maggiormente nell'ambito dell'educazione alimentare le istituzioni che accompagnano regolarmente i bambini nella vita quotidiana — in particolare asili nido, scuole dell'infanzia e gruppi di gioco.</li>
+            </ul>
+          </div>
+          <!-- TODO: Audio IT — aggiungere il blocco audio (player + trascrizione) quando saranno disponibili le audioregistrazioni italiane. File suggerito: ../audio/it/06-changer-echelle.mp3 -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-teal">
+  <div class="section-inner" style="text-align:center;">
+    <h2 style="color:var(--cream);">Vuoi contribuire a un campo d'azione?</h2>
+    <p style="color:rgba(250,247,240,0.9);font-size:1.1rem;max-width:580px;margin:0 auto 1.5rem;">
+      Ogni attore e attrice ha un ruolo importante. Partecipa.
+    </p>
+    <a href="contatto.html" class="btn btn-primary">Prendere contatto <span>→</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+      <img src="../images/chifoo-logo-white.png" alt="ChiFoo - Children's Food Education Lab">
+    </a>
+      <p>Children's Food Education Lab — BFH–HAFL. Un laboratorio sociale per la trasformazione dell'educazione alimentare dei bambini in Svizzera.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Scoprire</h4>
+      <ul>
+        <li><a href="lab.html">Il Lab</a></li>
+        <li><a href="bussola.html">La bussola</a></li>
+        <li><a href="sistema.html">Panoramica</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Risorse</h4>
+      <ul>
+        <li><a href="../downloads/chifoo-kompass.pdf">La bussola (PDF)</a></li>
+        <li><a href="partner.html">Partner</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contatto</h4>
+      <ul>
+        <li><a href="contatto.html">Scrivici</a></li>
+        <li><a href="mailto:chifoolab.hafl@bfh.ch">chifoolab.hafl@bfh.ch</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Children's Food Education Lab · BFH–HAFL</span>
+  </div>
+</footer>
+
+<script>
+  function toggleChamp(el) {
+    el.classList.toggle('open');
+  }
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>

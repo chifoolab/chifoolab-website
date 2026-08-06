@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Kontakt — ChiFoo Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">
+      <img src="images/chifoo-logo-nav.png" alt="ChiFoo - Children's Food Education Lab">
+    </a>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Startseite</a></li>
+    <li><a href="lab.html">Das Lab</a></li>
+    <li><a href="kompass.html">Der Kompass</a></li>
+    <li><a href="systemuebersicht.html">Systemübersicht</a></li>
+    <li><a href="partner.html">Partner</a></li>
+    <li><a href="kontakt.html" class="active">Kontakt</a></li>
+    <li class="nav-lang"><a href="fr/contact.html">FR</a><a href="it/contatto.html">IT</a><a href="en/">EN</a></li>
+  </ul>
+</nav>
+
+<section class="hero bg-cream">
+  <div class="hero-blob" style="width:380px;height:380px;background:var(--mint-mist);top:-130px;right:-100px;opacity:0.5;"></div>
+  <div class="hero-blob" style="width:240px;height:240px;background:var(--coral-soft);bottom:-80px;left:-60px;opacity:0.7;"></div>
+
+  <div class="hero-content">
+    <span class="eyebrow coral">Kontakt aufnehmen</span>
+    <h1>
+      Das Lab ist
+      <span class="accent-teal">ein offener Raum</span>
+    </h1>
+    <p class="lead">
+      Alle Interessierten sind jederzeit herzlich eingeladen, Kontakt aufzunehmen. Ob du eine Initiative trägst, eine Frage hast, eine Zusammenarbeit vorschlagen oder dich einfach austauschen möchtest — schreib uns.
+    </p>
+  </div>
+</section>
+
+<section class="bg-cream">
+  <div class="section-inner">
+    <div class="contact-card">
+      <h2 style="font-size:1.6rem;">Schreib uns</h2>
+      <p style="color:var(--grey);max-width:480px;margin:0.5rem auto 0;">
+        Wir lesen jede Nachricht und melden uns so schnell wie möglich.
+      </p>
+      <p style="color:var(--grey);max-width:480px;margin:0.6rem auto 0;">
+        Ansprechpersonen: Charlotte Bourcet &amp; Eugenia Harms
+      </p>
+      <a href="mailto:chifoolab.hafl@bfh.ch?subject=Contact%20depuis%20chifoolab.ch" class="contact-email">
+        ✉&nbsp; chifoolab.hafl@bfh.ch
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-cream">
+  <div class="section-inner section-narrow" style="text-align:center;">
+    <span class="eyebrow gold">Lab Design &amp; Facilitation</span>
+    <h2 class="reveal">Das Lab ist an der Berner Fachhochschule angesiedelt</h2>
+    <p style="max-width:640px;margin:1rem auto 0;color:var(--grey);">
+      Children's Food Education Lab<br>
+      Berner Fachhochschule<br>
+      Hochschule für Agrar-, Forst- und Lebensmittelwissenschaften (BFH–HAFL)<br>
+      Länggasse 85<br>
+      3052 Zollikofen
+    </p>
+    <img src="images/logo-bfh-hafl-de.png" alt="Berner Fachhochschule — Hochschule für Agrar-, Forst- und Lebensmittelwissenschaften HAFL" style="max-width:300px;width:80%;height:auto;margin:2rem auto 0;display:block;">
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+      <img src="images/chifoo-logo-white.png" alt="ChiFoo - Children's Food Education Lab">
+    </a>
+      <p>Children's Food Education Lab — BFH–HAFL.</p>
+    </div>
+    <div class="footer-col"><h4>Entdecken</h4><ul>
+      <li><a href="lab.html">Das Lab</a></li>
+      <li><a href="kompass.html">Der Kompass</a></li>
+      <li><a href="systemuebersicht.html">Systemübersicht</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Ressourcen</h4><ul>
+      <li><a href="downloads/chifoo-kompass.pdf">Der Kompass (PDF)</a></li>
+      <li><a href="partner.html">Partner</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Kontakt</h4><ul>
+      <li><a href="kontakt.html">Schreib uns</a></li>
+      <li><a href="mailto:chifoolab.hafl@bfh.ch">chifoolab.hafl@bfh.ch</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Children's Food Education Lab · BFH–HAFL</span>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
