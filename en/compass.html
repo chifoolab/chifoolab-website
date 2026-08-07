@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<title>The Compass — ChiFoo Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">
+      <img src="../images/chifoo-logo-nav.png" alt="ChiFoo - Children's Food Education Lab">
+    </a>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="lab.html">The Lab</a></li>
+    <li><a href="compass.html" class="active">The Compass</a></li>
+    <li><a href="system-overview.html">System overview</a></li>
+    <li><a href="partners.html">Partners</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li class="nav-lang"><a href="../kompass.html">DE</a><a href="../fr/boussole.html">FR</a><a href="../it/bussola.html">IT</a></li>
+  </ul>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero bg-cream">
+  <div class="hero-blob" style="width:380px;height:380px;background:var(--gold-pale);top:-130px;right:-100px;opacity:0.8;"></div>
+  <div class="hero-blob" style="width:260px;height:260px;background:var(--teal-pale);bottom:-90px;left:-70px;opacity:0.7;"></div>
+
+  <div class="hero-content hero-two-col">
+    <div>
+    <span class="eyebrow gold">The Compass</span>
+    <h1>
+      The Compass provides
+      <span class="accent-teal">orientation</span>
+      in the food education system for children
+    </h1>
+    <p class="lead">
+      The Compass brings together the insights and ideas of the Children's Food Education Lab. It consists of eight thematic action fields that invite reflection and shared action.
+    </p>
+    </div>
+    <div class="hero-compass" style="max-width:280px;margin:0 auto;">
+      <img src="../images/compass-large.png" alt="The ChiFoo Compass">
+      <div style="margin-top:1.4rem;text-align:center;">
+        <a href="../downloads/chifoo-kompass.pdf" download class="btn btn-primary">⬇ Download the Compass as PDF</a>
+        <p style="font-size:0.85rem;color:var(--grey);margin-top:0.6rem;">PDF · 0.5 MB · German</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── LES 8 CHAMPS D'ACTION ─── -->
+<section class="bg-gold-pale">
+  <div class="section-inner">
+
+    <span class="eyebrow mint">Action fields and audio contributions</span>
+    <p class="lead" style="margin-bottom:2rem;">
+      Each action field is complemented by an audio contribution that explains its significance and places it in a broader context.
+    </p>
+
+    <!-- 1. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="1"><img src="../images/picto-regarder-autour.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Look around before acting</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Approaches</h4>
+            <ul>
+              <li>Before starting new projects, seek exchange with existing initiatives to leverage synergies and draw on existing experience.</li>
+              <li>Involve relevant target groups and stakeholders in developing activities to make them more needs-based and effective.</li>
+              <li>Bundle initiatives and implement coordinated activities for different age groups to ensure coherence.</li>
+            </ul>
+          </div>
+          <!-- TODO: Audio EN — reactivate this block once the English audio file is available.
+<div class="champ-audio" onclick="event.stopPropagation()">
+            <audio controls preload="none">
+              <source src="../audio/01-regarder-autour.mp3" type="audio/mpeg">
+              Your browser does not support HTML5 audio.
+            </audio>
+            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Read transcript</button>
+            <div class="audio-transcript">
+              <p>Effective interventions must be based on a clear assessment of actual needs — those of children, parents, teachers, caregivers or other people involved — and be developed together with them. In practice, this means involving them in the process from the very start, using participatory formats suited to their age. When people help co-design solutions, identification and impact increase considerably.</p>
+              <p>If food education is to genuinely improve behaviour, we must also rely on experiential learning: cooking, tasting, gardening, observing. Exploring food with all the senses creates the personal experience that is needed. Knowledge alone is not enough. Repetition over time is just as important.</p>
+              <p>And before launching something new, we should ask ourselves: who is already engaged? What programmes already exist? Where are the strengths, the gaps, the overlaps? Too often we create parallel initiatives without realising that similar work is already being done nearby. This leads to wasted resources and fragmented impact.</p>
+              <p>Sometimes the most strategic action is not to act — at least not by creating something new. Strengthening an existing initiative, supporting a partner, or connecting stakeholders can achieve far more than a brand-new project. Systemic change requires humility.</p>
+            </div>
+          </div>
+-->
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="2"><img src="../images/picto-renforcer-familles.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Strengthen families' food skills</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Approaches</h4>
+            <ul>
+              <li>Make existing advisory services for families on nutrition more visible and accessible in several languages.</li>
+              <li>Extend advisory services for families beyond early childhood.</li>
+              <li>Raise families' awareness of nutrition and refer them to suitable services during paediatric check-ups.</li>
+              <li>Support families in navigating social media content about food.</li>
+              <li>Seek dialogue with marginalised families to better understand their needs and develop targeted measures.</li>
+              <li>Avoid using food as a reward or distraction.</li>
+              <li>Offer and subsidise holiday camps for children that combine gardening, cooking and food discovery.</li>
+              <li>Raise influencers' awareness of their impact on children's eating behaviour through social media.</li>
+            </ul>
+          </div>
+          <!-- TODO: Audio EN — reactivate this block once the English audio file is available.
+<div class="champ-audio" onclick="event.stopPropagation()">
+            <audio controls preload="none">
+              <source src="../audio/02-renforcer-familles.mp3" type="audio/mpeg">
+            </audio>
+            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Read transcript</button>
+            <div class="audio-transcript">
+              <p>The family is the first place where food education happens. Yet children often eat away from home up to four times a day, while advertising and social media strongly influence their food choices. Parents feel responsible for their children's food education — but can they keep up with professional marketing and the media?</p>
+              <p>Many parents lack the time and/or the knowledge to build solid food skills at home. They don't receive reliable information and therefore make skewed decisions. It is important to create advisory services that specifically support parents in food education — or to improve the visibility of those that already exist.</p>
+              <p>Parents should be supported in making decisions about their children's diet based on reliable information. Personal exchange can help them make sense of this information, strengthen their skills, and build confidence in their own judgement.</p>
+              <p>Cities and cantons already offer nutrition counselling from early childhood — but this support should extend beyond that phase and be more visible. It is not enough to act only once a child becomes overweight or develops an eating disorder. Paediatricians should actively address nutrition during routine check-ups.</p>
+              <p>Marginalised families need particular attention. When everyday life is difficult, healthy eating may not appear as a priority. We need to reach out to these families, understand their realities, and offer support — without adding pressure or creating guilt.</p>
+            </div>
+          </div>
+-->
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="3"><img src="../images/picto-apprendre-uns-autres.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Learn from and with one another</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Approaches</h4>
+            <ul>
+              <li>Build a strong community through regular exchange between stakeholders.</li>
+              <li>Invite stakeholders to a nationwide transdisciplinary forum to initiate a national food education agenda.</li>
+              <li>Explore new ways to build bridges between cultures and languages.</li>
+              <li>Bundle and make food education programmes and teacher training accessible across cantons.</li>
+            </ul>
+          </div>
+          <!-- TODO: Audio EN — reactivate this block once the English audio file is available.
+<div class="champ-audio" onclick="event.stopPropagation()">
+            <audio controls preload="none">
+              <source src="../audio/08-apprendre-uns-autres.mp3" type="audio/mpeg">
+            </audio>
+            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Read transcript</button>
+            <div class="audio-transcript">
+              <p>Switzerland is divided by linguistic and cultural boundaries. Too often, we develop initiatives in parallel without knowing what is happening right next door.</p>
+              <p>The school system is a good example. Because education is organised at cantonal level, each canton tends to develop its own programmes and its own teacher training. This leads to duplicated work — and we miss the opportunity to share resources and create synergies. A competitive mindset is often the biggest obstacle. Yet food education is not a product on the market: it concerns everyone.</p>
+              <p>Instead of working separately, we should strengthen collaboration. Let's save time, energy and public funds — and support one another on the way to a shared goal: advancing food education.</p>
+              <p>In 2024, the first national food education forum, "Passion for Food Education", brought together a broad community of interested people. This momentum must continue. We need a shared vision and transdisciplinary collaboration.</p>
+              <p>For this to be sustainable, the movement launched by the ChiFoo Lab must continue — not as a new, stand-alone organisation, but embedded within established and recognised national institutions.</p>
+            </div>
+          </div>
+-->
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="4"><img src="../images/picto-comprehension-commune.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Build a shared understanding</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Approaches</h4>
+            <ul>
+              <li>Develop a national competency framework for food education and the food environment across all stages of life, based on scientific evidence and expert knowledge.</li>
+              <li>Jointly define the roles and responsibilities of individual stakeholders — such as families, schools, canteens, sports clubs, etc.</li>
+              <li>Develop binding guidelines for catering at public events attended by children (e.g. sports camps, festivals).</li>
+            </ul>
+          </div>
+          <!-- TODO: Audio EN — reactivate this block once the English audio file is available.
+<div class="champ-audio" onclick="event.stopPropagation()">
+            <audio controls preload="none">
+              <source src="../audio/03-comprehension-commune.mp3" type="audio/mpeg">
+            </audio>
+            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Read transcript</button>
+            <div class="audio-transcript">
+              <p>What do we collectively understand by a diet that best respects both nature and people? How should this concretely translate into a typical day for a child in Switzerland? What should children know about food? What should they be able to do — and at what age?</p>
+              <p>Who is responsible for conveying this expected knowledge and these skills? What role do parents play? Schools? How do canteens and daycare centres contribute? Are there other stakeholders, such as sports coaches, who can also make a positive contribution?</p>
+              <p>Today, many stakeholders influence children's eating habits, together forming a food environment that is often highly heterogeneous. Although there are many committed and enthusiastic stakeholders in the field of nutrition, the question of coherence among all these influences remains. Overall responsibility for children's wellbeing remains unclear and fragmented.</p>
+              <p>We need a shared, common understanding of what food education means in Switzerland — and what skills we expect from children at what age. A clear competency framework would create a shared reference point. It would help professionals align their interventions, strengthen coherence between programmes, and ensure continuity across all stages of life.</p>
+              <p>This also means that the criteria for children's meals must align with this competency framework — in schools as well as at public events attended by children.</p>
+            </div>
+          </div>
+-->
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="5"><img src="../images/picto-synergies-locales.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Leverage local synergies</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Approaches</h4>
+            <ul>
+              <li>Set up local and cantonal coordination to bundle initiatives, make better use of synergies and unlock new opportunities.</li>
+              <li>Open school kitchens to associations, for example, to run cooking workshops with families.</li>
+              <li>Give schoolchildren insight into food businesses, processing and distribution.</li>
+              <li>Build collaboration between school management, teachers, municipal representatives, families and chefs to holistically strengthen food education as part of school culture.</li>
+            </ul>
+          </div>
+          <!-- TODO: Audio EN — reactivate this block once the English audio file is available.
+<div class="champ-audio" onclick="event.stopPropagation()">
+            <audio controls preload="none">
+              <source src="../audio/07-synergies-locales.mp3" type="audio/mpeg">
+            </audio>
+            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Read transcript</button>
+            <div class="audio-transcript">
+              <p>Local collaboration is the key lever for effective food education — and municipalities play a central role. They are uniquely positioned to connect stakeholders, pool resources and create coherence.</p>
+              <p>To align existing initiatives and avoid duplication, municipalities can create local coordination offices. Rather than launching new, isolated projects, the aim should be to strengthen synergies between schools, canteens, parent associations, local organisations, and the fields of health, education and environment.</p>
+              <p>Opening school kitchens for cooking workshops with children and parents is one concrete and effective measure. Establishing structured dialogue between school management, municipal services, teachers and parents is another.</p>
+              <p>Food education goes beyond the classroom. It needs a coordinated local ecosystem. When municipalities take the initiative and connect the various stakeholders, they turn scattered efforts into lasting impact.</p>
+              <p>When food education is rooted in local collaboration, it also becomes more sustainable and resilient. The number of stakeholders involved and their local presence reduce the risk that activities painstakingly built up over years will suddenly disappear. Root your project in the local community so it can last!</p>
+            </div>
+          </div>
+-->
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="6"><img src="../images/picto-communiquer.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Communicate more effectively</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Approaches</h4>
+            <ul>
+              <li>Share and promote the visibility of good practices in food education.</li>
+              <li>Reach the relevant target group with your own initiative.</li>
+              <li>Spread reliable information about food and nutrition in public media.</li>
+              <li>Design a professional, creative and innovative communication plan and secure the support needed for it.</li>
+            </ul>
+          </div>
+          <!-- TODO: Audio EN — reactivate this block once the English audio file is available.
+<div class="champ-audio" onclick="event.stopPropagation()">
+            <audio controls preload="none">
+              <source src="../audio/05-communiquer.mp3" type="audio/mpeg">
+            </audio>
+            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Read transcript</button>
+            <div class="audio-transcript">
+              <p>There are solid projects, excellent initiatives, valuable knowledge platforms and high-quality teaching materials. But far too often, the target group is not reached.</p>
+              <p>Communication is not a side issue. It requires skills, strategy and resources. Appropriate communication can create real impact. This means improving communication skills and working together with professionals.</p>
+              <p>Every project proposal should include a budget for a professional communication plan. Funders should require and finance this. Without visibility, even the best programmes remain ineffective.</p>
+              <p>Effective communication starts with choosing the right target group. The ChiFoo system map can help direct the message to those who are genuinely affected.</p>
+              <p>To strengthen communication in food education, we need to make better use of social media. Collaboration with influencers and ambassadors who raise broad public awareness of these issues should be expanded. Their influence on young people's eating habits is considerable.</p>
+            </div>
+          </div>
+-->
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="7"><img src="../images/picto-politique.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Advance the topic in politics</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Approaches</h4>
+            <ul>
+              <li>Identify decision-makers within your own action field.</li>
+              <li>Build partnerships with public health organisations.</li>
+              <li>Develop preventive and economic arguments about the cost-benefit ratio of food education.</li>
+              <li>Reduce highly processed foods in school canteens.</li>
+              <li>Reduce sugar, salt and fat content in foods aimed at children.</li>
+              <li>Ban food marketing and advertising aimed at children.</li>
+              <li>Regulate food advertising on social media aimed at children.</li>
+            </ul>
+          </div>
+          <!-- TODO: Audio EN — reactivate this block once the English audio file is available.
+<div class="champ-audio" onclick="event.stopPropagation()">
+            <audio controls preload="none">
+              <source src="../audio/04-politique.mp3" type="audio/mpeg">
+            </audio>
+            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Read transcript</button>
+            <div class="audio-transcript">
+              <p>Alongside the efforts of various stakeholders, political action is also needed to advance food education. Without it, paralysis through inaction risks blocking genuine systemic change: businesses justify their decisions by citing consumer preferences or strong competitive pressure; consumers are influenced by marketing and expect decisions and support from policymakers — while policymakers remain inactive to avoid any loss of popularity.</p>
+              <p>Initial steps have been taken: the regulation of food marketing aimed at children, and the introduction of food education as a compulsory school subject in some cantons. But more is needed. We can advocate for standards in school canteens, for limits on highly processed foods and sugar — and for better regulation of food advertising on social media, including influencer marketing.</p>
+              <p>Highly processed products deserve particular attention: crisps, processed meats and frozen pizzas are not suitable alternatives to fresh food. They contribute to the industrialisation of children's diets. Manufacturers of such products should therefore not appear as sponsors in health promotion.</p>
+              <p>Getting politically involved can seem complex, even intimidating. Many professionals hesitate to venture into this territory. Yet without engagement at municipal, cantonal and federal level, we will not shift the balance of power within the system.</p>
+            </div>
+          </div>
+-->
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="8"><img src="../images/picto-changer-echelle.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Anchor it structurally</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Approaches</h4>
+            <ul>
+              <li>Schedule dedicated food education lessons in the primary school timetable.</li>
+              <li>Use existing subjects (e.g. maths, language) for a cross-curricular approach to build food education skills.</li>
+              <li>Use food as a topic for everyday education for sustainable development (ESD).</li>
+              <li>Give children access to gardening at every daycare centre and school.</li>
+              <li>Include food education in the initial and continuing training of teachers, educators, canteen chefs and staff, social workers, childcare workers, health professionals, etc.</li>
+              <li>Provide stronger support for food education in institutions that regularly accompany children in daily life — especially daycare centres, kindergartens and playgroups.</li>
+            </ul>
+          </div>
+          <!-- TODO: Audio EN — reactivate this block once the English audio file is available.
+<div class="champ-audio" onclick="event.stopPropagation()">
+            <audio controls preload="none">
+              <source src="../audio/06-changer-echelle.mp3" type="audio/mpeg">
+            </audio>
+            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Read transcript</button>
+            <div class="audio-transcript">
+              <p>Many associations and programmes have already proven their effectiveness in building food skills. The content exists. The expertise exists. The evidence exists. Now it's about implementing them at scale.</p>
+              <p>Instead of constantly creating new pilot projects, we should focus on further developing what works and rolling it out nationwide. High-quality food education programmes for primary school already exist. But to implement them broadly, food education must become a compulsory part of curricula and timetables.</p>
+              <p>Teachers need appropriate training — both in initial training and continuing education — and/or targeted support from external specialists.</p>
+              <p>Food education is not an additional subject. It is a holistic topic, fully connected to education for sustainable development, civic education, and several teaching disciplines (natural sciences, history, etc.). The food system is a powerful entry point for developing critical thinking, collaboration and systems thinking.</p>
+              <p>It's not only teachers who are affected. Canteen chefs and daycare educators must also be trained. They are not just food providers — they are also role models and education stakeholders.</p>
+              <p>School gardens should become common practice. We have gymnasiums in every school. Access to a garden area should be just as self-evident.</p>
+            </div>
+          </div>
+-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA ─── -->
+<section class="bg-teal">
+  <div class="section-inner" style="text-align:center;">
+    <h2 style="color:var(--cream);">Would you like to contribute to an action field?</h2>
+    <p style="color:rgba(250,247,240,0.9);font-size:1.1rem;max-width:580px;margin:0 auto 1.5rem;">
+      Every stakeholder plays an important role. Help shape it.
+    </p>
+    <a href="contact.html" class="btn btn-primary">Get in touch <span>→</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+      <img src="../images/chifoo-logo-white.png" alt="ChiFoo - Children's Food Education Lab">
+    </a>
+      <p>Children's Food Education Lab — BFH–HAFL. A social laboratory working to transform food education for children in Switzerland.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="lab.html">The Lab</a></li>
+        <li><a href="compass.html">The Compass</a></li>
+        <li><a href="system-overview.html">System overview</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="../downloads/chifoo-kompass.pdf">The Compass (PDF)</a></li>
+        <li><a href="partners.html">Partners</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="contact.html">Write to us</a></li>
+        <li><a href="mailto:chifoolab.hafl@bfh.ch">chifoolab.hafl@bfh.ch</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Children's Food Education Lab · BFH–HAFL</span>
+  </div>
+</footer>
+
+<script>
+  function toggleChamp(el) {
+    el.classList.toggle('open');
+  }
+  function toggleTranscript(btn) {
+    const transcript = btn.nextElementSibling;
+    transcript.classList.toggle('show');
+    btn.textContent = transcript.classList.contains('show') ? 'Hide transcript' : 'Read transcript';
+  }
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>

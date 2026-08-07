@@ -4,24 +4,218 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>ChiFoo Lab — Under construction</title>
+<meta name="googlebot" content="noindex, nofollow">
+<title>ChiFoo Lab — Transforming food education for children</title>
+<meta name="description" content="Children's Food Education Lab — a social laboratory working to transform food education for children in Switzerland.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-<div class="construction">
-  <div class="trail-bg" aria-hidden="true"></div>
-  <img class="logo-big" src="../images/chifoo-logo-nav.png" alt="ChiFoo — Children's Food Education">
-  <h1>Under construction</h1>
-  <p>The English version of the Children's Food Education Lab website is coming soon. In the meantime, the German version is already available.</p>
-  <a class="btn btn-primary" href="../">View the German version</a>
-  <nav class="lang-row" aria-label="Languages">
-    <a href="../">DE</a>
-    <a href="../fr/">FR</a>
-    <a href="../it/">IT</a>
-    <a href="../en/" class="current">EN</a>
-  </nav>
-</div>
+
+<!-- ─── NAV ─── -->
+<nav>
+  <a href="index.html" class="logo">
+      <img src="../images/chifoo-logo-nav.png" alt="ChiFoo - Children's Food Education Lab">
+    </a>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="lab.html">The Lab</a></li>
+    <li><a href="compass.html">The Compass</a></li>
+    <li><a href="system-overview.html">System overview</a></li>
+    <li><a href="partners.html">Partners</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li class="nav-lang"><a href="../index.html">DE</a><a href="../fr/index.html">FR</a><a href="../it/index.html">IT</a></li>
+  </ul>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero bg-gold-pale">
+  <div class="hero-blob" style="width:420px;height:420px;background:var(--mint-mist);top:-150px;right:-100px;opacity:0.5;"></div>
+  <div class="hero-blob" style="width:280px;height:280px;background:var(--coral-soft);bottom:-100px;left:-80px;opacity:0.7;"></div>
+  <div class="hero-blob" style="width:160px;height:160px;background:var(--gold-pale);top:30%;right:15%;opacity:0.6;"></div>
+
+  <div class="hero-content" style="display:grid;grid-template-columns:1.4fr 1fr;gap:3rem;align-items:center;">
+    <div>
+      <h1>
+        Shaping the
+        <span class="accent">food education system</span>
+        for children together
+      </h1>
+      <p class="lead">
+        The <strong>Children's Food Education Lab</strong> is a social laboratory working to transform Switzerland's fragmented food education system for children into a more holistic and effective one.
+      </p>
+    </div>
+    <div class="hero-compass">
+      <img style="animation:none;" src="../images/famille-brocoli.png" alt="Parents and their child discovering a broccoli, surrounded by food education stakeholders">
+    </div>
+  </div>
+</section>
+
+<!-- ─── POURQUOI ─── -->
+<section class="bg-cream">
+  <div class="section-inner">
+    <span class="eyebrow coral">Why act together</span>
+    <h2 class="reveal">What we eat has consequences <span style="color:var(--coral)">far beyond the plate</span></h2>
+    <p class="lead reveal">
+      What we eat has consequences for our health, our environment and our economy. Children are a particularly vulnerable group — and childhood is a critical phase for developing sustainable food skills.
+    </p>
+
+    <div class="stat-grid">
+      <div class="stat reveal">
+        <span class="stat-number">~25%</span>
+        <span class="stat-label">of the Swiss population's ecological footprint comes from food consumption<sup>1</sup></span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-number">CHF 17 bn</span>
+        <span class="stat-label">in diet-related health costs in Switzerland in 2020<sup>2</sup></span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-number">13%</span>
+        <span class="stat-label">of 6- to 17-year-olds are overweight or obese<sup>3</sup></span>
+      </div>
+    </div>
+
+    <div class="reveal stat-sources" style="margin-top:1.8rem;max-width:820px;font-size:0.78rem;line-height:1.55;color:var(--grey);">
+      <p style="margin-bottom:0.35rem;"><sup>1</sup> Federal Office for the Environment (FOEN). (2022). <em>Umwelt Schweiz 2022. Bericht des Bundesrates.</em> FOEN. <a href="https://www.bafu.admin.ch/de/ub22" style="color:var(--grey);">www.bafu.admin.ch/de/ub22</a></p>
+      <p style="margin-bottom:0.35rem;"><sup>2</sup> De Luca, K. &amp; Muller, A. (2025). <em>Hidden costs of the Swiss agrifood system: Case study for the State of Food and Agriculture Report of the FAO – SOFA 2024.</em> Research Institute of Organic Agriculture (FiBL), Frick. Commissioned by the Federal Office for Agriculture (FOAG) and the FAO.</p>
+      <p style="margin-bottom:0;"><sup>3</sup> Federal Food Safety and Veterinary Office (FSVO). (2025). <em>Nationale Ernährungserhebung bei Kindern und Jugendlichen – menuCH-Kids Report.</em> Bern: FSVO.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── WAS IST ERNÄHRUNGSBILDUNG ─── -->
+<section class="bg-mint">
+  <div class="section-inner">
+    <span class="eyebrow">What is food education</span>
+    <h2 class="reveal">A <span style="color:var(--teal)">holistic approach</span> that lasts a lifetime</h2>
+    <p class="lead reveal" style="max-width:860px;">
+      Food education is a holistic approach that empowers children to understand food in its many dimensions — health, ecological, social, cultural and economic — and, on that basis, to make independent, responsible and reflective decisions. Through discovering, tasting, growing and cooking, children build skills and develop a positive relationship with food. This process continues throughout life and is embedded in socio-cultural everyday life. Responsibility for food education is shared across different people and places — family, educators, health professionals, supermarkets, media and many others.
+    </p>
+  </div>
+</section>
+
+<!-- ─── HANDLUNGSFELDER ─── -->
+<section class="bg-gold-pale">
+  <div class="section-inner">
+    <span class="eyebrow mint">Action fields</span>
+    <h2 class="reveal">Eight action fields for <span style="color:var(--gold-deep)">systemic change</span></h2>
+    <p class="lead reveal">
+      The Lab has identified eight thematic action fields where we are jointly focusing our efforts — to drive systemic change in today's food education system for children.
+    </p>
+
+    <div class="card-grid">
+      <div class="card reveal">
+        <div class="card-icon teal"><img src="../images/picto-regarder-autour.png" alt=""></div>
+        <h3>Look around before acting</h3>
+        <p>Understand the system as a whole and seek exchange with existing initiatives.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon coral"><img src="../images/picto-renforcer-familles.png" alt=""></div>
+        <h3>Strengthen families' food skills</h3>
+        <p>Expand advisory services and seek dialogue with marginalised families.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon gold"><img src="../images/picto-apprendre-uns-autres.png" alt=""></div>
+        <h3>Learn from and with one another</h3>
+        <p>Share resources and educational offers, build bridges between cultures and languages.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon gold"><img src="../images/picto-comprehension-commune.png" alt=""></div>
+        <h3>Build a shared understanding</h3>
+        <p>Develop a national competency framework for all stages of life.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon teal"><img src="../images/picto-synergies-locales.png" alt=""></div>
+        <h3>Leverage local synergies</h3>
+        <p>Coordinate initiatives and build local dialogue.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon mint"><img src="../images/picto-communiquer.png" alt=""></div>
+        <h3>Communicate more effectively</h3>
+        <p>Spread reliable information and reach the right audiences.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon sky"><img src="../images/picto-politique.png" alt=""></div>
+        <h3>Advance the topic in politics</h3>
+        <p>Advocate for food education, regulate advertising and supply.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon coral"><img src="../images/picto-changer-echelle.png" alt=""></div>
+        <h3>Anchor it structurally</h3>
+        <p>Embed food education in school curricula as well as in initial and continuing education.</p>
+      </div>
+    </div>
+
+    <div class="cta-row" style="margin-top:2.5rem;justify-content:center;">
+      <a href="compass.html" class="btn btn-primary">Explore every action field <span>→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── INTENTION ─── -->
+<section class="bg-teal">
+  <div class="section-inner">
+    <span class="eyebrow" style="background:rgba(250,247,240,0.15);color:var(--cream);">Our intention</span>
+    <h2 style="color:var(--cream);max-width:820px;">Bringing together the stakeholders of the food education system for children and making what works more visible — for a collective transformation.</h2>
+    <div class="cta-row">
+      <a href="contact.html" class="btn btn-primary">Be part of the change <span>→</span></a>
+      <a href="system-overview.html" class="btn" style="background:rgba(250,247,240,0.15);color:var(--cream);border:1.5px solid rgba(250,247,240,0.4);">Discover the food education system's stakeholders</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+      <img src="../images/chifoo-logo-white.png" alt="ChiFoo - Children's Food Education Lab">
+    </a>
+      <p>Children's Food Education Lab — BFH–HAFL. A social laboratory working to transform food education for children in Switzerland.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="lab.html">The Lab</a></li>
+        <li><a href="compass.html">The Compass</a></li>
+        <li><a href="system-overview.html">System overview</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="../downloads/chifoo-kompass.pdf">The Compass (PDF)</a></li>
+        <li><a href="partners.html">Partners</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="contact.html">Write to us</a></li>
+        <li><a href="mailto:chifoolab.hafl@bfh.ch">chifoolab.hafl@bfh.ch</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Children's Food Education Lab · BFH–HAFL</span>
+  </div>
+</footer>
+
+<script>
+  // Reveal on scroll
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
 </body>
 </html>

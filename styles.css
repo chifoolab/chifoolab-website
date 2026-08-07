@@ -129,6 +129,7 @@ footer .logo img {
 /* ───── Hero compass illustration ───── */
 .hero-compass {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -188,6 +189,7 @@ footer .logo img {
 .eyebrow.coral { background: var(--coral-soft); color: var(--coral); }
 .eyebrow.gold { background: var(--gold-pale); color: var(--gold-deep); }
 .eyebrow.sky { background: var(--sky-pale); color: var(--teal-deep); }
+.eyebrow.mint { background: var(--mint-mist); color: var(--gold-deep); }
 
 h1, .h1 {
   font-family: var(--font-display);
@@ -849,7 +851,8 @@ footer {
 .bg-mint, .bg-gold-pale {
   position: relative;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 600' preserveAspectRatio='none'><path d='M -60 480 C 200 380 260 560 480 500 S 780 300 950 380 S 1150 250 1260 300' fill='none' stroke='white' stroke-width='4' stroke-dasharray='2 16' stroke-linecap='round' opacity='0.9'/><path d='M -40 120 C 150 200 340 60 520 140 S 760 90 900 160' fill='none' stroke='white' stroke-width='4' stroke-dasharray='2 16' stroke-linecap='round' opacity='0.9'/></svg>");
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -905,11 +908,9 @@ footer {
 .construction .trail-bg {
   position:absolute; inset:0; z-index:0; pointer-events:none;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800' preserveAspectRatio='none'><path d='M -60 620 C 240 520 460 700 700 600 S 1040 460 1260 560' fill='none' stroke='white' stroke-width='4' stroke-dasharray='2 16' stroke-linecap='round' opacity='0.9'/><path d='M -60 160 C 200 260 420 100 660 180 S 980 120 1260 200' fill='none' stroke='white' stroke-width='4' stroke-dasharray='2 16' stroke-linecap='round' opacity='0.9'/></svg>");
-  background-size:100% 100%;
+  background-size: cover;
+  background-position: center;
 }
-
-
-/* ───── Pictos urban dans les cartes ───── */
 .card-picto {
   width: 72px;
   height: 72px;
@@ -930,9 +931,12 @@ footer {
 /* ───── Hero Kompass : boussole à droite du titre ───── */
 .hero-two-col {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 2.5rem;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 3.5rem;
   align-items: center;
+}
+.hero-two-col .hero-compass {
+  justify-self: end;
 }
 @media (max-width: 820px) {
   .hero-two-col { grid-template-columns: 1fr; }
