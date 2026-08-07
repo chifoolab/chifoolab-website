@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<title>La boussole — ChiFoo Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">
+      <img src="../images/chifoo-logo-nav.png" alt="ChiFoo - Children's Food Education Lab">
+    </a>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="lab.html">Le Lab</a></li>
+    <li><a href="boussole.html" class="active">La boussole</a></li>
+    <li><a href="systeme.html">Vue d'ensemble</a></li>
+    <li><a href="partenaires.html">Partenaires</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li class="nav-lang"><a href="../kompass.html">DE</a><a href="../it/bussola.html">IT</a><a href="../en/">EN</a></li>
+  </ul>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero bg-cream">
+  <div class="hero-blob" style="width:380px;height:380px;background:var(--gold-pale);top:-130px;right:-100px;opacity:0.8;"></div>
+  <div class="hero-blob" style="width:260px;height:260px;background:var(--teal-pale);bottom:-90px;left:-70px;opacity:0.7;"></div>
+
+  <div class="hero-content hero-two-col">
+    <div>
+    <span class="eyebrow gold">La boussole</span>
+    <h1>
+      La boussole offre des
+      <span class="accent-teal">repères</span>
+      dans le système d'éducation à l'alimentation des enfants
+    </h1>
+    <p class="lead">
+      La boussole rassemble les enseignements et les pistes de réflexion du Children's Food Education Lab. Elle se compose de huit champs d'action regroupés par thème, qui invitent à la réflexion et à la co-construction.
+    </p>
+    </div>
+    <div class="hero-compass" style="max-width:280px;margin:0 auto;">
+      <img src="../images/compass-large.png" alt="La boussole ChiFoo">
+      <div style="margin-top:1.4rem;text-align:center;">
+        <a href="../downloads/chifoo-kompass.pdf" download class="btn btn-primary">⬇ Télécharger la boussole en PDF</a>
+        <p style="font-size:0.85rem;color:var(--grey);margin-top:0.6rem;">PDF · 0.5 Mo · allemand</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── LES 8 CHAMPS D'ACTION ─── -->
+<section class="bg-cream">
+  <div class="section-inner">
+
+    <span class="eyebrow gold">Champs d'action et capsules audio</span>
+    <p class="lead" style="margin-bottom:2rem;">
+      Chaque champ d'action est complété par une capsule audio qui en explique la portée et le replace dans un contexte plus large.
+    </p>
+
+    <!-- 1. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="1"><img src="../images/picto-regarder-autour.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Regarder autour de soi avant d'agir</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Pistes d'action</h4>
+            <ul>
+              <li>Avant de lancer de nouveaux projets, chercher l'échange avec les initiatives existantes afin d'exploiter les synergies et d'intégrer les expériences déjà acquises.</li>
+              <li>Impliquer les groupes cibles et les acteur·rice·s concerné·e·s dans le développement des activités, afin de les rendre plus adaptées aux besoins et plus efficaces.</li>
+              <li>Regrouper les initiatives et mettre en œuvre des activités coordonnées pour différentes tranches d'âge, afin de garantir la cohérence.</li>
+            </ul>
+          </div>
+          <!-- TODO : Audio FR — réactiver ce bloc dès que le fichier audio correspondant est déposé dans /audio/.
+<div class="champ-audio" onclick="event.stopPropagation()">
+            <audio controls preload="none">
+              <source src="../audio/01-regarder-autour.mp3" type="audio/mpeg">
+              Ton navigateur ne prend pas en charge l'audio HTML5.
+            </audio>
+            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Lire la transcription</button>
+            <div class="audio-transcript">
+              <p>Des interventions efficaces doivent reposer sur une évaluation claire des besoins réels — ceux des enfants, des parents, du corps enseignant, du personnel d'encadrement ou d'autres personnes concernées — et être développées avec ces personnes. Concrètement : elles sont impliquées dans le processus dès le départ, avec des formats participatifs adaptés à leur âge. Lorsque les personnes co-construisent les solutions, l'identification et l'impact augmentent considérablement.</p>
+              <p>Si l'éducation à l'alimentation doit réellement améliorer les comportements, nous devons en outre miser sur l'apprentissage par l'expérience : cuisiner, déguster, jardiner, observer. Explorer l'alimentation avec tous les sens crée l'expérience personnelle nécessaire. Le savoir seul ne suffit pas. La répétition dans le temps est tout aussi importante.</p>
+              <p>Et avant de lancer quelque chose de nouveau, nous devrions nous demander : qui est déjà engagé ? Quels programmes existent déjà ? Où se trouvent les forces, les lacunes, les chevauchements ? Trop souvent, nous créons des initiatives parallèles sans nous rendre compte qu'un travail similaire est mené tout près. Cela conduit à un gaspillage de ressources et à un impact fragmenté.</p>
+              <p>Parfois, l'action la plus stratégique est de ne pas agir — du moins pas en créant quelque chose de nouveau. Renforcer une initiative existante, soutenir un partenaire ou mettre en réseau des acteur·rice·s peut avoir bien plus d'effet qu'un tout nouveau projet. Le changement systémique exige de l'humilité.</p>
+            </div>
+          </div>
+-->
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="2"><img src="../images/picto-renforcer-familles.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Renforcer les compétences alimentaires des familles</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Pistes d'action</h4>
+            <ul>
+              <li>Rendre les offres de conseil existantes pour les familles sur le thème de l'alimentation plus visibles et accessibles en plusieurs langues.</li>
+              <li>Élargir les offres de conseil aux familles au-delà de l'encouragement précoce.</li>
+              <li>Sensibiliser les familles à l'alimentation et les orienter vers des offres adaptées lors des examens pédiatriques.</li>
+              <li>Soutenir les familles dans leur rapport aux réseaux sociaux sur le thème de l'alimentation.</li>
+              <li>Chercher le dialogue avec les familles marginalisées afin de mieux comprendre leurs besoins et de développer des mesures ciblées.</li>
+              <li>Ne pas utiliser la nourriture comme récompense ou comme distraction.</li>
+              <li>Proposer des camps de vacances pour enfants qui combinent jardinage, cuisine et découverte des aliments, et les subventionner.</li>
+              <li>Sensibiliser les influenceur·euse·s à leur influence sur les réseaux sociaux sur le comportement alimentaire des enfants.</li>
+            </ul>
+          </div>
+          <!-- TODO : Audio FR — réactiver ce bloc dès que le fichier audio correspondant est déposé dans /audio/.
+<div class="champ-audio" onclick="event.stopPropagation()">
+            <audio controls preload="none">
+              <source src="../audio/02-renforcer-familles.mp3" type="audio/mpeg">
+              Ton navigateur ne prend pas en charge l'audio HTML5.
+            </audio>
+            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Lire la transcription</button>
+            <div class="audio-transcript">
+              <p>La famille est le premier lieu de l'éducation à l'alimentation. Pourtant, les enfants mangent souvent jusqu'à quatre fois par jour hors de la maison, tandis que la publicité et les réseaux sociaux influencent fortement leurs choix alimentaires. Les parents se sentent responsables de l'éducation à l'alimentation de leurs enfants — mais peuvent-ils rivaliser avec le marketing professionnel et les médias ?</p>
+              <p>Beaucoup de parents manquent de temps et/ou de connaissances pour construire de solides compétences alimentaires à la maison. Ils ne reçoivent pas d'informations fiables et prennent donc des décisions biaisées. Il est important de créer des offres de conseil qui soutiennent les parents de manière ciblée dans l'éducation à l'alimentation — ou d'améliorer la visibilité de celles qui existent.</p>
+              <p>Les parents devraient être soutenus pour prendre des décisions concernant l'alimentation de leurs enfants sur la base d'informations fiables. L'échange personnel peut les aider à contextualiser ces informations, à renforcer leurs compétences et à gagner confiance en leur propre jugement.</p>
+              <p>Les villes et les cantons proposent déjà aujourd'hui des conseils en alimentation dès la petite enfance — mais le soutien devrait aller au-delà de cette phase et être plus visible. Il ne suffit pas d'agir seulement lorsqu'un enfant devient en surpoids ou développe un trouble alimentaire. Les pédiatres devraient aborder activement le thème de l'alimentation lors des examens de routine.</p>
+              <p>Les familles marginalisées méritent une attention particulière. Lorsque le quotidien est difficile, une alimentation saine peut ne pas apparaître comme une priorité. Nous devons aller vers ces familles, comprendre leurs réalités et proposer un soutien — sans créer de pression supplémentaire ni de culpabilité.</p>
+            </div>
+          </div>
+-->
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="3"><img src="../images/picto-apprendre-uns-autres.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Apprendre les uns des autres</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Pistes d'action</h4>
+            <ul>
+              <li>Construire une communauté forte grâce à des échanges réguliers entre acteur·rice·s.</li>
+              <li>Inviter les acteur·rice·s à un forum transdisciplinaire à l'échelle suisse afin d'initier un agenda national pour l'éducation à l'alimentation.</li>
+              <li>Explorer de nouvelles voies pour jeter des ponts entre cultures et langues.</li>
+              <li>Regrouper les programmes d'éducation à l'alimentation et les formations du corps enseignant au niveau intercantonal et les rendre accessibles.</li>
+            </ul>
+          </div>
+          <!-- TODO : Audio FR — réactiver ce bloc dès que le fichier audio correspondant est déposé dans /audio/.
+<div class="champ-audio" onclick="event.stopPropagation()">
+            <audio controls preload="none">
+              <source src="../audio/08-apprendre-uns-autres.mp3" type="audio/mpeg">
+              Ton navigateur ne prend pas en charge l'audio HTML5.
+            </audio>
+            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Lire la transcription</button>
+            <div class="audio-transcript">
+              <p>La Suisse est divisée par des frontières linguistiques et culturelles. Trop souvent, nous développons des initiatives en parallèle, sans savoir ce qui se passe juste à côté.</p>
+              <p>Le système scolaire en est un bon exemple. L'éducation étant organisée au niveau cantonal, chaque canton a tendance à développer ses propres programmes et sa propre formation du corps enseignant. Cela conduit à un travail à double — et nous manquons l'occasion de partager les ressources et de créer des synergies. L'esprit de concurrence est souvent le plus grand obstacle. Or, l'éducation à l'alimentation n'est pas un produit sur le marché : elle concerne tout le monde.</p>
+              <p>Au lieu de travailler séparément, nous devrions renforcer la collaboration. Économisons du temps, de l'énergie et des fonds publics — et soutenons-nous mutuellement sur le chemin d'un objectif commun : promouvoir l'éducation à l'alimentation.</p>
+              <p>En 2024, le premier forum national sur l'éducation à l'alimentation « Passion for Food Education » a rassemblé une large communauté de personnes intéressées. Cette dynamique doit se poursuivre. Nous avons besoin d'une vision commune et d'une collaboration transdisciplinaire.</p>
+              <p>Pour que cela soit durable, le mouvement lancé par le Children’s Food Education Lab doit se poursuivre — non pas comme une nouvelle organisation indépendante, mais intégré dans des institutions nationales établies et reconnues.</p>
+            </div>
+          </div>
+-->
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="4"><img src="../images/picto-comprehension-commune.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Établir une compréhension commune</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Pistes d'action</h4>
+            <ul>
+              <li>Développer un cadre de compétences national pour l'éducation à l'alimentation et l'environnement alimentaire, pour toutes les phases de la vie, sur la base des connaissances scientifiques et de l'expertise.</li>
+              <li>Définir ensemble les rôles et responsabilités des différent·e·s acteur·rice·s — famille, écoles, cantines, clubs sportifs, etc.</li>
+              <li>Développer des directives contraignantes pour la restauration lors d'événements publics auxquels participent des enfants (p. ex. camps sportifs, festivals).</li>
+            </ul>
+          </div>
+          <!-- TODO : Audio FR — réactiver ce bloc dès que le fichier audio correspondant est déposé dans /audio/.
+<div class="champ-audio" onclick="event.stopPropagation()">
+            <audio controls preload="none">
+              <source src="../audio/03-comprehension-commune.mp3" type="audio/mpeg">
+              Ton navigateur ne prend pas en charge l'audio HTML5.
+            </audio>
+            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Lire la transcription</button>
+            <div class="audio-transcript">
+              <p>Que comprenons-nous collectivement par une alimentation qui respecte au mieux la nature et l'être humain ? Comment cela devrait-il se traduire concrètement dans une journée type d'un enfant en Suisse ? Que doivent savoir les enfants sur l'alimentation ? Que doivent-ils savoir faire — et à quel âge ?</p>
+              <p>Qui est responsable de transmettre les savoirs et compétences attendus ? Quel rôle jouent les parents ? Les écoles ? Comment les cantines et les crèches y contribuent-elles ? Y a-t-il d'autres acteur·rice·s, par exemple les entraîneur·euse·s sportif·ve·s, qui peuvent aussi apporter une contribution positive ?</p>
+              <p>Aujourd'hui, de nombreux acteur·rice·s influencent les habitudes alimentaires des enfants et forment ensemble un environnement alimentaire souvent très hétérogène. Bien qu'il existe beaucoup d'acteur·rice·s engagé·e·s et enthousiastes dans le domaine de l'alimentation, la question de la cohérence de toutes ces influences se pose. La responsabilité globale du bien-être des enfants reste floue et fragmentée.</p>
+              <p>Nous avons besoin d'une compréhension commune et partagée de ce que signifie l'éducation à l'alimentation en Suisse — et des compétences que nous attendons des enfants à quel âge. Un cadre de compétences clair créerait un point de référence commun. Il aiderait les professionnel·le·s à coordonner leurs interventions, à renforcer la cohérence entre les programmes et à assurer la continuité à travers toutes les phases de la vie.</p>
+              <p>Cela signifie aussi : les critères de restauration des enfants doivent correspondre au cadre de compétences — à l'école comme lors d'événements publics auxquels participent des enfants.</p>
+            </div>
+          </div>
+-->
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="5"><img src="../images/picto-synergies-locales.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Tirer parti des synergies locales</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Pistes d'action</h4>
+            <ul>
+              <li>Mettre en place une coordination locale et cantonale afin de regrouper les initiatives, de mieux exploiter les synergies et d'ouvrir de nouvelles possibilités.</li>
+              <li>Ouvrir les cuisines scolaires, p. ex. aux associations, pour organiser des ateliers de cuisine avec les familles.</li>
+              <li>Permettre aux écolier·ère·s de découvrir les entreprises alimentaires, la transformation et la distribution des aliments.</li>
+              <li>Construire une collaboration entre la direction d'école, le corps enseignant, les représentant·e·s des communes ainsi que les familles et les cuisinier·ère·s, afin de renforcer l'éducation à l'alimentation de manière globale, comme partie intégrante de la culture de l'établissement.</li>
+            </ul>
+          </div>
+          <!-- TODO : Audio FR — réactiver ce bloc dès que le fichier audio correspondant est déposé dans /audio/.
+<div class="champ-audio" onclick="event.stopPropagation()">
+            <audio controls preload="none">
+              <source src="../audio/07-synergies-locales.mp3" type="audio/mpeg">
+              Ton navigateur ne prend pas en charge l'audio HTML5.
+            </audio>
+            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Lire la transcription</button>
+            <div class="audio-transcript">
+              <p>La collaboration locale est le levier clé d'une éducation à l'alimentation efficace — et les communes jouent un rôle central. Elles sont dans une position unique pour mettre en réseau les acteur·rice·s, mutualiser les ressources et créer de la cohérence.</p>
+              <p>Pour coordonner les initiatives existantes et éviter les doublons, les communes peuvent créer des postes de coordination locaux. Plutôt que de lancer de nouveaux projets isolés, il s'agit de renforcer les synergies entre écoles, cantines, associations de parents, organisations locales ainsi que les domaines de la santé, de l'éducation et de l'environnement.</p>
+              <p>Ouvrir les cuisines scolaires pour des ateliers de cuisine avec les enfants et les parents est une mesure concrète et efficace. Établir un dialogue structuré entre la direction d'école, les services communaux, le corps enseignant et les parents en est une autre.</p>
+              <p>L'éducation à l'alimentation dépasse la salle de classe. Elle a besoin d'un écosystème local coordonné. Lorsque les communes prennent l'initiative et mettent en réseau les différent·e·s acteur·rice·s, elles transforment des efforts dispersés en un impact durable.</p>
+              <p>Lorsque l'éducation à l'alimentation est ancrée dans la collaboration locale, elle devient aussi plus durable et plus résiliente. Le nombre d'acteur·rice·s impliqué·e·s et leur présence locale réduisent le risque que des activités construites laborieusement pendant des années disparaissent soudainement. Ancre ton projet dans la communauté locale pour qu'il perdure !</p>
+            </div>
+          </div>
+-->
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="6"><img src="../images/picto-communiquer.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Mieux communiquer</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Pistes d'action</h4>
+            <ul>
+              <li>Partager et promouvoir la visibilité des bonnes pratiques en éducation à l'alimentation.</li>
+              <li>Atteindre le groupe cible pertinent avec sa propre initiative.</li>
+              <li>Diffuser des informations fiables sur les aliments et l'alimentation dans les médias publics.</li>
+              <li>Concevoir un plan de communication professionnel, créatif et innovant, et obtenir le soutien nécessaire pour le réaliser.</li>
+            </ul>
+          </div>
+          <!-- TODO : Audio FR — réactiver ce bloc dès que le fichier audio correspondant est déposé dans /audio/.
+<div class="champ-audio" onclick="event.stopPropagation()">
+            <audio controls preload="none">
+              <source src="../audio/05-communiquer.mp3" type="audio/mpeg">
+              Ton navigateur ne prend pas en charge l'audio HTML5.
+            </audio>
+            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Lire la transcription</button>
+            <div class="audio-transcript">
+              <p>Il existe des projets solides, d'excellentes initiatives, des plateformes de connaissances précieuses et du matériel pédagogique de qualité. Mais bien trop souvent, le groupe cible n'est pas atteint.</p>
+              <p>La communication n'est pas un détail. Elle demande des compétences, une stratégie et des ressources. Une communication appropriée peut produire de l'impact. Cela signifie améliorer les compétences en communication et collaborer avec des professionnel·le·s.</p>
+              <p>Chaque demande de projet devrait prévoir un budget pour un plan de communication professionnel. Les bailleurs de fonds devraient l'exiger et le financer. Sans visibilité, même les meilleurs programmes restent sans effet.</p>
+              <p>Une communication efficace commence par le choix du groupe cible. La carte systémique ChiFoo peut aider à adresser le message à celles et ceux qui sont réellement concerné·e·s.</p>
+              <p>Pour renforcer la communication en éducation à l'alimentation, il s'agit de mieux utiliser les réseaux sociaux. La collaboration avec des influenceur·euse·s et des ambassadeur·rice·s qui sensibilisent le grand public à ces questions devrait être développée. Leur influence sur les habitudes alimentaires des jeunes est considérable.</p>
+            </div>
+          </div>
+-->
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="7"><img src="../images/picto-politique.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Accentuer le sujet en politique</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Pistes d'action</h4>
+            <ul>
+              <li>Identifier les décideur·euse·s dans son propre champ d'action.</li>
+              <li>Construire des partenariats avec des organisations du domaine de la santé publique.</li>
+              <li>Développer des arguments préventifs et économiques sur le rapport coût-bénéfice de l'éducation à l'alimentation.</li>
+              <li>Réduire les produits ultra-transformés dans les cantines scolaires.</li>
+              <li>Réduire la teneur en sucre, en sel et en graisses des aliments destinés aux enfants.</li>
+              <li>Interdire le marketing et la publicité alimentaires destinés aux enfants.</li>
+              <li>Réguler la publicité alimentaire destinée aux enfants sur les réseaux sociaux.</li>
+            </ul>
+          </div>
+          <div class="champ-audio" onclick="event.stopPropagation()">
+            <audio controls preload="none">
+              <source src="../audio/04-politique.mp3" type="audio/mpeg">
+              Ton navigateur ne prend pas en charge l'audio HTML5.
+            </audio>
+            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Lire la transcription</button>
+            <div class="audio-transcript">
+              <p>Au-delà des efforts des différent·e·s acteur·rice·s, une action politique est aussi nécessaire pour faire avancer l'éducation à l'alimentation. Sans elle, la paralysie par l'inaction menace d'entraver un véritable changement de système : les entreprises justifient leurs décisions par les préférences des consommateur·rice·s ou une forte pression concurrentielle ; les consommateur·rice·s sont influencé·e·s par le marketing et attendent des décisions et un soutien de la politique — tandis que celle-ci reste inactive pour ne pas risquer de perdre en popularité.</p>
+              <p>Les premiers pas sont faits : la régulation du marketing alimentaire destiné aux enfants, l'intégration de l'éducation à l'alimentation comme matière scolaire obligatoire dans certains cantons. Mais on peut aller plus loin. Nous pouvons nous engager pour des standards dans les cantines scolaires, pour des limites concernant les produits ultra-transformés et le sucre — et pour une meilleure régulation de la publicité alimentaire sur les réseaux sociaux, y compris le marketing d'influence.</p>
+              <p>Les produits ultra-transformés méritent une attention particulière : les chips, la charcuterie et les pizzas surgelées ne sont pas des alternatives appropriées aux aliments frais. Ils contribuent à l'industrialisation de l'alimentation des enfants. Les fabricants de tels produits ne devraient donc pas apparaître comme sponsors dans la promotion de la santé.</p>
+              <p>S'engager politiquement peut sembler complexe, voire intimidant. Beaucoup de professionnel·le·s hésitent à s'aventurer sur ce terrain. Mais sans engagement au niveau communal, cantonal et fédéral, nous ne changerons pas les rapports de force dans le système.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. -->
+    <div class="champ" onclick="toggleChamp(this)">
+      <div class="champ-header">
+        <div class="champ-num" data-num="8"><img src="../images/picto-changer-echelle.png" alt=""></div>
+        <div class="champ-title-block">
+          <div class="champ-title">Ancrer structurellement</div>
+        </div>
+        <div class="champ-toggle">＋</div>
+      </div>
+      <div class="champ-body">
+        <div class="champ-content">
+          <div class="champ-actions">
+            <h4>Pistes d'action</h4>
+            <ul>
+              <li>Prévoir à l'école primaire des leçons spécifiquement dédiées à l'éducation à l'alimentation dans la grille horaire.</li>
+              <li>Utiliser les matières existantes (p. ex. mathématiques, français) dans une approche interdisciplinaire pour construire des compétences en éducation à l'alimentation.</li>
+              <li>Utiliser l'alimentation comme thème d'une éducation au développement durable (EDD) proche du quotidien.</li>
+              <li>Permettre aux enfants d'accéder au jardinage dans chaque crèche et chaque école.</li>
+              <li>Intégrer l'éducation à l'alimentation dans la formation initiale et continue du corps enseignant, des éducateur·rice·s, des cuisinier·ère·s et du personnel de cantine, des travailleur·euse·s sociaux, du personnel d'accueil de l'enfance, des professionnel·le·s de la santé, etc.</li>
+              <li>Soutenir davantage dans le domaine de l'éducation à l'alimentation les institutions qui accompagnent régulièrement les enfants au quotidien — en particulier les crèches, les écoles enfantines et les groupes de jeu.</li>
+            </ul>
+          </div>
+          <!-- TODO : Audio FR — réactiver ce bloc dès que le fichier audio correspondant est déposé dans /audio/.
+<div class="champ-audio" onclick="event.stopPropagation()">
+            <audio controls preload="none">
+              <source src="../audio/06-changer-echelle.mp3" type="audio/mpeg">
+              Ton navigateur ne prend pas en charge l'audio HTML5.
+            </audio>
+            <button class="transcript-toggle" onclick="event.stopPropagation();toggleTranscript(this)">Lire la transcription</button>
+            <div class="audio-transcript">
+              <p>De nombreuses associations et programmes ont déjà prouvé leur efficacité dans la construction de compétences alimentaires. Les contenus existent. L'expertise existe. Les preuves existent. Il s'agit maintenant de les déployer à grande échelle.</p>
+              <p>Plutôt que de créer sans cesse de nouveaux projets pilotes, nous devrions nous concentrer sur le développement de ce qui a fait ses preuves et son déploiement sur tout le territoire. Des programmes d'éducation à l'alimentation de qualité pour l'école primaire existent. Mais pour les mettre en œuvre à large échelle, l'éducation à l'alimentation doit devenir une partie obligatoire des plans d'études et des grilles horaires.</p>
+              <p>Le corps enseignant a besoin d'une formation appropriée — tant dans la formation initiale que continue — et/ou du soutien ponctuel de spécialistes externes.</p>
+              <p>L'éducation à l'alimentation n'est pas une matière supplémentaire. C'est un thème holistique, entièrement lié à l'éducation au développement durable, à l'éducation à la citoyenneté et à plusieurs disciplines d'enseignement (sciences naturelles, histoire, etc.). Le système alimentaire est une porte d'entrée puissante pour développer l'esprit critique, la collaboration et la pensée systémique.</p>
+              <p>Le corps enseignant n'est pas seul concerné. Les cuisinier·ère·s de cantine et le personnel éducatif des crèches doivent aussi être formés. Ils et elles ne sont pas seulement des fournisseur·euse·s de repas — ce sont aussi des modèles et des acteur·rice·s éducatif·ve·s.</p>
+              <p>Les jardins scolaires devraient devenir une pratique courante. Nous avons des salles de gym dans chaque école. L'accès à un espace de jardinage devrait être tout aussi évident.</p>
+            </div>
+          </div>
+-->
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── CTA ─── -->
+<section class="bg-teal">
+  <div class="section-inner" style="text-align:center;">
+    <h2 style="color:var(--cream);">Tu souhaites contribuer à un champ d'action&nbsp;?</h2>
+    <p style="color:rgba(250,247,240,0.9);font-size:1.1rem;max-width:580px;margin:0 auto 1.5rem;">
+      Chaque acteur·rice porte un rôle important. Participe.
+    </p>
+    <a href="contact.html" class="btn btn-primary">Prendre contact <span>→</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+      <img src="../images/chifoo-logo-white.png" alt="ChiFoo - Children's Food Education Lab">
+    </a>
+      <p>Children's Food Education Lab — BFH–HAFL. Un laboratoire social pour la transformation de l'éducation à l'alimentation des enfants en Suisse.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Découvrir</h4>
+      <ul>
+        <li><a href="lab.html">Le Lab</a></li>
+        <li><a href="boussole.html">La boussole</a></li>
+        <li><a href="systeme.html">Vue d'ensemble</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Ressources</h4>
+      <ul>
+        <li><a href="../downloads/chifoo-kompass.pdf">La boussole (PDF)</a></li>
+        <li><a href="partenaires.html">Partenaires</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="contact.html">Écris-nous</a></li>
+        <li><a href="mailto:chifoolab.hafl@bfh.ch">chifoolab.hafl@bfh.ch</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Children's Food Education Lab · BFH–HAFL</span>
+  </div>
+</footer>
+
+<script>
+  function toggleChamp(el) {
+    el.classList.toggle('open');
+  }
+  function toggleTranscript(btn) {
+    const transcript = btn.nextElementSibling;
+    transcript.classList.toggle('show');
+    btn.textContent = transcript.classList.contains('show') ? 'Masquer la transcription' : 'Lire la transcription';
+  }
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
