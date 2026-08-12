@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Partenaires — ChiFoo Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">
+      <img src="../images/chifoo-logo-nav.png" alt="ChiFoo - Children's Food Education Lab">
+    </a>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="lab.html">Le Lab</a></li>
+    <li><a href="boussole.html">La boussole</a></li>
+    <li><a href="systeme.html">Vue d'ensemble</a></li>
+    <li><a href="partenaires.html" class="active">Partenaires</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li class="nav-lang"><a href="../partner.html">DE</a><a href="../it/partner.html">IT</a><a href="../en/partners.html">EN</a></li>
+  </ul>
+</nav>
+
+<section class="hero bg-cream">
+  <div class="hero-blob" style="width:380px;height:380px;background:var(--coral-soft);top:-130px;right:-100px;opacity:0.7;"></div>
+  <div class="hero-blob" style="width:240px;height:240px;background:var(--gold-pale);bottom:-80px;left:-60px;opacity:0.8;"></div>
+
+  <div class="hero-content">
+    <span class="eyebrow coral">Nos partenaires</span>
+    <h1>
+      Un collectif
+      <span class="accent-teal">d'actrices et d'acteurs engagés</span>
+      pour les enfants
+    </h1>
+    <p class="lead">
+      Le Lab est soutenu et nourri par un réseau diversifié d'acteur·rice·s engagé·e·s, qui œuvrent ensemble à la transformation de l'éducation à l'alimentation des enfants en Suisse.
+    </p>
+  </div>
+</section>
+
+<section class="bg-mint partners-network">
+  <div class="section-inner">
+    <span class="eyebrow">Notre réseau</span>
+    <h2 class="reveal">Un réseau de partenaires relié·e·s</h2>
+    <p class="lead reveal" style="max-width:680px;">
+      Aperçu des institutions, fondations, associations et autres partenaires du Lab.
+    </p>
+    <div class="partners-grid">
+      <a class="partner-card reveal" href="https://www.acker.co" target="_blank" rel="noopener" aria-label="Acker">
+        <img src="../images/logo-acker.png" alt="Acker" class="partner-logo">
+      </a>
+      <a class="partner-card reveal" href="https://www.bfh.ch/hafl" target="_blank" rel="noopener" aria-label="BFH–HAFL">
+        <img src="../images/logo-bfh-hafl.png" alt="BFH–HAFL" class="partner-logo">
+      </a>
+      <a class="partner-card reveal" href="https://collaboratiohelvetica.ch" target="_blank" rel="noopener" aria-label="Collaboratio Helvetica">
+        <img src="../images/logo-collaboratio.png" alt="Collaboratio Helvetica" class="partner-logo">
+      </a>
+      <a class="partner-card reveal" href="https://www.fit-4-future.ch/fr/" target="_blank" rel="noopener" aria-label="fit4future foundation">
+        <img src="../images/logo-fit4future.png" alt="fit4future foundation" class="partner-logo">
+      </a>
+      <a class="partner-card reveal" href="https://www.oertlistiftung.ch/fr/" target="_blank" rel="noopener" aria-label="Fondation Oertli Stiftung">
+        <img src="../images/logo-oertli.png" alt="Fondation Oertli Stiftung" class="partner-logo">
+      </a>
+      <a class="partner-card reveal" href="https://www.promotionsante.ch" target="_blank" rel="noopener" aria-label="Promotion Santé Suisse">
+        <img src="../images/logo-gfch.png" alt="Promotion Santé Suisse" class="partner-logo">
+      </a>
+      <a class="partner-card reveal" href="https://www.gewa.ch" target="_blank" rel="noopener" aria-label="GEWA">
+        <img src="../images/logo-gewa.png" alt="GEWA" class="partner-logo">
+      </a>
+      <a class="partner-card reveal" href="https://www.hep-bejune.ch" target="_blank" rel="noopener" aria-label="HEP-BEJUNE">
+        <img src="../images/logo-hep-bejune.png" alt="HEP-BEJUNE" class="partner-logo">
+      </a>
+      <a class="partner-card reveal" href="https://www.papille-on.com/index.php/fr/" target="_blank" rel="noopener" aria-label="Papille-ON">
+        <img src="../images/logo-papilleon.png" alt="Papille-ON" class="partner-logo">
+      </a>
+      <a class="partner-card reveal" href="https://www.seedlingfoundation.ch" target="_blank" rel="noopener" aria-label="Seedling Foundation">
+        <img src="../images/logo-seedling.png" alt="Seedling Foundation" class="partner-logo">
+      </a>
+      <a class="partner-card reveal" href="https://www.swissfoodacademy.ch" target="_blank" rel="noopener" aria-label="Swiss Food Academy">
+        <img src="../images/logo-sfa.png" alt="Swiss Food Academy" class="partner-logo">
+      </a>
+      <a class="partner-card reveal" href="https://www.tropos.ch" target="_blank" rel="noopener" aria-label="Tropos">
+        <img src="../images/logo-tropos.png" alt="Tropos" class="partner-logo">
+      </a>
+      <a class="partner-card reveal" href="https://www.schuleleubringen.ch" target="_blank" rel="noopener" aria-label="TS Leubringen · EJC Evilard">
+        <img src="../images/logo-ts-leubringen.png" alt="TS Leubringen · EJC Evilard" class="partner-logo">
+      </a>
+      <a class="partner-card reveal" href="https://www.urbanillustration.ch/" target="_blank" rel="noopener" aria-label="urbanillustration">
+        <img src="../images/logo-urbanillustration.png" alt="urbanillustration" class="partner-logo">
+      </a>
+      <a class="partner-card reveal" href="https://www.wegeinsneue.ch/" target="_blank" rel="noopener" aria-label="Wege ins Neue">
+        <img src="../images/logo-wege-ins-neue.png" alt="Wege ins Neue" class="partner-logo">
+      </a>
+      <a class="partner-card reveal" href="https://www.2000m2.eu/de/schweiz/" target="_blank" rel="noopener" aria-label="2000m² Weltacker Schweiz">
+        <img src="../images/logo-weltacker.png" alt="2000m² Weltacker Schweiz" class="partner-logo">
+      </a>
+      <a class="partner-card reveal" href="https://www.zhaw.ch" target="_blank" rel="noopener" aria-label="ZHAW">
+        <img src="../images/logo-zhaw.png" alt="ZHAW" class="partner-logo">
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="bg-teal">
+  <div class="section-inner" style="text-align:center;">
+    <h2 style="color:var(--cream);">Devenir partenaire du Lab</h2>
+    <p style="color:rgba(250,247,240,0.92);font-size:1.1rem;max-width:680px;margin:0 auto 2rem;">
+      Ton organisation s'engage pour l'éducation à l'alimentation des enfants en Suisse&nbsp;? Le Lab est un espace ouvert : prends contact à tout moment pour explorer des collaborations.
+    </p>
+    <a href="contact.html" class="btn btn-primary">Écris-nous <span>→</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+      <img src="../images/chifoo-logo-white.png" alt="ChiFoo - Children's Food Education Lab">
+    </a>
+      <p>Children's Food Education Lab — BFH–HAFL. Un laboratoire social pour la transformation de l'éducation à l'alimentation des enfants en Suisse.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Découvrir</h4>
+      <ul>
+        <li><a href="lab.html">Le Lab</a></li>
+        <li><a href="boussole.html">La boussole</a></li>
+        <li><a href="systeme.html">Vue d'ensemble</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Ressources</h4>
+      <ul>
+        <li><a href="../downloads/chifoo-kompass.pdf">La boussole (PDF)</a></li>
+        <li><a href="partenaires.html">Partenaires</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="contact.html">Écris-nous</a></li>
+        <li><a href="mailto:chifoolab.hafl@bfh.ch">chifoolab.hafl@bfh.ch</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Children's Food Education Lab · BFH–HAFL</span>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>

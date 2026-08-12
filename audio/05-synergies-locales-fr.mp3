@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Le Lab — ChiFoo Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" class="logo">
+      <img src="../images/chifoo-logo-nav.png" alt="ChiFoo - Children's Food Education Lab">
+    </a>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="lab.html" class="active">Le Lab</a></li>
+    <li><a href="boussole.html">La boussole</a></li>
+    <li><a href="systeme.html">Vue d'ensemble</a></li>
+    <li><a href="partenaires.html">Partenaires</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li class="nav-lang"><a href="../lab.html">DE</a><a href="../it/lab.html">IT</a><a href="../en/lab.html">EN</a></li>
+  </ul>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero bg-cream">
+  <div class="hero-blob" style="width:380px;height:380px;background:var(--coral-soft);top:-130px;right:-100px;opacity:0.6;"></div>
+  <div class="hero-blob" style="width:240px;height:240px;background:var(--mint-mist);bottom:-80px;left:-60px;opacity:0.5;"></div>
+
+  <div class="hero-content">
+    <span class="eyebrow coral">Le Lab</span>
+    <h1>
+      Un laboratoire social
+      <span class="accent-teal">pour la transformation</span>
+      de l'éducation à l'alimentation
+    </h1>
+    <p class="lead">
+      Le Lab suit une approche systémique avec des acteur·rice·s engagé·e·s, afin de transformer ensemble le système d'éducation à l'alimentation des enfants.
+    </p>
+  </div>
+</section>
+
+<!-- ─── QUESTION CENTRALE ─── -->
+<section class="bg-mint">
+  <div class="section-inner">
+    <div class="quote reveal">
+      Comment l'éducation à l'alimentation des enfants en Suisse peut-elle être conçue de manière <em>plus holistique et plus efficace</em>&nbsp;?
+    </div>
+  </div>
+</section>
+
+<!-- ─── NOTRE APPROCHE ─── -->
+<section class="bg-cream">
+  <div class="section-inner">
+    <span class="eyebrow">Notre approche</span>
+    <h2 class="reveal">Une approche <span style="color:var(--teal)">systémique</span> et collective</h2>
+
+    <div class="reveal" style="max-width:860px;margin-top:2rem;">
+      <p class="lead" style="max-width:none;">
+        L'approche holistique du Children's Food Education Lab vise à sensibiliser les acteur·rice·s impliqué·e·s aux défis du système actuel de l'éducation à l'alimentation des enfants, à exploiter les synergies de manière ciblée et à encourager la pensée systémique. Au cœur de la démarche se trouvent la mise en œuvre commune d'interventions efficaces ainsi que le renforcement d'une compréhension collective du système. Le Lab s'engage en outre pour l'exploration de nouvelles possibilités de financement et le positionnement du sujet dans l'agenda politique. Un échange régulier entre les acteur·rice·s est ici décisif pour faire avancer le changement.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ENFANTS ET ADOLESCENT·E·S ─── -->
+<section class="bg-mint">
+  <div class="section-inner">
+    <div style="display:grid;grid-template-columns:1.5fr 0.5fr;gap:3rem;align-items:center;">
+      <div>
+        <span class="eyebrow coral">Enfants et adolescent·e·s</span>
+        <h2 class="reveal">L'enfance — une <span style="color:var(--coral)">fenêtre décisive</span></h2>
+        <p class="lead reveal">
+          L'enfance est une fenêtre temporelle sensible et particulièrement propice au développement d'habitudes alimentaires saines et durables. Celles-ci marquent souvent le comportement alimentaire jusqu'à l'adolescence et l'âge adulte. L'intégration participative des perspectives des enfants dans le développement de mesures visant à renforcer l'éducation à l'alimentation accroît leur pertinence et renforce l'identification du groupe cible avec les offres. C'est pourquoi le Lab attache une grande importance à impliquer non seulement les adultes qui créent un environnement favorable à la santé des enfants, mais aussi les enfants eux-mêmes, activement, dans le développement et la conception des mesures.
+        </p>
+      </div>
+      <div class="reveal" style="text-align:center;">
+        <img src="../images/char-fillette-pomme.png" alt="" style="max-width:150px;width:100%;height:auto;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ACTEUR·RICE·S IMPORTANT·E·S ─── -->
+<section class="bg-cream">
+  <div class="section-inner">
+    <span class="eyebrow coral">Acteur·rice·s important·e·s</span>
+    <h2 class="reveal">Une diversité d'acteur·rice·s engagé·e·s</h2>
+    <p class="lead reveal">
+      Le Lab réunit des personnes actives à différents niveaux de l'éducation à l'alimentation des enfants en Suisse. Le Lab est un espace ouvert et grandit organiquement. L'éducation à l'alimentation est une <strong style="color:var(--gold-deep);">responsabilité sociétale partagée</strong>. Aucun·e acteur·rice ne peut opérer seul·e la transformation.
+    </p>
+
+    <div class="audience-grid">
+      <div class="audience-card reveal">
+        <img src="../images/char-parent-poussette.png" alt="" class="audience-illu">
+        <h3>Familles</h3>
+        <p>Parents et responsables légaux au centre de la transmission quotidienne des compétences alimentaires</p>
+      </div>
+      <div class="audience-card reveal">
+        <img src="../images/char-chef.png" alt="" class="audience-illu">
+        <h3>Cantines &amp; cuisinier·ère·s</h3>
+        <p>Professionnel·le·s qui façonnent l'offre de restauration destinée aux enfants</p>
+      </div>
+      <div class="audience-card reveal">
+        <img src="../images/char-enseignant-livre.png" alt="" class="audience-illu">
+        <h3>École &amp; corps enseignant</h3>
+        <p>Pédagogues qui mettent en œuvre l'éducation à l'alimentation en classe et au jardin scolaire</p>
+      </div>
+      <div class="audience-card reveal">
+        <img src="../images/char-medecin.png" alt="" class="audience-illu">
+        <h3>Médecins &amp; professionnel·le·s de la santé</h3>
+        <p>Pédiatres, diététicien·ne·s et professionnel·le·s de la santé qui accompagnent les familles et les enfants</p>
+      </div>
+      <div class="audience-card reveal">
+        <img src="../images/char-jardinier.png" alt="" class="audience-illu">
+        <h3>Acteur·rice·s locaux</h3>
+        <p>Producteur·rice·s, agriculteur·rice·s et associations qui rendent tangible la valeur des aliments</p>
+      </div>
+      <div class="audience-card reveal">
+        <img src="../images/placeholder-cercle.png" alt="" class="audience-illu">
+        <h3>Politique et institutions</h3>
+        <p>Cantons, communes et décideur·euse·s qui s'engagent pour l'environnement, la santé et l'éducation</p>
+      </div>
+      <div class="audience-card reveal">
+        <img src="../images/placeholder-cercle.png" alt="" class="audience-illu">
+        <h3>Offres de loisirs</h3>
+        <p>Responsables de camps, entraîneur·euse·s sportif·ve·s et autres qui façonnent l'alimentation des enfants</p>
+      </div>
+      <div class="audience-card reveal">
+        <img src="../images/placeholder-cercle.png" alt="" class="audience-illu">
+        <h3>Recherche</h3>
+        <p>Relier les connaissances scientifiques aux réalités vécues</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+      <img src="../images/chifoo-logo-white.png" alt="ChiFoo - Children's Food Education Lab">
+    </a>
+      <p>Children's Food Education Lab — BFH–HAFL. Un laboratoire social pour la transformation de l'éducation à l'alimentation des enfants en Suisse.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Découvrir</h4>
+      <ul>
+        <li><a href="lab.html">Le Lab</a></li>
+        <li><a href="boussole.html">La boussole</a></li>
+        <li><a href="systeme.html">Vue d'ensemble</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Ressources</h4>
+      <ul>
+        <li><a href="../downloads/chifoo-kompass.pdf">La boussole (PDF)</a></li>
+        <li><a href="partenaires.html">Partenaires</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="contact.html">Écris-nous</a></li>
+        <li><a href="mailto:chifoolab.hafl@bfh.ch">chifoolab.hafl@bfh.ch</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Children's Food Education Lab · BFH–HAFL</span>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
