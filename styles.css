@@ -782,14 +782,31 @@ footer {
 
   section, .hero { padding-left: 1.2rem; padding-right: 1.2rem; }
   .hero { padding-top: 3rem; padding-bottom: 3rem; }
+  .champ-header { padding: 1.4rem; flex-wrap: nowrap; align-items: flex-start; gap: 0.8rem; }
+  .champ-title-block { min-width: 0; }
+  .champ-num { width: 64px; height: 64px; }
   .hero-content { grid-template-columns: 1fr !important; }
   .hero-compass img { max-width: 320px; margin: 0 auto; }
 
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .footer-bottom { flex-direction: column; text-align: center; }
 
-  .champ-header { padding: 1.4rem; flex-wrap: wrap; gap: 1rem; }
   .champ-content { padding: 0 1.4rem 1.4rem; }
+
+  .contact-card { width: 100%; padding: 2rem 1.4rem; }
+  .contact-email {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 100%;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    white-space: normal;
+    word-break: break-word;
+  }
 }
 
 @media (max-width: 480px) {
@@ -923,12 +940,10 @@ footer {
 .partners-network {
   position: relative;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 700' preserveAspectRatio='none'><path d='M 80 120 C 320 60 420 260 640 200 S 940 90 1140 170' fill='none' stroke='%23007488' stroke-width='3' stroke-dasharray='1 14' stroke-linecap='round' opacity='0.45'/><path d='M 60 420 C 260 520 500 350 720 460 S 1000 560 1160 440' fill='none' stroke='%23007488' stroke-width='3' stroke-dasharray='1 14' stroke-linecap='round' opacity='0.45'/><path d='M 160 640 C 380 560 620 660 840 580 S 1060 500 1180 600' fill='none' stroke='%23E16364' stroke-width='3' stroke-dasharray='1 14' stroke-linecap='round' opacity='0.4'/></svg>");
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
 }
 .partners-network .partner-card { background: rgba(255,255,255,0.92); }
-
-
-/* ───── Hero Kompass : boussole à droite du titre ───── */
 .hero-two-col {
   display: grid;
   grid-template-columns: 1.3fr 0.7fr;
@@ -1001,9 +1016,9 @@ a.partner-card {
 }
 
 /* ───── Responsive hero (n°8) : mots longs + colonnes ───── */
-h1, .h1, h2, .h2 { overflow-wrap: break-word; }
+h1, .h1, h2, .h2, p, li, .lead { overflow-wrap: break-word; }
+h1, .h1, h2, .h2, p, li, .lead, .eyebrow, .stat-label, .champ-title { hyphens: manual; }
 @media (max-width: 860px) {
-  h1, .h1 { hyphens: auto; }
   .hero-content > div { min-width: 0; }
   .hero-two-col { grid-template-columns: 1fr !important; }
 }
