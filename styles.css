@@ -788,6 +788,11 @@ footer {
   .hero-content { grid-template-columns: 1fr !important; }
   .hero-compass img { max-width: 320px; margin: 0 auto; }
 
+  .kinder-content { grid-template-columns: 1fr !important; }
+  .kinder-picto { max-width: 150px; margin: 0 auto; }
+
+  .bg-mint, .bg-gold-pale { background-size: 260% auto; background-repeat: no-repeat; }
+
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .footer-bottom { flex-direction: column; text-align: center; }
 
