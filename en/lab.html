@@ -56,6 +56,18 @@
   </div>
 </section>
 
+<!-- ─── VIDEO ─── -->
+<section class="bg-mint video-section">
+  <div class="section-inner">
+    <div class="video-embed reveal" data-yt-id="9veGt_RQ59M">
+      <img src="../images/video-jardin-thumb.jpg" alt="ChiFoo Lab video — a child and an adult discovering the garden together" loading="lazy">
+      <button class="video-play-btn" aria-label="Play the ChiFoo Lab video" onclick="chifooLoadVideo(this)">
+        <svg viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
 <!-- ─── UNSER ANSATZ ─── -->
 <section class="bg-cream">
   <div class="section-inner">
@@ -124,22 +136,22 @@
         <p>Producers, farmers and associations who make appreciation for food tangible</p>
       </div>
       <div class="audience-card reveal">
-        <img src="../images/placeholder-cercle.png" alt="" class="audience-illu">
+        <img src="../images/picto-ic-industrie.png" alt="" class="audience-illu">
         <h3>Industry &amp; retail</h3>
         <p>Food producers and retailers who shape the range and availability of products available to children</p>
       </div>
       <div class="audience-card reveal">
-        <img src="../images/placeholder-cercle.png" alt="" class="audience-illu">
+        <img src="../images/picto-ic-institutions.png" alt="" class="audience-illu">
         <h3>Politics and institutions</h3>
         <p>Cantons, municipalities and decision-makers committed to the environment, health and education</p>
       </div>
       <div class="audience-card reveal">
-        <img src="../images/placeholder-cercle.png" alt="" class="audience-illu">
+        <img src="../images/picto-ic-loisirs.png" alt="" class="audience-illu">
         <h3>Leisure activities</h3>
         <p>Camp supervisors, sports coaches and others who shape children's food environment</p>
       </div>
       <div class="audience-card reveal">
-        <img src="../images/placeholder-cercle.png" alt="" class="audience-illu">
+        <img src="../images/picto-ic-recherche.png" alt="" class="audience-illu">
         <h3>Research</h3>
         <p>Connecting scientific findings with lived realities</p>
       </div>
@@ -191,6 +203,12 @@
     });
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  function chifooLoadVideo(el) {
+    const wrap = el.closest('.video-embed');
+    const id = wrap.getAttribute('data-yt-id');
+    wrap.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0" title="ChiFoo Lab" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  }
 </script>
 
 </body>
