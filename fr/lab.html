@@ -21,7 +21,7 @@
     <li><a href="index.html">Accueil</a></li>
     <li><a href="lab.html" class="active">Le Lab</a></li>
     <li><a href="boussole.html">La boussole</a></li>
-    <li><a href="systeme.html">Vue d'ensemble</a></li>
+    <li><a href="systeme.html">Écosystème</a></li>
     <li><a href="partenaires.html">Partenaires</a></li>
     <li><a href="contact.html">Contact</a></li>
     <li class="nav-lang"><a href="../lab.html">DE</a><a href="../it/lab.html">IT</a><a href="../en/lab.html">EN</a></li>
@@ -51,6 +51,18 @@
   <div class="section-inner">
     <div class="quote reveal">
       Comment l'éducation à l'alimentation des enfants en Suisse peut-elle être conçue de manière <em>plus holistique et plus efficace</em>&nbsp;?
+    </div>
+  </div>
+</section>
+
+<!-- ─── VIDÉO ─── -->
+<section class="bg-mint video-section">
+  <div class="section-inner">
+    <div class="video-embed reveal" data-yt-id="9veGt_RQ59M">
+      <img src="../images/video-jardin-thumb.jpg" alt="Vidéo ChiFoo Lab — un enfant et un adulte découvrent le jardin ensemble" loading="lazy">
+      <button class="video-play-btn" aria-label="Lire la vidéo ChiFoo Lab" onclick="chifooLoadVideo(this)">
+        <svg viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+      </button>
     </div>
   </div>
 </section>
@@ -123,22 +135,22 @@
         <p>Producteur·rice·s, agriculteur·rice·s et associations qui rendent tangible la valeur des aliments</p>
       </div>
       <div class="audience-card reveal">
-        <img src="../images/placeholder-cercle.png" alt="" class="audience-illu">
+        <img src="../images/picto-ic-industrie.png" alt="" class="audience-illu">
         <h3>Industrie et détaillants</h3>
         <p>Entreprises de production et de distribution alimentaire, qui façonnent l'offre et la disponibilité des produits destinés aux enfants</p>
       </div>
       <div class="audience-card reveal">
-        <img src="../images/placeholder-cercle.png" alt="" class="audience-illu">
+        <img src="../images/picto-ic-institutions.png" alt="" class="audience-illu">
         <h3>Politique et institutions</h3>
         <p>Cantons, communes et décideur·euse·s qui s'engagent pour l'environnement, la santé et l'éducation</p>
       </div>
       <div class="audience-card reveal">
-        <img src="../images/placeholder-cercle.png" alt="" class="audience-illu">
+        <img src="../images/picto-ic-loisirs.png" alt="" class="audience-illu">
         <h3>Offres de loisirs</h3>
         <p>Responsables de camps, entraîneur·euse·s sportif·ve·s et autres qui façonnent l'alimentation des enfants</p>
       </div>
       <div class="audience-card reveal">
-        <img src="../images/placeholder-cercle.png" alt="" class="audience-illu">
+        <img src="../images/picto-ic-recherche.png" alt="" class="audience-illu">
         <h3>Recherche</h3>
         <p>Relier les connaissances scientifiques aux réalités vécues</p>
       </div>
@@ -159,13 +171,13 @@
       <ul>
         <li><a href="lab.html">Le Lab</a></li>
         <li><a href="boussole.html">La boussole</a></li>
-        <li><a href="systeme.html">Vue d'ensemble</a></li>
+        <li><a href="systeme.html">Écosystème</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Ressources</h4>
       <ul>
-        <li><a href="../downloads/chifoo-kompass.pdf">La boussole (PDF)</a></li>
+        <li><a href="../downloads/chifoo-boussole.pdf">La boussole (PDF)</a></li>
         <li><a href="partenaires.html">Partenaires</a></li>
       </ul>
     </div>
@@ -189,6 +201,12 @@
     });
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  function chifooLoadVideo(el) {
+    const wrap = el.closest('.video-embed');
+    const id = wrap.getAttribute('data-yt-id');
+    wrap.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0" title="ChiFoo Lab" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  }
 </script>
 
 </body>
