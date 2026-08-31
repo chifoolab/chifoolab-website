@@ -53,6 +53,18 @@
   </div>
 </section>
 
+<!-- ─── VIDEO ─── -->
+<section class="bg-mint video-section">
+  <div class="section-inner">
+    <div class="video-embed reveal" data-yt-id="9veGt_RQ59M">
+      <img src="../images/video-jardin-thumb.jpg" alt="Video ChiFoo Lab — un bambino e un adulto scoprono insieme il giardino" loading="lazy">
+      <button class="video-play-btn" aria-label="Riproduci il video ChiFoo Lab" onclick="chifooLoadVideo(this)">
+        <svg viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
 <section class="bg-cream">
   <div class="section-inner">
     <span class="eyebrow">Il nostro approccio</span>
@@ -118,22 +130,22 @@
         <p>Produttori, agricoltori e associazioni che rendono tangibile il valore degli alimenti</p>
       </div>
       <div class="audience-card reveal">
-        <img src="../images/placeholder-cercle.png" alt="" class="audience-illu">
+        <img src="../images/picto-ic-industrie.png" alt="" class="audience-illu">
         <h3>Industria e commercio al dettaglio</h3>
         <p>Aziende della produzione e della distribuzione alimentare, che modellano l'offerta e la disponibilità di prodotti per i bambini</p>
       </div>
       <div class="audience-card reveal">
-        <img src="../images/placeholder-cercle.png" alt="" class="audience-illu">
+        <img src="../images/picto-ic-institutions.png" alt="" class="audience-illu">
         <h3>Politica e istituzioni</h3>
         <p>Cantoni, comuni e decisori che si impegnano per l'ambiente, la salute e l'educazione</p>
       </div>
       <div class="audience-card reveal">
-        <img src="../images/placeholder-cercle.png" alt="" class="audience-illu">
+        <img src="../images/picto-ic-loisirs.png" alt="" class="audience-illu">
         <h3>Offerte del tempo libero</h3>
         <p>Responsabili di campi, allenatori sportivi e altri che plasmano l'alimentazione dei bambini</p>
       </div>
       <div class="audience-card reveal">
-        <img src="../images/placeholder-cercle.png" alt="" class="audience-illu">
+        <img src="../images/picto-ic-recherche.png" alt="" class="audience-illu">
         <h3>Ricerca</h3>
         <p>Collegare le conoscenze scientifiche alle realtà vissute</p>
       </div>
@@ -160,7 +172,7 @@
     <div class="footer-col">
       <h4>Risorse</h4>
       <ul>
-        <li><a href="../downloads/chifoo-kompass.pdf">La bussola (PDF)</a></li>
+        <li><a href="../downloads/chifoo-boussole.pdf">La bussola (PDF)</a></li>
         <li><a href="partner.html">Partner</a></li>
       </ul>
     </div>
@@ -184,6 +196,12 @@
     });
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  function chifooLoadVideo(el) {
+    const wrap = el.closest('.video-embed');
+    const id = wrap.getAttribute('data-yt-id');
+    wrap.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0" title="ChiFoo Lab" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+  }
 </script>
 
 </body>
