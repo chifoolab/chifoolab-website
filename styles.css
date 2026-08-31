@@ -1027,3 +1027,52 @@ h1, .h1, h2, .h2, p, li, .lead, .eyebrow, .stat-label, .champ-title { hyphens: m
   .hero-content > div { min-width: 0; }
   .hero-two-col { grid-template-columns: 1fr !important; }
 }
+
+/* ───── Video lazy-load (vignette YouTube cliquable) ───── */
+.video-section { padding-top: 0; padding-bottom: 0; }
+.video-embed {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 22px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 14px 34px rgba(4, 84, 99, 0.18);
+  aspect-ratio: 1280 / 726;
+  background: var(--teal-deep);
+}
+.video-embed img,
+.video-embed iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border: 0;
+}
+.video-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: var(--coral);
+  border: 4px solid rgba(251, 247, 239, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease;
+  padding: 0;
+}
+.video-play-btn svg { width: 30px; height: 30px; margin-left: 4px; }
+.video-embed:hover .video-play-btn {
+  transform: translate(-50%, -50%) scale(1.08);
+  background: var(--coral-deep);
+}
+@media (max-width: 640px) {
+  .video-embed { border-radius: 14px; }
+  .video-play-btn { width: 64px; height: 64px; border-width: 3px; }
+  .video-play-btn svg { width: 22px; height: 22px; margin-left: 3px; }
+}
